@@ -98,7 +98,7 @@ Nodes can retrieve a unit of the currency by solving a problem. The currency is 
 
 - Should we start from a programmable network such as Ethereum or MaidSafe? Or should we start from scratch? ("make, buy or adapt pre-study")
 
-- How many hours this whole project may take? I feel like the project is much bigger than 86h of TP + 360h of TB to get into maturity: thus we will need to reduce its size.
+- How many hours this whole project may take? (I feel like the project is much bigger than 86h of TP + 360h of TB to get into maturity. Thus, we will need to reduce its size. But when would it be reduced? After or during the analytic work of the TP? Is it okay to set specifications at the beginning of a project such as TP and reduce the workload during the TP itself?)
 
 - Could we use storage providers indirectly to help the network storage load? (Probably, but the security could be compromised in some cases because a node will have to do the bridge to a storage provider. But in the case of TOR, it works fine I guess.)
 
@@ -112,15 +112,17 @@ Nodes can retrieve a unit of the currency by solving a problem. The currency is 
 
 - What is a consensus of nodes? How and where should be them used exactly? Is there any proof of work of it? (Should be clear during TP)
 
-- I don't really understand how a node and only that node can get access to its data in the presence of malicious software (maybe assume there is less than X% of malicious software around in the network?)
+- How to guaranty that a node and only that node can get access to its data in the presence of malicious software on the system used by the node? (We could maybe assume that there is less than X% of malicious software designed for the network. It's indeed difficult to protect people from malicious people...  We could add security layers, like a Pin or a passphrase, but if the user is running a keylogger of some sort, it's not secured. But since the node can only be accessible from a unique hardware, the key stealing could not as useful. However, the system could be also compromised by someone or/and something physical like a USB RUBBER. In which case the hardware protection is bypassed. Now we could think of a security that only shows a virtual keyboard, but a specific program could sniff on the mouse positions and actions. A solution could be to use a USB-key as key, but it could be also replicated if it's the user who generates the files on the key. Or use an external hardware, but it would impact the attractivity of Overclouds. And at the end how to be sure that the company who is making those encrypting hardware will not be hacked and release the key generator algorithms? Another solution is to control the hardware and the software, assuming that there is no way for an external or internal entity to know what's on the key, but in that case, the product Overclouds will be commercialized. And it could impact also the nature of the project, because it makes the project proprietary.)
 
-- What about stealing a private key: is this a concern or is the private key only usable in a specific node anyway?  would hardware signing mechanism help (I have a NitroKey)
+- What about stealing a private key, could it be a concern? (A private key should be only usable by a specific node using a hardware signing mechanism. How to be sure that a specific hardware is not simulated/emulated? We could use an externally secured hardware such as a NitroKey, but it would have an important impact on new users who would like to join the network.)
 
 - Concerning the TP: What should I do? (Responding to questions without answers, explore the possibilities to make the magic happen in the browser only, start making the network with the mesh-of-trust. I am not sure exactly how to scale the work.)
 
 - Concerning the TB: What should I do? (Make the network...)
 
-- Concerning after TP+TB, what would be left? Would the work of TP+TB will be a proof only a concept?  (this is allowed)
+- Concerning after TP+TB, what would be left? Would the result of the TP+TB be only a proof of concept or should it an iteration of a final product?
+
+- Is it possible to continue the project after the TP+TB? (This is allowed)
 
 
 ## Features

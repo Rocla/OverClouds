@@ -76,7 +76,7 @@ A node can transfer the ownership of data to another node. Both nodes must accep
 Once the network as enough blames, it asks for unrelated nodes to rate the blame. Judges will vote for the ban of the data based on the comments.
 Blamed data can ask once for a second trial, new unrelated nodes will have to rate the blame again.
 
-### Nodes are anonymous from the internet providers
+### Nodes are anonymous from the Internet providers
 The Internet provider is only aware that encrypted tunnel has been made to a random node, which will play the role of a gateway. At each restart, a new node is selected.
 
 ### The network generates currency units over time
@@ -98,7 +98,7 @@ Nodes can retrieve a unit of the currency by solving a problem. The currency is 
 
 - Should we start from a programmable network such as Ethereum or MaidSafe? Or should we start from scratch? ("make, buy or adapt pre-study")
 
-- How many hours this whole project may take? I feel like the project is much bigger than 86h of TP + 360h of TB to get into maturity.
+- How many hours this whole project may take? I feel like the project is much bigger than 86h of TP + 360h of TB to get into maturity: thus we will need to reduce its size.
 
 - Could we use storage providers indirectly to help the network storage load? (Probably, but the security could be compromised in some cases because a node will have to do the bridge to a storage provider. But in the case of TOR, it works fine I guess.)
 
@@ -114,11 +114,13 @@ Nodes can retrieve a unit of the currency by solving a problem. The currency is 
 
 - I don't really understand how a node and only that node can get access to its data in the presence of malicious software (maybe assume there is less than X% of malicious software around in the network?)
 
+- What about stealing a private key: is this a concern or is the private key only usable in a specific node anyway?  would hardware signing mechanism help (I have a NitroKey)
+
 - Concerning the TP: What should I do? (Responding to questions without answers, explore the possibilities to make the magic happen in the browser only, start making the network with the mesh-of-trust. I am not sure exactly how to scale the work.)
 
 - Concerning the TB: What should I do? (Make the network...)
 
-- Concerning after TP+TB, what would be left? Would the work of TP+TB will be a proof only a concept?
+- Concerning after TP+TB, what would be left? Would the work of TP+TB will be a proof only a concept?  (this is allowed)
 
 
 ## Features

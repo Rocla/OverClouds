@@ -142,53 +142,75 @@ Nodes can retrieve a unit of the currency by solving a problem. The currency is 
 - Currency
 
 # State of art
-
-- Freenet
+## Existing Networks
+- [Freenet](https://freenetproject.org)
 > Freenet is free software which lets you anonymously share files, browse and publish "free sites" (web sites accessible only through Freenet) and chat on forums, without fear of censorship. Freenet is decentralized to make it less vulnerable to attack, and if used in "darknet" mode, where users only connect to their friends, is very difficult to detect.
-- I2P
+- [I2P](https://geti2p.net/en/)
 > The Invisible Internet Project is an overlay network and darknet that allows applications to send messages to each other pseudonymously and securely. Uses include anonymous Web surfing, chatting, blogging and file transfers. The software that implements this layer is called an I2P router and a computer running I2P is called an I2P node.
-- MaidSafe
+- [MaidSafe](http://maidsafe.net)
 > Software description: this is the super-project in which each MaidSafe library resides. Some information is common to all libraries and is detailed here. Library-specific information can be found in each library's wiki (C++).
-- QEMU JS
-> QEMU is a generic and open source machine emulator and virtualizer.
-- Route-based VPN
+- [Tor](https://www.torproject.org)
+> Tor is free software and an open network that helps you defend against traffic analysis, a form of network surveillance that threatens personal freedom and privacy, confidential business activities and relationships, and state security.
+- [ZeroNet](http://zeronet.io)
+> Real-time updated, P2P websites using Bitcoin cryptography and the BitTorrent network. Zeronet is decentralized, open source software in Python aimed to build an Internet-like computer network of peer-to-peer users. Zeronet is not anonymous by default, but users can hide their IP address by using Tor which uses bitcoin cryptography and the BitTorrent network.
+- [Project Maelstrom](http://project-maelstrom.bittorrent.com)
+> BitTorrent wants your help creating a P2P-powered web with Project Maelstrom. (Beta on windows only)
+- [Diaspora*](https://diasporafoundation.org)
+> The community-run, distributed social network. diaspora* is based on three key philosophies: Decentralization, Freedom, and Privacy.
+- [FlowingMail](http://flowingmail.com)
+> A decentralized, secure, encrypted email system.
+- [Bitmessage](https://bitmessage.org/wiki/Main_Page)
+> Bitmessage is a P2P communications protocol used to send encrypted messages to another person or to many subscribers. It is decentralized and trustless, meaning that you need-not inherently trust any entities like root certificate authorities. 
+- [Retroshare](http://retroshare.sourceforge.net)
+> RetroShare is free software for encrypted filesharing, serverless email, instant messaging, chatrooms, and BBS, based on a friend-to-friend network built on GPG. It is not strictly a darknet since optionally, peers may communicate certificates and IP addresses from and to their friends.
+- [MediaGoblin](http://www.mediagoblin.org)
+> MediaGoblin is a free software media publishing platform that anyone can run. You can think of it as a decentralized alternative to Flickr, YouTube, SoundCloud, etc.
+- [Movim](https://movim.eu)
+> MOVIM (My Open Virtual Identity Manager) is a distributed social network built on top of XMPP, a popular open standards communication protocol. Movim is a free and open source software licensed under the AGPL.[2] It can be accessed using existing XMPP clients and Jabber accounts.
+- [The IPFS Project](http://ipfs.io)
+> The InterPlanetary File System (IPFS) is a new hypermedia distribution protocol, addressed by content and identities. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. IPFS clams to be a Permanent Web with a a new peer-to-peer hypermedia protocol.
+
+## Transfer Protocols
+- [Route-based VPN](https://sc1.checkpoint.com/documents/R76/CP_R76_VPN_AdminGuide/13824.htm)
 > The use of VPN Tunnel Interfaces (VTI) introduces a new method of configuring VPNs called Route Based VPN. This method is based on the notion that setting up a VTI between peer Security Gateways is much like connecting them directly.
-- XBee digimesh
+- [Commotion](https://www.commotionwireless.net)
+> Commotion is an open-source communication tool that uses wireless devices to create decentralized mesh networks.
+- [Hubzilla](http://hubzilla.org/sandbox/index.html)
+> Hubzilla is a powerful platform for creating interconnected websites featuring a decentralized identity, communications, and permissions framework built using common webserver technology.
+- [Tent](https://tent.io)
+> Tent lets you control your data instead of handing it over to service and app providers. Just like email, you choose a provider or can set up your own Tent server. Tent data and relationships are portable so you can change Tent providers easily at any time.
+
+## Hardware
+- [XBee digimesh](http://www.digi.com/products/xbee-rf-solutions/modules/xbee-digimesh-2-4)
 > XBee & XBee-PRO DigiMesh 2.4 embedded RF modules utilize the peer-to-peer DigiMesh protocol in 2.4 GHz for global deployments. This innovative mesh protocol offers users added network stability through self-healing, self-discovery, and dense network operation. With support for sleeping routers, DigiMesh is ideal for power sensitive applications relying upon batteries or power harvesting technology for power.
-- Bitcoin
+
+## Block Chain
+- [Bitcoin](https://bitcoin.org/en/)
 > Bitcoin uses peer-to-peer technology to operate with no central authority or banks; managing transactions and the issuing of bitcoins is carried out collectively by the network.
 The idea of proof of work and network consensus are central here.
-- Ethereum
+- [Ethereum](https://www.ethereum.org)
 > Ethereum is a decentralized platform that runs smart contracts: applications that run exactly as programmed without any possibility of downtime, censorship, fraud or third party interference.
-- Prism-Break
+
+## Libraries
+- [Prism-Break](https://prism-break.org/en/)
 > Help make mass surveillance of entire populations uneconomical! We all have a right to privacy, which you can exercise today by encrypting your communications and ending your reliance on proprietary services.
-- Tor
-> Tor is free software and an open network that helps you defend against traffic analysis, a form of network surveillance that threatens personal freedom and privacy, confidential business activities and relationships, and state security.
-- ZeroNet
-> Zeronet is decentralized, open source software in Python aimed to build an Internet-like computer network of peer-to-peer users. Zeronet is not anonymous by default, but users can hide their IP address by using Tor which uses bitcoin cryptography and the BitTorrent network.
-- Project Maelstrom
-> BitTorrent wants your help creating a P2P-powered web with Project Maelstrom
-- Diaspora*
-> The community-run, distributed social network
-- FlowingMail
-> a decentralized, secure, encrypted email system
-- Bitmessage
-> Bitmessage is a P2P communications protocol used to send encrypted messages to another person or to many subscribers. It is decentralized and trustless, meaning that you need-not inherently trust any entities like root certificate authorities. 
-- Retroshare
-> RetroShare is free software for encrypted filesharing, serverless email, instant messaging, chatrooms, and BBS, based on a friend-to-friend network built on GPG. It is not strictly a darknet since optionally, peers may communicate certificates and IP addresses from and to their friends.
-- YaCy
+
+## Decentralized applications
+- [YaCy](http://www.yacy.net/en/)
 > YaCy is a free distributed search engine, built on principles of peer-to-peer networks. Its core is a computer program written in Java distributed on several hundred computers, so-called YaCy-peers.
-- Tent
-> Tent lets you control your data instead of handing it over to service and app providers. Just like email, you choose a provider or can set up your own Tent server. Tent data and relationships are portable so you can change Tent providers easily at any time.
-- Hubzilla
-> Hubzilla is a powerful platform for creating interconnected websites featuring a decentralized identity, communications, and permissions framework built using common webserver technology.
-- MediaGoblin
-> MediaGoblin is a free software media publishing platform that anyone can run. You can think of it as a decentralized alternative to Flickr, YouTube, SoundCloud, etc.
-- Movim
-> MOVIM (My Open Virtual Identity Manager) is a distributed social network built on top of XMPP, a popular open standards communication protocol. Movim is a free and open source software licensed under the AGPL.[2] It can be accessed using existing XMPP clients and Jabber accounts.
-- Commotion
-> Commotion is an open-source communication tool that uses wireless devices to create decentralized mesh networks.
-- Project-Byzantium
+
+## Authentification 
+- [TeamSpeak](http://www.teamspeak.com)
+> TeamSpeak is proprietary voice-over-Internet Protocol software that allows computer users to speak on a chat channel with fellow computer users, much like a telephone conference call. (Allow the user to create a mathematically generated identity certificate, with a level increasing over time)
+
+## OS
+- [Project-Byzantium](http://project-byzantium.org)
 > Byzantium is a live Linux distribution that delivers easy-to-use, secure, and robust mesh networking capabilities.
-- TeamSpeak
-> TeamSpeak is proprietary voice-over-Internet Protocol software that allows computer users to speak on a chat channel with fellow computer users, much like a telephone conference call.
+
+## Technologies
+- [QEMU JS](http://bellard.org/jslinux/tech.html)
+> QEMU is a generic and open source machine emulator and virtualizer.
+- [PeerJS](https://github.com/MrSwitch/peer.js)
+> PeerJS is a service which makes it easier to build a chat room using the present WebRTC's PeerConnection API. The PeerConnection API proposes to be able to send data, video etc from one user-agent to another without the need for it going through a server. PeerJS handles this handshake with a simple Socket.IO backend server.
+- [PeerShare](https://github.com/cuonic/PeerShare)
+> PeerShare is a P2P file sharing website that uses WebRTC technologies to allow uses to send and receive files without going through any servers. PeerShare is mainly built on Javascript and jQuery, and uses PeerJS as a WebRTC API.

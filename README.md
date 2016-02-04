@@ -169,6 +169,10 @@ Nodes can retrieve a unit of the currency by solving a problem. The currency is 
 > MOVIM (My Open Virtual Identity Manager) is a distributed social network built on top of XMPP, a popular open standards communication protocol. Movim is a free and open source software licensed under the AGPL.[2] It can be accessed using existing XMPP clients and Jabber accounts.
 - [The IPFS Project](http://ipfs.io)
 > The InterPlanetary File System (IPFS) is a new hypermedia distribution protocol, addressed by content and identities. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open. IPFS clams to be a Permanent Web with a a new peer-to-peer hypermedia protocol.
+- [Serval Project](http://www.servalproject.org)
+> Serval is a telecommunications system comprised of at least two mobile phones that are able to work outside of regular mobile phone tower range due thanks to the Serval App and Serval Mesh.
+- [Open Garden](http://opengarden.com/home/)
+> Open Garden's technology creates a software-based network, also known as a peer-to-peer wireless mesh network, among participating mobile devices using WiFi, Bluetooth LE, and other technologies. Open Garden's innovations include: seamless device discovery and pairing, offline identity, a proprietary network protocol for addressing and routing messages off-the-grid, distributed algorithms for managing mesh networks, advanced traffic management (multi-hop, store and forward), and battery use reduction.
 
 ## Transfer Protocols
 - [Route-based VPN](https://sc1.checkpoint.com/documents/R76/CP_R76_VPN_AdminGuide/13824.htm)

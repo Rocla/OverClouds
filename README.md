@@ -173,6 +173,8 @@ Nodes can retrieve a unit of the currency by solving a problem. The currency is 
 > Serval is a telecommunications system comprised of at least two mobile phones that are able to work outside of regular mobile phone tower range due thanks to the Serval App and Serval Mesh.
 - [Open Garden](http://opengarden.com/home/)
 > Open Garden's technology creates a software-based network, also known as a peer-to-peer wireless mesh network, among participating mobile devices using WiFi, Bluetooth LE, and other technologies. Open Garden's innovations include: seamless device discovery and pairing, offline identity, a proprietary network protocol for addressing and routing messages off-the-grid, distributed algorithms for managing mesh networks, advanced traffic management (multi-hop, store and forward), and battery use reduction.
+- [Hyperboria](https://hyperboria.net)
+> A community of local Wifi initiatives, programmers, and enthusiasts. They are running a peer-to-peer IPv6 network with automatic end-to-end encryption, distributed IP address allocation, and DHT-based Source Routing. ([cjdns](https://github.com/cjdelisle/cjdns/) connects to it.)
 
 ## Transfer Protocols
 - [Route-based VPN](https://sc1.checkpoint.com/documents/R76/CP_R76_VPN_AdminGuide/13824.htm)
@@ -185,6 +187,12 @@ Nodes can retrieve a unit of the currency by solving a problem. The currency is 
 > Tent lets you control your data instead of handing it over to service and app providers. Just like email, you choose a provider or can set up your own Tent server. Tent data and relationships are portable so you can change Tent providers easily at any time.
 - [cjdns](https://github.com/cjdelisle/cjdns/)
 > Networking Reinvented. Cjdns implements an encrypted IPv6 network using public-key cryptography for address allocation and a distributed hash table for routing. This provides near-zero-configuration networking, and prevents many of the security and scalability issues that plague existing networks.
+
+## Protection
+- [Honeypot](https://en.wikipedia.org/wiki/Honeypot_%28computing%29)
+> In computer terminology, a honeypot is a computer security mechanism set to detect, deflect, or, in some manner, counteract attempts at unauthorized use of information systems. Generally, a honeypot consists of data (for example, in a network site) that appears to be a legitimate part of the site but is actually isolated and monitored, and that seems to contain information or a resource of value to attackers, which are then blocked.
+- [Penetration Testing Lab](http://www.thejoshjones.com/penetration-testing-lab-setup-and-overview/)
+> Use of multiples OS to target penetration type on a network or computer.
 
 ## Hardware
 - [XBee digimesh](http://www.digi.com/products/xbee-rf-solutions/modules/xbee-digimesh-2-4)
@@ -205,13 +213,17 @@ The idea of proof of work and network consensus are central here.
 - [YaCy](http://www.yacy.net/en/)
 > YaCy is a free distributed search engine, built on principles of peer-to-peer networks. Its core is a computer program written in Java distributed on several hundred computers, so-called YaCy-peers.
 
-## Authentification 
+## Reputation Management 
 - [TeamSpeak](http://www.teamspeak.com)
 > TeamSpeak is proprietary voice-over-Internet Protocol software that allows computer users to speak on a chat channel with fellow computer users, much like a telephone conference call. (Allow the user to create a mathematically generated identity certificate, with a level increasing over time)
+- [EigenTrust](https://en.wikipedia.org/wiki/EigenTrust)
+> EigenTrust algorithm is a reputation management algorithm for peer-to-peer networks. The algorithm provides each peer in the network a unique global trust value based on the peer's history of uploads and thus aims to reduce the number of inauthentic files in a P2P network. It has been cited by approximately 3853 other articles according to Google Scholar.
 
 ## OS
 - [Project-Byzantium](http://project-byzantium.org)
 > Byzantium is a live Linux distribution that delivers easy-to-use, secure, and robust mesh networking capabilities.
+- [Tails](https://tails.boum.org)
+> Tails is a live operating system, that you can start on almost any computer from a DVD, USB stick, or SD card. It aims at preserving your privacy and anonymity.
 
 ## Technologies
 - [QEMU JS](http://bellard.org/jslinux/tech.html)

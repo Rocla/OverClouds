@@ -179,6 +179,8 @@ Nodes can retrieve a unit of the currency by solving a problem. The currency is 
 > Hubzilla is a powerful platform for creating interconnected websites featuring a decentralized identity, communications, and permissions framework built using common webserver technology.
 - [Tent](https://tent.io)
 > Tent lets you control your data instead of handing it over to service and app providers. Just like email, you choose a provider or can set up your own Tent server. Tent data and relationships are portable so you can change Tent providers easily at any time.
+- [cjdns](https://github.com/cjdelisle/cjdns/)
+> Networking Reinvented. Cjdns implements an encrypted IPv6 network using public-key cryptography for address allocation and a distributed hash table for routing. This provides near-zero-configuration networking, and prevents many of the security and scalability issues that plague existing networks.
 
 ## Hardware
 - [XBee digimesh](http://www.digi.com/products/xbee-rf-solutions/modules/xbee-digimesh-2-4)
@@ -214,3 +216,5 @@ The idea of proof of work and network consensus are central here.
 > PeerJS is a service which makes it easier to build a chat room using the present WebRTC's PeerConnection API. The PeerConnection API proposes to be able to send data, video etc from one user-agent to another without the need for it going through a server. PeerJS handles this handshake with a simple Socket.IO backend server.
 - [PeerShare](https://github.com/cuonic/PeerShare)
 > PeerShare is a P2P file sharing website that uses WebRTC technologies to allow uses to send and receive files without going through any servers. PeerShare is mainly built on Javascript and jQuery, and uses PeerJS as a WebRTC API.
+- [PeerSurf](https://github.com/matthaywardwebdesign/PeerSurf)
+> PeerSurf is a demo (and kind of a library) of P2P websites powered by WebTorrent

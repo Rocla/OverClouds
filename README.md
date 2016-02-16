@@ -1,6 +1,6 @@
 # Over Clouds
 
-- Project proposition for 2016 TP & TB
+- Project proposition for 2016 TP \& TB
 - Author: Romain Claret
 - Author's favorite development style: Prototyping
 - Author's favorite languages: Python + Javascript
@@ -35,7 +35,7 @@ The features include:
 - We can also easily imagine that soon a new company will come saying: "Hey, we are specialized in transmitting encrypted data, nobody will ever know what you are doing, and when you are doing it. All you have to do is to buy from us a the key every month.". I don't think it's good neither, it will only make the privatization of the data security goes further and further and killing hope to retrieve data one day. We could see this has an evolution of VPN services.
 
 - With Overclouds, I am looking for a new approach to allow people to communicate together and be sure that their private data is secured and safe.
-Nodes are anonymous on the network, in the sense that other people are aware of other nodes, but they don't know who they are, expect if they are considered malicious or bad (such as terrorists, scammers, etc.) by the global network of nodes. 
+Nodes are anonymous on the network, in the sense that other people are aware of other nodes, but they don't know who they are, expect if they are considered malicious or bad (such as terrorists, scammers, etc.) by the global network of nodes.
 And finally, the network does not act like random noises, it should be nice mathematics (like a sinus?). Users should be able to predict what will happen with their data, however, it is unpredictable for other users to know what will happen with this data.
 
 
@@ -61,7 +61,7 @@ All that users or things need is to have a standard Internet connection and a br
 
 - Each identity has a public key, a private key, a node parent (alterable), and optional profile (languages, picture, name, etc...) which could be used by internal applications.
 
-- The network needs require that a user uses his identity to log into a node and access the network. During votings, only node can give a vote. Identities cannot vote multiple times on the same vote. The first identity using a node validates its vote.
+- The network needs require that a user uses his identity to log into a node and access the network. During votings, only nodes can give a vote. Identities cannot vote multiple times on the same vote. The first identity using a node validates its vote.
 
 - A node works without an identity, however, an identity needs a node.
 
@@ -170,7 +170,7 @@ Nodes can retrieve a unit of the currency by solving a problem. The currency is 
 - Storage on network
 - Website
 - Chat
-- File sharing 
+- File sharing
 - Currency
 
 
@@ -238,7 +238,7 @@ Nodes can retrieve a unit of the currency by solving a problem. The currency is 
     - Increases over time
     - Increases randomly by solving mathematical problem given by the network
     - Increases for good blames
-    - Decreases with incorrect transaction 
+    - Decreases with incorrect transaction
     - Decreases if used by untrusted users
     - Decreases for bad blames
     - Bannable by MoT
@@ -323,7 +323,7 @@ TODO
 - [FlowingMail](http://flowingmail.com)
 > A decentralized, secure, encrypted email system.
 - [Bitmessage](https://bitmessage.org/wiki/Main_Page)
-> Bitmessage is a P2P communications protocol used to send encrypted messages to another person or to many subscribers. It is decentralized and trustless, meaning that you need-not inherently trust any entities like root certificate authorities. 
+> Bitmessage is a P2P communications protocol used to send encrypted messages to another person or to many subscribers. It is decentralized and trustless, meaning that you need-not inherently trust any entities like root certificate authorities.
 - [Retroshare](http://retroshare.sourceforge.net)
 > RetroShare is free software for encrypted filesharing, serverless email, instant messaging, chatrooms, and BBS, based on a friend-to-friend network built on GPG. It is not strictly a darknet since optionally, peers may communicate certificates and IP addresses from and to their friends.
 - [MediaGoblin](http://www.mediagoblin.org)
@@ -365,7 +365,7 @@ TODO
 ## Hardware
 
 - [XBee digimesh](http://www.digi.com/products/xbee-rf-solutions/modules/xbee-digimesh-2-4)
-> XBee & XBee-PRO DigiMesh 2.4 embedded RF modules utilize the peer-to-peer DigiMesh protocol in 2.4 GHz for global deployments. This innovative mesh protocol offers users added network stability through self-healing, self-discovery, and dense network operation. With support for sleeping routers, DigiMesh is ideal for power sensitive applications relying on batteries or power harvesting technology for power.
+> XBee \& XBee-PRO DigiMesh 2.4 embedded RF modules utilize the peer-to-peer DigiMesh protocol in 2.4 GHz for global deployments. This innovative mesh protocol offers users added network stability through self-healing, self-discovery, and dense network operation. With support for sleeping routers, DigiMesh is ideal for power sensitive applications relying on batteries or power harvesting technology for power.
 
 
 ## Block Chain
@@ -389,7 +389,7 @@ The idea of proof of work and network consensus are central here.
 > YaCy is a free distributed search engine, built on principles of peer-to-peer networks. Its core is a computer program written in Java distributed on several hundred computers, so-called YaCy-peers.
 
 
-## Reputation Management 
+## Reputation Management
 
 - [TeamSpeak](http://www.teamspeak.com)
 > TeamSpeak is proprietary voice-over-Internet Protocol software that allows computer users to speak on a chat channel with fellow computer users, much like a telephone conference call. (Allow the user to create a mathematically generated identity certificate, with a level increasing over time)
@@ -415,3 +415,14 @@ The idea of proof of work and network consensus are central here.
 > PeerShare is a P2P file sharing website that uses WebRTC technologies to allow uses to send and receive files without going through any servers. PeerShare is mainly built on Javascript and jQuery and uses PeerJS as a WebRTC API.
 - [PeerSurf](https://github.com/matthaywardwebdesign/PeerSurf)
 > PeerSurf is a demo (and kind of a library) of P2P websites powered by WebTorrent
+
+## Languages
+
+- [TypeScript](http://www.typescriptlang.org)
+> TypeScript lets you write JavaScript the way you really want to. TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. Any browser. Any host. Any OS. Open Source.
+
+- [ECMAScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Language_Resources)
+> ECMAScript is the scripting language that forms the basis of JavaScript. ECMAScript is standardized by the Ecma International standards organization in the ECMA-262 and ECMA-402 specifications.
+
+- [Ruby](https://www.ruby-lang.org/en/)
+> A dynamic, open source programming language with a focus on simplicity and productivity. It has an elegant syntax that is natural to read and easy to write.

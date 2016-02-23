@@ -5,34 +5,27 @@
   - first rough iteration draft (product backlog?)
 
 2016-02-17 normal meeting with student
-   - goals
-        - CDC finalization: OK
-        - run through first rough iteration draft: OK
+  - goals
+    - CDC finalization: OK
+    - run through first rough iteration draft: OK
 
-   - wiki: nothing (not a problem)
-   - GIT
-        - SCRUM.md: most of the objectives are there
+  - wiki: nothing (not a problem)
+  - GIT
+    - SCRUM.md: most of the objectives are there
 
-   - missing first draft of iterations (what will be done in the 10
-     weeks of the project), developped first draft:
+  - missing first draft of iterations (what will be done in the 10 weeks of the project), developed first draft:
+    - SPRINT1 (state+planif+draft architecture)   2 weeks
+    - SPRINT2  communication
+    - SPRINT3  encryption
+    - SPRINT4  trust
+    - SPRINT5  storage
+    - SPRINTN (finalizing rapport)
 
-     SPRINT1 (état+planif+draft architecture)   2 semaines
+    result at each sprint:
+      - deliverables (small prototype, demo, library)
+    	- what is missing (to do during bachelor session, to do at the next sprint, drop): eventually manage as a list of backlogS.
 
-     SPRINT2  communiquer
-
-     SPRINT3  chiffrer
-
-     SPRINT4  confiance
-
-     SPRINT5  stockage
-
-     SPRINTN (finalisation rapport) 
-
-     résultats de chaque sprint:
-	- deliverables (petit prototype, démo, bibliothèque)
-	- qu'est-ce qui manque (à faire au TB, à faire un prochain sprint, abandonner): évt. géré comme liste de backlogS
-
-   next week goal
+    next week goal
       - list of iterations (=? sprint)
       - expected duration
       - deliverables attendus
@@ -41,6 +34,3 @@
 
 OTHER
    - Massimo contract
-
-    
-

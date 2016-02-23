@@ -31,6 +31,7 @@
   - End date: 2016-03-15 (2 weeks)
   - Sprint Theme: Communication
   - Sprint Backlog:
+    - Update Architecture
     - State of the art
       - Current technologies of anonymous data transfer for chainblock ([Ethereum](https://www.ethereum.org)?) and other ([MaidSafe](http://maidsafe.net), [Freenet](https://freenetproject.org)?)
       - [Bitcoin](https://bitcoin.org/en/)
@@ -56,6 +57,8 @@
         - Hyperboria compatible
         - Low and High bandwidth
       - Nodes
+        - Hardware Certificate
+        - User Identity
       - Data transfer
         - Gateway
         - Data in clear
@@ -66,6 +69,7 @@
   - Start date: 2016-03-16
   - End date: 2016-03-29 (2 weeks)
   - Sprint Theme: Encryption
+    - Update Architecture
     - State of the art
       - Encryption technologies from the browser as library (js?)
     - UI
@@ -80,6 +84,7 @@
   - Start date: 2016-03-30
   - End date: 2016-04-19 (3 weeks)
   - Sprint Theme: Trust
+    - Update Architecture
     - State of the art
       - [EigenTrust](https://en.wikipedia.org/wiki/EigenTrust)
       - [TeamSpeak](http://www.teamspeak.com)
@@ -109,6 +114,7 @@
   - Start date: 2016-04-20
   - End date: 2016-05-03 (2 weeks)
   - Sprint Theme: Storage
+    - Update Architecture
     - State of the art
       - Read https://www.usenix.org/conference/atc14/technical-sessions/presentation/bessani
     - Storing on the network

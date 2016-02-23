@@ -1,10 +1,11 @@
 # Scrum Project Management
 
 ## Project backlog
+  - State of art
   - Architecture
     - Software
       - From a browser
-      - No software installation
+      - No software installation (dependancies to the browser ecosystem?)
     - Hardware
     - Physical transmission
       - Anonymous

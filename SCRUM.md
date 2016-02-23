@@ -59,13 +59,39 @@
       - Public certificates and identities
       - Flags
 
-## Current Sprint
-### Sprint Details:
+## Planned Sprints
+### Sprint #1 Details:
+  - Sprint number: 1
+  - Start date: 2016-02-17
+  - End date: 2016-02-23
+  - Sprint Backlog:
+    - Work on the planification (sprints)
+    - State of the art
+      - Read https://www.usenix.org/conference/atc14/technical-sessions/presentation/bessani
+      - Current technologies of anonymous data transfer for chainblock (Ethereum?) and other (Maidsafe, Freenet?)
+      - Encryption technologies from the browser as library (js?)
+      - Difficulties for the security layer on top of browser
+    - Draft architecture
+
+### Sprint #2 Details:
+  - Sprint number: 1
+  - Start date: 2016-02-17
+  - End date: 2016-02-23
+  - Sprint Backlog:
+    - Finish on the planification (sprints)
+    - State of the art
+
+### Sprint #3 Details:
   - Sprint number: 1
   - Start date: 2016-02-17
   - End date: 2016-02-23
 
-### Sprint backlog
+ ### Sprint #4 Details:
+  - Sprint number: 1
+  - Start date: 2016-02-17
+  - End date: 2016-02-23
+
+### Current Sprint backlog
   - TODO:
   - IN PROGRESS:
   - TESTING:

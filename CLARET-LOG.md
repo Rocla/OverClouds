@@ -25,6 +25,12 @@
   - Filled up the product backlog in SCRUM.md (i am not sure about if it is correct)
 
 2016-02-17 1st Meeting
+  - Worked on a draft for the sprints
+  - Discussed Sprint structure (sprints with themes instead of one per week)
+    - What, How, Result
+  - TODO for the 2nd meeting
+    - Sprint planning
+    - Start sprint 1
 
 2016-02-17 -> 2016-02-23 Week 1 / 13
 

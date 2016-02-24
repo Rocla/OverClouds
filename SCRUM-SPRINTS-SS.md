@@ -129,9 +129,9 @@
   - Sprint number: 7
   - Start date: 2016-05-04
   - End date: 2016-05-13 (1 week)
-  - Sprint Theme: Rapport
+  - Sprint Theme: Report
   - Sprint Backlog:
-    - Make Rapport
+    - Make Report
 
 ### Current Sprint backlog
   - TODO: Architecture Draft

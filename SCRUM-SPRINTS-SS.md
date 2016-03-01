@@ -17,11 +17,12 @@
         - Nodes
         - Gateway
         - Data transfer
-        - Global Rules/Laws of the network
-        - Mesh-of-Trust
         - Node certificates
         - Identities
-        - Storage on the network
+      - Encryption
+      - Mesh-of-Trust
+        - Global Rules/Laws of the network
+      - Storage on the network
       - UI
       - Language
 
@@ -63,6 +64,8 @@
         - Gateway
         - Data in clear
       - Anonymous
+  - Delivrable:
+    - Demo in the browser for the Communication
 
 ### Sprint #3 Details:
   - Sprint number: 3
@@ -78,6 +81,8 @@
       - Mathematically elegant encryption
       - Chunks
       - Aware of next node
+  - Delivrable:
+    - Demo in the browser for the Encryption
 
  ### Sprint #4 Details:
   - Sprint number: 4
@@ -108,6 +113,12 @@
       - PKI
       - Data owner
       - Public profile
+    - Delivrable:
+      - Demo in the browser for
+        - Mesh-of-Trust
+        - Node/Identities
+        - Global Rules & Data tribunal
+      - Intermediar Report
 
 ### Sprint #5 Details:
   - Sprint number: 5
@@ -124,6 +135,10 @@
       - Countdown to go publicly
       - Public certificates and identities
       - Flags
+      - No data is send over the network, only the location of the data and the rights
+    - Start Final Report
+  - Delivrable:
+    - Demo in the browser of the Storage
 
 ### Sprint #6 Details:
   - Sprint number: 7
@@ -131,12 +146,16 @@
   - End date: 2016-05-13 (1 week)
   - Sprint Theme: Report
   - Sprint Backlog:
-    - Make Report
+    - Finish Report
+      - Graphs/Pictures
+      - Schemas
+  - Delivrable:
+    - Report
 
 ### Current Sprint backlog
-  - TODO: Architecture Draft
-  - IN PROGRESS: Sprint #1
+  - TODO: Looking for what is done currently with TOR (communication plugins, descentralized storage)
+  - IN PROGRESS: Sprint #2
   - TESTING: None
 
 ## Increments
-  - None
+  - Sprint #1: Architecture Draft + Planning

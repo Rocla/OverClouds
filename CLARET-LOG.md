@@ -38,8 +38,77 @@
   - Working on the architecture
 
 2016-02-24 2nd Meeting
+  - Missing Delivrables for sprints
+  - Should focus on the use of the existant before creating new
+    - May be use TOR for the communication base
+  - The architecture draft looks more like a mind map than an architecture
+  - The architecture draft looks find so far, however it includes mainly the communication
+    - Missing Encryption
+    - Missing Trust
+    - Missing Storage
+  - The delay for the report is maybe too short (should think to add the in)
+    - Add of an intermediar report
+    - Start earlier the final report
+  - There won't be a meeting next week
+    - Push the end of Sprint #1 and notify teacher
+  - Sprint #1
+    - Add missing theme in architecture
+    - Check for the use of the existant (as plugins)
+  - Sprint #2
+    - Start with a direct communication (also try to use TOR)
+  - The current communication architecture looks a lot like TOR (onion peel)
+  - Maybe have an active auto-ban by the system, and use the data tribunal only if there is a requiest for a trial.
 
 2016-02-24 -> 2016-03-01 Week 2 / 13
+  - Finishing the draft of the architecture #1
+    - Add of Encryption
+    - Add of Trust
+    - Add of Storage
+  - Making of the architecture draft #2
+    - Use of a decentralized server (with decentralized storage)
+      - Identities and Nodes are not doing anything anymore
+      - The server is applying the rules made by the identities
+      - The server is working as a black-box
+        - The connection between the user and the server is secured (not spyable)
+        - Identities can give orders on their data and the server apply them
+        - The traffic inside the server is not understandable
+          - The work is encrypted and distributed in chunks to nodes
+          - The worker node only see chunks of the information. (even descypted, there is no real use for it)
+      - The server must do integrety checks
+        - Send the same work 2 or 3 times and compare results
+      - Nodes are being used as computing power and storage
+      - Nodes' level of trust (certificates) are increasing
+        - Over time
+        - With correct "integrety check"
+      - Identities' level of trust are increasing
+        - Over time
+        - For public data (unblamed)
+  - Add of delivrables to sprints
+  - Add of intermediar report data
+  - Modified the start date of the final report
+  - Check for a plugin structure using TOR, I2P, Freenet
+  - SELF THOUGHT:
+    - Communication by data probagation:
+      - The path optimization won't be possible and the global status of the network will be very dificult to maintain. And being sure that the chunk arrived would not be as easy as well.
+      - But it would be must easier to just push data into the wild...
+      - An advantage would be total anonymity, but I am not sure it's what we need here.
+    - Global Knowledge:
+      - It's not necessarily a blockchain
+        - It could be something similar to a VCS
+          - A directory with public files (list of nodes, activities, etc..)
+          - Versioning
+          - Similar to pull requests, when a new node arrive, a data ban, etc..
+    - Storage
+      - May be the best if to only allow Read, and Delete verbs
+        - The modification as only sense if we went to do versioning
+        - The address of the file should be kept the same so other "reader" could still access it
+        - The flags (ban) should be persistante on the file, identity and node of birth.
+        - Auto banning by flags
+
+    *NOT STARTED YET:*
+    - Start sprint #2 themed Communication
+      - Looking for what is done currently with TOR (communication plugins, descentralized storage)
+      - Looking for current technologies that could suit the communication
 
 2016-03-02 3rd Meeting
 

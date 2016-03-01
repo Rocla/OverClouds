@@ -403,6 +403,9 @@ The idea of proof of work and network consensus are central here.
 > Byzantium is a live Linux distribution that delivers easy-to-use, secure, and robust mesh networking capabilities.
 - [Tails](https://tails.boum.org)
 > Tails is a live operating system, that you can start on almost any computer from a DVD, USB stick, or SD card. It aims at preserving your privacy and anonymity.
+- [arkos](https://arkos.io)
+> Install arkOS to a dedicated device. Plug the device into your router, fill in your settings, then you're online. Customize it to your heart's content from your browser.
+
 
 
 ## Technologies

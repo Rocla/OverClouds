@@ -360,12 +360,16 @@ TODO
 > In computer terminology, a honeypot is a computer security mechanism set to detect, deflect, or, in some manner, counteract attempts at unauthorized use of information systems. Generally, a honeypot consists of data (for example, in a network site) that appears to be a legitimate part of the site but is actually isolated and monitored, and that seems to contain information or a resource of value to attackers, which are then blocked.
 - [Penetration Testing Lab](http://www.thejoshjones.com/penetration-testing-lab-setup-and-overview/)
 > Use of multiples OS to target penetration type on a network or computer.
+- [Two-factor authentication](https://en.wikipedia.org/wiki/Two-factor_authentication)
+> That provides identification of users by means of the combination of two different components.
 
 
 ## Hardware
 
 - [XBee digimesh](http://www.digi.com/products/xbee-rf-solutions/modules/xbee-digimesh-2-4)
 > XBee \& XBee-PRO DigiMesh 2.4 embedded RF modules utilize the peer-to-peer DigiMesh protocol in 2.4 GHz for global deployments. This innovative mesh protocol offers users added network stability through self-healing, self-discovery, and dense network operation. With support for sleeping routers, DigiMesh is ideal for power sensitive applications relying on batteries or power harvesting technology for power.
+- [Nitrokey](https://www.nitrokey.com)
+> USB key to enable secure encryption and signing of data. The secret keys are always stored inside the Nitrokey.
 
 
 ## Block Chain

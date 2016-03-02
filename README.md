@@ -362,6 +362,9 @@ TODO
 > Use of multiples OS to target penetration type on a network or computer.
 - [Two-factor authentication](https://en.wikipedia.org/wiki/Two-factor_authentication)
 > That provides identification of users by means of the combination of two different components.
+- [Let's Encrypt](https://letsencrypt.org)
+> A new Certificate Authority: It’s free, automated, and open. 
+
 
 
 ## Hardware

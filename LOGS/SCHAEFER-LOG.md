@@ -56,6 +56,13 @@
         - *direct* communication client-client
         - is tor eventually utilizable if the time is short?
 
+2016-03-03 séance spéciale avec étudiant
+   - aspect novateur à ne pas oublier: cadenas dans le stockage
+     (données appartiennent à X, et chiffrés par le consensus)
+   - rapport en anglais OK.
+   - évaluez le temps chaque semaine, préparer évt. une
+     répartition du temps pour le rapport.
+
 
 OTHER
    - Massimo contract

@@ -64,7 +64,7 @@
         - Gateway
         - Data in clear
       - Anonymous
-  - Delivrable:
+  - Deliverable:
     - Demo in the browser for the Communication
 
 ### Sprint #3 Details:
@@ -81,7 +81,7 @@
       - Mathematically elegant encryption
       - Chunks
       - Aware of next node
-  - Delivrable:
+  - Deliverable:
     - Demo in the browser for the Encryption
 
  ### Sprint #4 Details:
@@ -113,7 +113,7 @@
       - PKI
       - Data owner
       - Public profile
-    - Delivrable:
+    - Deliverable:
       - Demo in the browser for
         - Mesh-of-Trust
         - Node/Identities
@@ -137,7 +137,7 @@
       - Flags
       - No data is send over the network, only the location of the data and the rights
     - Start Final Report
-  - Delivrable:
+  - Deliverable:
     - Demo in the browser of the Storage
 
 ### Sprint #6 Details:
@@ -149,7 +149,7 @@
     - Finish Report
       - Graphs/Pictures
       - Schemas
-  - Delivrable:
+  - Deliverable:
     - Report
 
 ### Current Sprint backlog

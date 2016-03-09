@@ -63,6 +63,13 @@
    - évaluez le temps chaque semaine, préparer évt. une
      répartition du temps pour le rapport.
 
+2016-03-09 lecture README.md
+   - the two "THIS PART MUST BE REVISITED": they look quite good, you can't
+     ensure 100% security; only external hardware can help to prevent
+     private key loss; however that won't help to prevent data loss unless
+     the operation you are requesting the NitroKey to do is seen on another
+     display, e.g.
+   - quite complete references
 
 OTHER
    - Massimo contract

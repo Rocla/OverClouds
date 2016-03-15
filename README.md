@@ -344,26 +344,43 @@ TODO
 
 - [Route-based VPN](https://sc1.checkpoint.com/documents/R76/CP_R76_VPN_AdminGuide/13824.htm)
 > The use of VPN Tunnel Interfaces (VTI) introduces a new method of configuring VPNs called Route Based VPN. This method is based on the notion that setting up a VTI between peer Security Gateways is much like connecting them directly.
+
 - [Commotion](https://www.commotionwireless.net)
 > Commotion is an open-source communication tool that uses wireless devices to create decentralized mesh networks.
+
 - [Hubzilla](http://hubzilla.org/sandbox/index.html)
 > Hubzilla is a powerful platform for creating interconnected websites featuring a decentralized identity, communications, and permissions framework built using common webserver technology.
+
 - [Tent](https://tent.io)
 > Tent lets you control your data instead of handing it over to service and app providers. Just like email, you choose a provider or can set up your own Tent server. Tent data and relationships are portable so you can change Tent providers easily at any time.
+
 - [cjdns](https://github.com/cjdelisle/cjdns/)
 > Networking Reinvented. Cjdns implements an encrypted IPv6 network using public-key cryptography for address allocation and a distributed hash table for routing. This provides near-zero-configuration networking and prevents many of the security and scalability issues that plague existing networks.
+
+- [WebRTC](https://webrtc.org)
+> WebRTC is a free, open project that provides browsers and mobile applications with Real-Time Communications (RTC) capabilities via simple APIs. The WebRTC components have been optimized to best serve this purpose. http://iswebrtcreadyyet.com
+
+- [Open Peer](http://openpeer.org)
+> Real-time Communications Protocol & Specification. What further reduces the proliferation of peer-to-peer is a lack of standardization, openness and ubiquity of the technology. The standards bodies have been working for years on firewall traversal techniques and standardization of the approaches and a new joint effort called WebRTC between the W3C and IETF on how browsers can directly communication between browsers to move media. This joint effort does not specify how signalling happens between peers so it’s not a complete solutions on its own.
+
+- [freedom.js](http://www.freedomjs.org)
+> It's a framework for building peer-to-peer (P2P) web apps. Easily create social applications that work in modern web browsers, Chrome packaged apps, Firefox extensions, node.js, and native mobile apps. freedom.js apps are just JavaScript, so they can be distributed as packages on an app store or hosted on static web servers.
+
 
 
 ## Protection
 
 - [Honeypot](https://en.wikipedia.org/wiki/Honeypot_%28computing%29)
 > In computer terminology, a honeypot is a computer security mechanism set to detect, deflect, or, in some manner, counteract attempts at unauthorized use of information systems. Generally, a honeypot consists of data (for example, in a network site) that appears to be a legitimate part of the site but is actually isolated and monitored, and that seems to contain information or a resource of value to attackers, which are then blocked.
+
 - [Penetration Testing Lab](http://www.thejoshjones.com/penetration-testing-lab-setup-and-overview/)
 > Use of multiples OS to target penetration type on a network or computer.
+
 - [Two-factor authentication](https://en.wikipedia.org/wiki/Two-factor_authentication)
 > That provides identification of users by means of the combination of two different components.
+
 - [Let's Encrypt](https://letsencrypt.org)
-> A new Certificate Authority: It’s free, automated, and open. 
+> A new Certificate Authority: It’s free, automated, and open.
 
 
 
@@ -419,12 +436,22 @@ The idea of proof of work and network consensus are central here.
 
 - [QEMU JS](http://bellard.org/jslinux/tech.html)
 > QEMU is a generic and open source machine emulator and virtualizer.
+
 - [PeerJS](https://github.com/MrSwitch/peer.js)
 > PeerJS is a service which makes it easier to build a chat room using the present WebRTC's PeerConnection API. The PeerConnection API proposes to be able to send data, video etc from one user-agent to another without the need for it going through a server. PeerJS handles this handshake with a simple Socket.IO backend server.
+
 - [PeerShare](https://github.com/cuonic/PeerShare)
 > PeerShare is a P2P file sharing website that uses WebRTC technologies to allow uses to send and receive files without going through any servers. PeerShare is mainly built on Javascript and jQuery and uses PeerJS as a WebRTC API.
+
 - [PeerSurf](https://github.com/matthaywardwebdesign/PeerSurf)
 > PeerSurf is a demo (and kind of a library) of P2P websites powered by WebTorrent
+
+- [OpenWebRTC](http://www.openwebrtc.org)
+> With OpenWebRTC you can build native WebRTC apps that communicate with browsers that supports the WebRTC standard, such as Chrome, Firefox and Bowser. OpenWebRTC is especially focused on mobile platforms, with powerful features such as hardware accelerated video coding and OpenGL-based video rendering. http://www.openwebrtc.org/blog/2014/10/31/webrtc-in-safari-using-openwebrtc
+
+- [PeerServer](http://www.peer-server.com)
+> This system allows you to quickly create a decentralized, short-lived web application where all the content lives within your browser. The traditional server only performs the initial handshake between the client-browsers and the client-server; your browser serves all other content peer-to-peer.
+
 
 ## Languages
 

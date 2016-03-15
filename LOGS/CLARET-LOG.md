@@ -214,6 +214,7 @@
         - Will discuss with the teacher during the 5th meeting
 
 2016-03-16 5th Meeting
+  - TO DISCUSS: Move the deadline for the sprint #2 to the next week
 
 2016-03-16 -> 2016-03-22 Week 5 / 13
   - HOURS:

@@ -32,7 +32,6 @@
       - // start of sprint 1
 
 2016-02-24 normal meeting with student
-
    -  architecture draft
      - how do all the nodes get the list of all the nodes? is that required? (alternative: peer nodes flooding)
 
@@ -56,12 +55,13 @@
         - *direct* communication client-client
         - is tor eventually utilizable if the time is short?
 
-2016-03-03 séance spéciale avec étudiant
-   - aspect novateur à ne pas oublier: cadenas dans le stockage
-     (données appartiennent à X, et chiffrés par le consensus)
-   - rapport en anglais OK.
-   - évaluez le temps chaque semaine, préparer évt. une
-     répartition du temps pour le rapport.
+2016-03-03 special meeting with student (not a school week)
+   - do not forget the innovative aspect: padlock in the storage
+     (the data is owned by X, and encrypted by the consensus)
+   - report in English OK.
+   - evaluate the time for each week, eventually prepare a time
+     repartition for the report
+
 
 
 OTHER

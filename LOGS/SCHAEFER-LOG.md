@@ -71,5 +71,9 @@
      display, e.g.
    - quite complete references
 
+2016-04-16 meeting with student
+   - results/deliverables of finished sprints
+   - planning of next sprints
+
 OTHER
    - Massimo contract

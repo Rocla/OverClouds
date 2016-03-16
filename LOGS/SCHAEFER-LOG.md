@@ -62,7 +62,6 @@
    - evaluate the time for each week, eventually prepare a time
      repartition for the report
 
-
 2016-03-09 lecture README.md
    - the two "THIS PART MUST BE REVISITED": they look quite good, you can't
      ensure 100% security; only external hardware can help to prevent
@@ -73,7 +72,21 @@
 
 2016-04-16 meeting with student
    - results/deliverables of finished sprints
+        s1 OK
+        s2 late; allocation problem; will be ended on week 12 (before next
+                                                               meeting)        
    - planning of next sprints
+       s4 shortened to 2 weeks, will be handled in detail in TB
+   - github API as a directory service / twitter / your own directory service
+     (for bootstrap only)
+   - before coding/prototyping phase, small specification (protocol,
+     interactions, goal)
+      - UDP or TCP
+         - UDP: directory service + potential direct I/O
+           (requirement of reliability service layer?)
+         - TCP: directory service + relay for I/O
+           (requirement of reliability service layer, maybe also high level?)
+      - high level reliability service handled by WebRTC
 
 OTHER
    - Massimo contract

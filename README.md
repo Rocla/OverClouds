@@ -1,6 +1,6 @@
 # Over Clouds
 
-- Project proposition for 2016 TP \& TB
+- Project proposal for 2016 TP \& TB
 - Author: Romain Claret
 - Author's favorite development style: Prototyping
 - Author's favorite languages: Python + Javascript

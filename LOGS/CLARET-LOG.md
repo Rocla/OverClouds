@@ -235,6 +235,10 @@
     - I checked on the torrent options for signaling. It's theoretically possible to have a decentralized tracker, or even a javascript tracker running from github.io for example.
       - The client (browser), would connect to a known tracker, which could be run virtually by anyone, and retrieve the list of users ids. It would do the same thing than peerJS (managing the peer ids to initialize the connection between peers).
     - Wrapping NodeJS in a browser app is a pain... It should be avoided by any mean. NodeJS is not meant to be run from a browser.
+    - WebRTC works on Google Chrome and Firefox
+      - I tried Safari and it doesn't work
+      - I am using Google Chrome 49.0.2623.87 (64-bit)
+    - Made a public repository for the project. https://www.github.com/rocla/OverClouds-public which contains nothing but the web version of the project at the last iteration (maybe). Nothing about the project is explained here. The URL for the web page access is http://rocla.github.io/OverClouds-public
 
 2016-03-23 6th Meeting
 

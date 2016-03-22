@@ -382,6 +382,9 @@ TODO
 - [Let's Encrypt](https://letsencrypt.org)
 > A new Certificate Authority: It’s free, automated, and open.
 
+- [Stanford Javascript Crypto Library](http://bitwiseshiftleft.github.io/sjcl/)
+> The Stanford Javascript Crypto Library (hosted here on GitHub) is a project by the Stanford Computer Security Lab to build a secure, powerful, fast, small, easy-to-use, cross-browser library for cryptography in Javascript.
+
 
 
 ## Hardware

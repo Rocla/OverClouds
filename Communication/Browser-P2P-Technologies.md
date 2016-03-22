@@ -38,6 +38,8 @@
 # NodeJS
   - http://socket.io
   - http://browserify.org
+  - https://www.npmjs.com/package/browserify
+  - https://www.npmjs.com/package/browser-run
 
 
 # Other
@@ -49,3 +51,17 @@
   - https://www.peer5.com/
   - https://github.com/cvan/socketpeer
   - http://webrtc-chat-demo.pusher.io
+  - http://bitwiseshiftleft.github.io/sjcl/
+  - https://muskepeer.net
+  - https://github.com/cjb/serverless-webrtc
+  - http://www.richardrodger.com/2013/09/27/how-to-make-simple-node-js-modules-work-in-the-browser/
+
+
+# Existing
+  - https://github.com/pguth/peertransfer/ (GNU AFFERO)
+  - https://github.com/pguth/peermesh (GNU AFFERO)
+  - https://github.com/peers/peerjs (MIT)
+  - https://github.com/diasdavid/webrtc-explorer (MIT)
+  - https://github.com/diasdavid/webrtc-connect (MIT)
+  - https://github.com/feross/bittorrent-tracker (MIT)
+  - https://github.com/feross/webtorrent (MIT)

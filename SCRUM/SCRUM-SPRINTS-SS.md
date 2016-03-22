@@ -29,7 +29,7 @@
 ### Sprint #2 Details:
   - Sprint number: 2
   - Start date: 2016-03-02
-  - End date: 2016-03-15 (2 weeks)
+  - End date: 2016-03-22 (3 weeks)
   - Sprint Theme: Communication
   - Sprint Backlog:
     - Update Architecture
@@ -69,8 +69,8 @@
 
 ### Sprint #3 Details:
   - Sprint number: 3
-  - Start date: 2016-03-16
-  - End date: 2016-03-29 (2 weeks)
+  - Start date: 2016-03-23
+  - End date: 2016-04-05 (2 weeks)
   - Sprint Theme: Encryption
     - Update Architecture
     - State of the art
@@ -86,8 +86,8 @@
 
  ### Sprint #4 Details:
   - Sprint number: 4
-  - Start date: 2016-03-30
-  - End date: 2016-04-19 (3 weeks)
+  - Start date: 2016-04-06
+  - End date: 2016-04-20 (2 weeks)
   - Sprint Theme: Trust
     - Update Architecture
     - State of the art

@@ -110,6 +110,7 @@
   - Add of intermediary report data
   - Modified the start date of the final report
   - Check for a plugin structure using TOR, I2P, Freenet
+
   - NOTES:
     - Communication by data propagation:
       - The path optimization won't be possible and the global status of the network will be very difficult to maintain. And being sure that the chunk arrived would not be as easy as well.
@@ -143,6 +144,7 @@
   - Start sprint #2 themed Communication
   - Research on communication technologies
     - Looking for technologies working from the browser
+
   - NOTES:
     - The P2P technologies for browsers are always requiring a server to do the first connection (signaling)
     - Currently, we have no choice that to have a list of "trusted" nodes to connect to (like on TOR)
@@ -162,6 +164,7 @@
       - Looking at Javascript Pattern for the Constructor and Module
         - https://addyosmani.com/resources/essentialjsdesignpatterns/book/#constructorpatternjavascript
         - https://addyosmani.com/resources/essentialjsdesignpatterns/book/#modulepatternjavascript
+
   - NOTES:
     - **WebRTC Basic**
       - Clear API
@@ -214,20 +217,32 @@
         - Will discuss with the teacher during the 5th meeting
 
 2016-03-16 5th Meeting
-  - TO DISCUSS: Move the deadline for the sprint #2 to the next week
+  - Validated: Move the deadline for the sprint #2 to the next week
+  - It could be interesting to use a signaling server on IRC, Github repo, twitter,
 
 2016-03-16 -> 2016-03-22 Week 5 / 13
   - HOURS:
-  - *NOT STARTED YET:*
-    - Testing WebRTC solutions
-    - Looking up for hidden services
-    - Looking for what is done currently with TOR (communication plugins, decentralized storage)
-    - Looking for current technologies that could suit the communication
-    - Decentralized storage: Freenet, I2P
+    - 2016-03-19: 2h
+      - Research of existing demos for signaling
+      - Planning testing
+    - 2016-03-21: 3h
+      - Testing signaling demos
+    - 2016-03-22: 4h
+      - Made a custom chat demo with peerJS
+
+  - NOTES:
+    - PeerJS offers a nice API to do signaling. It's also Open Source, and we are able to run the server on our own servers for free. They also offer a developer service, 50 connections at the same time for free.
+    - I checked on the torrent options for signaling. It's theoretically possible to have a decentralized tracker, or even a javascript tracker running from github.io for example.
+      - The client (browser), would connect to a known tracker, which could be run virtually by anyone, and retrieve the list of users ids. It would do the same thing than peerJS (managing the peer ids to initialize the connection between peers).
+    - Wrapping NodeJS in a browser app is a pain... It should be avoided by any mean. NodeJS is not meant to be run from a browser.
 
 2016-03-23 6th Meeting
 
 2016-03-23 -> 2016-03-29 Week 6 / 13
+  - *NOT STARTED YET: (this part is moving along the scrum, it's stuff I would like to do if I have time)*
+    - Looking up for hidden services
+    - Looking for what is done currently with TOR (communication plugins, decentralized storage)
+    - Decentralized storage: Freenet, I2P
 
 2016-03-30 7th Meeting
 

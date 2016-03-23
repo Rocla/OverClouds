@@ -70,7 +70,7 @@
      display, e.g.
    - quite complete references
 
-2016-04-16 meeting with student
+2016-03-16 meeting with student
    - results/deliverables of finished sprints
         s1 OK
         s2 late; allocation problem; will be ended on week 12 (before next
@@ -87,6 +87,22 @@
          - TCP: directory service + relay for I/O
            (requirement of reliability service layer, maybe also high level?)
       - high level reliability service handled by WebRTC
+
+2016-03-23 meeting with student
+   - OK for directory service on torrent, but for now 
+     a simple content fetched on a static URL suffices.
+   - details on PeerJS? schematics?
+   - where is the small spec for the prototype ?
+   - prototype test: OK, uses PeerJS on top of WebRTC with servers
+   - is sprint 1+2 complete? if yes -> consolidate in report already
+   - planning will be reviewed in two weeks, think of reduction of
+     sprints Trust or Storage if sprint Encryption is not shorter.
+   - document better your tests
+   - if direct communication not possible (firewall), e.g.
+        iptables -I OUTPUT -o wlan0 -d 157.26.109.224/32 -j DROP
+     what is your solution?
+        -> bricolage (serveur relais)
+        -> évt. via PeerJS? (port 9000/TCP, plus real-time, argh!?)
 
 OTHER
    - Massimo contract

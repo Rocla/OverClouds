@@ -1,9 +1,9 @@
 // http://peerjs.com/docs/
 
-HOST = '0.peerjs.com'
-PORT = 9000
-API_KEY = 'gs0f5vyqmvaemi'  // TMP API key from Peerjs free developer account
-SSL = false
+HOST = '0.peerjs.com';
+PORT = 9000;
+API_KEY = 'gs0f5vyqmvaemi';  // TMP API key from Peerjs free developer account
+SSL = false;
 
 var connectToId;
 var myName;
@@ -13,11 +13,12 @@ function getError(err){
     console.log(err);
 }
 
-var peer = new Peer({
+var peer;
+peer = new Peer({
     host: HOST,
     port: PORT,
     key: API_KEY,
-    secure: SSL? true:false
+    secure: !!SSL
 });
 
 // Get peer id from peerjs

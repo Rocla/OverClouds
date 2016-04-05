@@ -1,7 +1,7 @@
 # Log for the student: Romain Claret
 
 2015-12-13 -> 2016-02-04 preparation for pre-meeting with teacher (not school weeks)
-  - HOURS:
+  - PROGRESS:
     - Does not count (free work, to set the project up)
   - Draft of project description (README.md)
 
@@ -21,7 +21,7 @@
     - Draft of the product backlog
 
 2016-02-10 -> 2016-02-16 Week 0 / 13
-  - HOURS:
+  - PROGRESS:
     - 2016-03-10: 5h
       - Work on global view of the project structure
       - Reading the specifications
@@ -40,7 +40,7 @@
     - Start of Sprint #1
 
 2016-02-17 -> 2016-02-23 Week 1 / 13
-  - HOURS:
+  - PROGRESS:
     - 2016-03-20: 3h
       - Making drafts of for the architecture of the project
     - 2016-03-23: 8h
@@ -74,7 +74,7 @@
   - Maybe have an active auto-ban by the system, and use the data tribunal only if there is a request for a trial.
 
 2016-02-24 -> 2016-03-01 Week 2 / 13
-  - HOURS:
+  - PROGRESS:
     - 2016-02-27: 3h
       - Research on browser-side existing solutions (Protection, OS, Javascripts RTC, Nodes,...)
       - Drafting solutions for the architecture model #1
@@ -130,12 +130,12 @@
         - Auto-banning by flags
 
 2016-03-02 3rd Meeting (not a school week)
-  - Must start logging the hours
+  - Must start logging the PROGRESS
     - Only 8 hours per week are required for the SS
     - The extra hours must be documented
 
 2016-03-02 -> 2016-03-08 Week 3 / 13
-  - HOURS:
+  - PROGRESS:
     - 2016-03-02: 4h (not a school week)
       - Version 2 of the Architecture (General & User & Node-Only)
       - Browsing the web in quest for a mighty P2P browser-only protocols
@@ -153,7 +153,7 @@
   - Canceled, due to the HES-SO forum and School Conferences
 
 2016-03-09 -> 2016-03-15 Week 4 / 13
-  - HOURS:
+  - PROGRESS:
     - 2016-03-12: 6h
       - Global research about P2P communications in the browser
         - Communication/Broser-P2P-Technologies
@@ -221,7 +221,7 @@
   - It could be interesting to use a signaling server on IRC, Github repo, twitter,
 
 2016-03-16 -> 2016-03-22 Week 5 / 13
-  - HOURS:
+  - PROGRESS:
     - 2016-03-19: 2h
       - Research of existing demos for signaling
       - Planning testing
@@ -241,20 +241,53 @@
     - Made a public repository for the project. https://www.github.com/rocla/OverClouds-public which contains nothing but the web version of the project at the last iteration (maybe). Nothing about the project is explained here. The URL for the web page access is http://rocla.github.io/OverClouds-public
 
 2016-03-23 6th Meeting
+  - Tested the demo with wireshark, found unknown protocols..
+  - Missing the specification for the demo.
+  - It's not possible in this demo to connect to a user with a "strong" firewall.
+    - Maybe fixable with a rely server
+  - I should start working on the report already
 
 2016-03-23 -> 2016-03-29 Week 6 / 13
-  - *NOT STARTED YET: (this part is moving along the scrum, it's stuff I would like to do if I have time)*
-    - Looking up for hidden services
-    - Looking for what is done currently with TOR (communication plugins, decentralized storage)
-    - Decentralized storage: Freenet, I2P
+  - PROGRESS:
+    - 2016-03-23: 3h
+      - Research for *javascript browser side cryptography*
+        - Libraries
+          - [Stanford Javascript Crypto Library](http://bitwiseshiftleft.github.com/sjcl/)
+          - [jsHashes](https://github.com/h2non/jshashes)
+        - Browser Native
+          - **Microsoft Edge** browser has a native Web Crypto API implementation. (msrCrypto)
+          - [**W3C**](https://www.w3.org/TR/WebCryptoAPI/) Web Cryptography API
+          - [**MDN**](https://developer.mozilla.org/en-US/docs/Web/API/Window/crypto)
+            - [GlobalCrypto](https://dvcs.w3.org/hg/webcrypto-api/raw-file/tip/spec/Overview.html#dfn-GlobalCrypto)
+        - Homemade
+          - [Symmetric Encryption Sample](https://github.com/infotechinc/symmetric-encryption-in-browser)
+          - [Digital Signature in the Browser](https://github.com/infotechinc/digital-signature-in-browser)
 
-2016-03-30 7th Meeting
+2016-03-30 7th Meeting (not a school week)
+  - No meeting was intended here. I was not in switzerland.
+  - Received from the teacher a state of the art on a javascript crypto library by Microsoft.
 
 2016-03-30 -> 2016-04-05 Week 7 / 13
+  - PROGRESS:
+    - 2016-04-04: 30 min (without the download time)
+      - Looking at the *MSR JavaScript Cryptography Library*
+    - 2016-04-05: 3h
+      - Administration of the project
+
+  - NOTES:
+    - Web workers are a good for a homemade solution.
+      - Usually the libraries and other solutions already existing are based on this process.
+    - Development enhancement
+      - It could be interesting to use Node.js and npm to build the project and automatically optimized and obfuscate.
+    - Added the msrCrypto library because of the microsoft ftp slow servers.
 
 2016-04-06 8th Meeting
 
 2016-04-06 -> 2016-04-12 Week 8 / 13
+- *NOT STARTED YET: (this part is moving along the scrum, it's stuff I would like to do if I have time)*
+      - Looking up for hidden services
+      - Looking for what is done currently with TOR (communication plugins, decentralized storage)
+      - Decentralized storage: Freenet, I2P
 
 2016-04-13 9th Meeting
 

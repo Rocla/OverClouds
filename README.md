@@ -297,12 +297,7 @@ Nodes can retrieve a unit of the currency by solving a problem. The currency is 
 - Any "computer"
 
 
-# Idea for iterative development approach
-
-TODO
-
-
-# State of art
+# State of the art
 
 ## Existing Networks
 
@@ -382,8 +377,14 @@ TODO
 - [Let's Encrypt](https://letsencrypt.org)
 > A new Certificate Authority: It’s free, automated, and open.
 
+
+## Cryptography
+
 - [Stanford Javascript Crypto Library](http://bitwiseshiftleft.github.io/sjcl/)
 > The Stanford Javascript Crypto Library (hosted here on GitHub) is a project by the Stanford Computer Security Lab to build a secure, powerful, fast, small, easy-to-use, cross-browser library for cryptography in Javascript.
+
+- [MSR JavaScript Cryptography Library](http://research.microsoft.com/en-us/downloads/29f9385d-da4c-479a-b2ea-2a7bb335d727/default.aspx)
+> The Microsoft Research JavaScript Cryptography Library has been developed for use with cloud services in an HTML5 compliant and forward-looking manner.
 
 
 
@@ -391,6 +392,7 @@ TODO
 
 - [XBee digimesh](http://www.digi.com/products/xbee-rf-solutions/modules/xbee-digimesh-2-4)
 > XBee \& XBee-PRO DigiMesh 2.4 embedded RF modules utilize the peer-to-peer DigiMesh protocol in 2.4 GHz for global deployments. This innovative mesh protocol offers users added network stability through self-healing, self-discovery, and dense network operation. With support for sleeping routers, DigiMesh is ideal for power sensitive applications relying on batteries or power harvesting technology for power.
+
 - [Nitrokey](https://www.nitrokey.com)
 > USB key to enable secure encryption and signing of data. The secret keys are always stored inside the Nitrokey.
 
@@ -400,6 +402,7 @@ TODO
 - [Bitcoin](https://bitcoin.org/en/)
 > Bitcoin uses peer-to-peer technology to operate with no central authority or banks; managing transactions and the issuing of bitcoins is carried out collectively by the network.
 The idea of proof of work and network consensus are central here.
+
 - [Ethereum](https://www.ethereum.org)
 > Ethereum is a decentralized platform that runs smart contracts: applications that run exactly as programmed without any possibility of downtime, censorship, fraud or third party interference.
 
@@ -420,6 +423,7 @@ The idea of proof of work and network consensus are central here.
 
 - [TeamSpeak](http://www.teamspeak.com)
 > TeamSpeak is proprietary voice-over-Internet Protocol software that allows computer users to speak on a chat channel with fellow computer users, much like a telephone conference call. (Allow the user to create a mathematically generated identity certificate, with a level increasing over time)
+
 - [EigenTrust](https://en.wikipedia.org/wiki/EigenTrust)
 > EigenTrust algorithm is a reputation management algorithm for peer-to-peer networks. The algorithm provides each peer in the network a unique global trust value based on the peer's history of uploads and thus aims to reduce the number of inauthentic files in a P2P network. It has been cited by approximately 3853 other articles according to Google Scholar.
 
@@ -428,8 +432,10 @@ The idea of proof of work and network consensus are central here.
 
 - [Project-Byzantium](http://project-byzantium.org)
 > Byzantium is a live Linux distribution that delivers easy-to-use, secure, and robust mesh networking capabilities.
+
 - [Tails](https://tails.boum.org)
 > Tails is a live operating system, that you can start on almost any computer from a DVD, USB stick, or SD card. It aims at preserving your privacy and anonymity.
+
 - [arkos](https://arkos.io)
 > Install arkOS to a dedicated device. Plug the device into your router, fill in your settings, then you're online. Customize it to your heart's content from your browser.
 

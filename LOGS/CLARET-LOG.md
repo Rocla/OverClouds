@@ -246,6 +246,7 @@
   - It's not possible in this demo to connect to a user with a "strong" firewall.
     - Maybe fixable with a relay server
   - I should start working on the report already
+  - I should document more what I did (tests, etc, even if it's not working)
 
 2016-03-23 -> 2016-03-29 Week 6 / 13
   - PROGRESS:
@@ -301,12 +302,19 @@
     - *Forge* looks pretty amazing... I think it could be great to use it and it's GNU GPL v2, however, I don't know who is behind Digital Bazaar...
 
 2016-04-06 8th Meeting
+  - PREVIEW:
+    - Last week was not productive at all...
+    - I don't think it will be possible to finish the demos for the following sprints.
+      - Sprints maybe should be reduced to only research and the report as deliverables?
+    - A TODO list has been made to keep track of the tasks missing until now...
 
 2016-04-06 -> 2016-04-12 Week 8 / 13
   - TODO:
     - Start report
       - Use notes from claret-log (and schaefer-log?)
+      - Details tests, errors, success during the make of the communication demo. (justification of the time spent)
     - Make the specification for the communication demo
+      - schematics, what is peerjs?
     - Make the specification for the encryption demo
     - Make a demo for the encryption
     - Use google stun server instead of peerjs
@@ -315,7 +323,7 @@
     - Looking up for hidden services
       - Looking for what is done currently with TOR (communication plugins, decentralized storage)
       - Decentralized storage: Freenet, I2P
-    - Look at a relay server concept for the communication, to bypass firewall restrictions
+    - Look at a relay server concept for the communication, to bypass firewall restrictions (the partner's IP adress is blocked)
 
 2016-04-13 9th Meeting
 

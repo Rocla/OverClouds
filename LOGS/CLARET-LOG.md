@@ -241,10 +241,10 @@
     - Made a public repository for the project. https://www.github.com/rocla/OverClouds-public which contains nothing but the web version of the project at the last iteration (maybe). Nothing about the project is explained here. The URL for the web page access is http://rocla.github.io/OverClouds-public
 
 2016-03-23 6th Meeting
-  - Tested the demo with wireshark, found unknown protocols..
+  - Tested the demo with Wireshark, found unknown protocols.
   - Missing the specification for the demo.
   - It's not possible in this demo to connect to a user with a "strong" firewall.
-    - Maybe fixable with a rely server
+    - Maybe fixable with a relay server
   - I should start working on the report already
 
 2016-03-23 -> 2016-03-29 Week 6 / 13
@@ -255,7 +255,6 @@
           - [Stanford Javascript Crypto Library](http://bitwiseshiftleft.github.com/sjcl/)
           - [jsHashes](https://github.com/h2non/jshashes)
         - Browser Native
-          - **Microsoft Edge** browser has a native Web Crypto API implementation. (msrCrypto)
           - [**W3C**](https://www.w3.org/TR/WebCryptoAPI/) Web Cryptography API
           - [**MDN**](https://developer.mozilla.org/en-US/docs/Web/API/Window/crypto)
             - [GlobalCrypto](https://dvcs.w3.org/hg/webcrypto-api/raw-file/tip/spec/Overview.html#dfn-GlobalCrypto)
@@ -264,30 +263,59 @@
           - [Digital Signature in the Browser](https://github.com/infotechinc/digital-signature-in-browser)
 
 2016-03-30 7th Meeting (not a school week)
-  - No meeting was intended here. I was not in switzerland.
+  - No meeting was intended here. I was not in Switzerland.
   - Received from the teacher a state of the art on a javascript crypto library by Microsoft.
 
 2016-03-30 -> 2016-04-05 Week 7 / 13
   - PROGRESS:
     - 2016-04-04: 30 min (without the download time)
       - Looking at the *MSR JavaScript Cryptography Library*
-    - 2016-04-05: 3h
+        - Browser Native: **Microsoft Edge** browser has a native Web Crypto API implementation. (msrCrypto)
+    - 2016-04-05: 2h
       - Administration of the project
+    - 2016-04-05: 4h
+      - Looking at PGP and GPG technology (Pretty_Good_Privacy)
+      - For the signaling, we could be using google's stun server! instead of PeerJS. (must try)
+        - in webrtc.RTCPeerConnection(...) use *iceServers: [{url:'stun:stun.l.google.com:19302'}]*
+      - Looking at the *Stanford Javascript Crypto Library*
+        - https://jsperf.com/sjcl/14 interesting comparison for the encryption sjcl VS Google Closure
+      - [Google Closure](https://developers.google.com/closure/library/) is the javascript cryptography solution by google.
+      - [Forge](https://github.com/digitalbazaar/forge) is a native implementation of TLS in Javascript and tools to write crypto-based and network-heavy webapps.
+        - http://digitalbazaar.github.io/forge/demos/rsa.html
 
   - NOTES:
     - Web workers are a good for a homemade solution.
-      - Usually the libraries and other solutions already existing are based on this process.
+      - Usually, the libraries and other solutions already existing are based on this process.
     - Development enhancement
       - It could be interesting to use Node.js and npm to build the project and automatically optimized and obfuscate.
-    - Added the msrCrypto library because of the microsoft ftp slow servers.
+    - Added the msrCrypto library because of the slow Microsoft's FTP  servers.
+    - About *MSR JavaScript Cryptography Library*: While looking at it I noticed that there is no real breakthrough, W3C, MDN, and Microsoft are almost doing the same thing. They are just making homemade APIs for their own browser.
+    - [**ICE**](https://webrtcglossary.com/ice/) in WebRTC
+      - This is a constrain for the "server-less" concept.
+      - >ICE collects all available candidates (local IP addresses, reflexive addresses – STUN ones and relayed addresses – TURN ones). All the collected addresses are then sent to the remote peer via SDP.
+    - [**Trickle ICE**](https://webrtcglossary.com/trickle-ice/) in WebRTC
+      - Same as above but it parallelizes the whole process, which makes it faster in some cases.
+    - The *STUN* server can be disabled if users are not behind an NAT.
+    - Warning about Chrome (works for Firefox without), we need to run a local web server rather than put the file path in the URL...
+      - python -m SimpleHTTPServer **port** .
+    - *Forge* looks pretty amazing... I think it could be great to use it and it's GNU GPL v2, however, I don't know who is behind Digital Bazaar...
 
 2016-04-06 8th Meeting
 
 2016-04-06 -> 2016-04-12 Week 8 / 13
-- *NOT STARTED YET: (this part is moving along the scrum, it's stuff I would like to do if I have time)*
-      - Looking up for hidden services
+  - TODO:
+    - Start report
+      - Use notes from claret-log (and schaefer-log?)
+    - Make the specification for the communication demo
+    - Make the specification for the encryption demo
+    - Make a demo for the encryption
+    - Use google stun server instead of peerjs
+
+  - *NOT STARTED YET: (this part is moving along the scrum, it's stuff I would like to do if I have time)*
+    - Looking up for hidden services
       - Looking for what is done currently with TOR (communication plugins, decentralized storage)
       - Decentralized storage: Freenet, I2P
+    - Look at a relay server concept for the communication, to bypass firewall restrictions
 
 2016-04-13 9th Meeting
 

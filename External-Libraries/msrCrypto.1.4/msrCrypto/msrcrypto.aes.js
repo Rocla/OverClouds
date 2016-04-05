@@ -15,7 +15,7 @@
 //    limitations under the License.
 //
 //*******************************************************************************
-﻿
+
 
 var msrCryptoVersion = "1.4";
 var msrCrypto = msrCrypto || (function () {

@@ -118,7 +118,7 @@
         - Mesh-of-Trust
         - Node/Identities
         - Global Rules & Data tribunal
-      - Intermediar Report
+      - Intermediate Report
 
 ### Sprint #5 Details:
   - Sprint number: 5

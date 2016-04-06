@@ -104,5 +104,29 @@
         -> bricolage (serveur relais)
         -> évt. via PeerJS? (port 9000/TCP, plus real-time, argh!?)
 
+2016-04-06 meeting with student
+   - replanify with 5 remaining weeks (not counting the autonomous work week)
+     appx. 40 hours
+        - start the report (1/2 week)
+             technology comparisons (table)
+             -> send to me as soon as ready
+        - communication (1 week)
+             - specification for the communication prototype
+             - adapt the prototype
+             - validation (remaining issues?)
+        - crypto (2.5 weeks)
+             - specification
+             - prototype
+             - validation (remaining issues?)
+        - report (1 week)
+           - includes CDC of the TB
+
+    - mettre dans les références: OpenPGP.js (pas investiguer)
+
+    - TB
+        - trust
+             PGP/GPG: trust mesh (vs X.509 trust chains)
+        - storage
+
 OTHER
    - Massimo contract

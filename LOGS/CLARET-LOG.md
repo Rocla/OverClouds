@@ -300,6 +300,9 @@
     - Warning about Chrome (works for Firefox without), we need to run a local web server rather than put the file path in the URL...
       - python -m SimpleHTTPServer **port** .
     - *Forge* looks pretty amazing... I think it could be great to use it and it's GNU GPL v2, however, I don't know who is behind Digital Bazaar...
+    - SJCL interesting demo
+      - https://bitwiseshiftleft.github.io/sjcl/demo/
+    - Homemade cryptography. While looking at forums on this subject, a lot of recommendation went into: "Avoid make it yourself".
 
 2016-04-06 8th Meeting
   - PREVIEW:

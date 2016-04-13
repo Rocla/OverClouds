@@ -85,8 +85,8 @@ The goal for the Spring Project is to prepare the Bachelor Project by making and
 The requirements are:
 - Simple prototypes validating the assumptions for each iteration (sprint)
 - Report of the TP (current project) with the comparisons and justification of choice made for each sprint. As well as the architecture of the system.
-- The specification of the TB (bachelor project)
-- Detailed planning of the TB
+- The specification of the TB (bachelor project, see chapter X)
+- Detailed planning of the TB (see chapter X)
 
 ## Specifications
 ### Goal
@@ -101,10 +101,14 @@ The requirements are:
 - SPRINT6  finalizing rapport 1 week
 
 ### Effective
-- SPRINT1  state+planif+draft architecture  2 weeks
-- SPRINT2  communication  4 weeks
-- SPRINT3  encryption  2.5 weeks
-- SPRINT4  rapport 1.5 week
+- SPRINT1  state+planif+draft architecture  2 weeks (see ...)
+- SPRINT2  communication  4 weeks (see ...)
+- SPRINT3  encryption  2.5 weeks (see ...)
+- SPRINT4  rapport 1.5 week (see ...)
+
+### Explanations
+- planified during the vacation, reduced the project to the expected number of hours
+- ...
 
 # State of the art
 ## Similar products (Existing Networks)
@@ -131,12 +135,12 @@ The requirements are:
 - W3C
 - Forge
 
-# Analyse
+# Analysis
 ## Current global architecture
 ## Communication
 ## Cryptography
 
-# Implementation (demos)
+# Implementation (prototypes)
 ## Communication
 ## Cryptography
 
@@ -144,14 +148,19 @@ The requirements are:
 ## Tests
 ## Results
 
+# Results
+## Technology recommandations
+## TB specifications
+## TB planning
+
 # Conclusion
-
-# Deployment
-
-# User Guide
 
 # Bibliography
 ## Tutorials
 ## Tools
 ## Languages
 ## References
+
+# Annex
+## Deployment
+## User Guide (optional)

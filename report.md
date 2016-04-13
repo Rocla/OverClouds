@@ -52,6 +52,16 @@ We are aiming that users only need to have a standard Internet connection and a 
 # Preface
 ## Introduction
 ## Objectives
+### About
+The goal for the Spring Project is to prepare the Bachelor Project by making and/or planning iterations by performing research (already done) and/or prototyping (proof-of-concept) various aspects of the project.
+
+### Deliverables
+The requirements are:
+- Simple prototypes validating the assumptions for each iteration (sprint)
+- Report of the TP (current project) with the comparisons and justification of choice made for each sprint. As well as the architecture of the system.
+- The specification of the TB (bachelor project)
+- Detailed planning of the TB
+
 ## Specifications
 ### Goal
 ### Constraints
@@ -85,7 +95,7 @@ We are aiming that users only need to have a standard Internet connection and a 
 # Technology comparison
 ## Communication
 - WebRTC Basic
-- WebRTC Datachannel
+- WebRTC Data channel
 - ORTC
 
 ## Cryptography
@@ -96,6 +106,7 @@ We are aiming that users only need to have a standard Internet connection and a 
 - Forge
 
 # Analyse
+## Current global architecture
 ## Communication
 ## Cryptography
 

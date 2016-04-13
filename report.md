@@ -178,4 +178,4 @@ The requirements are:
 
 # Annex
 ## Deployment
-## User Guide (optional)
+## User Guide (optional, only TB)

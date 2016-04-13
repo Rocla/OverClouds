@@ -117,7 +117,7 @@ The requirements are:
 
 ### Effective
 - SPRINT1  state+planif+draft architecture  2 weeks
-- SPRINT2  communication  4 weeks
+- SPRINT2  communication  5 weeks
 - SPRINT3  encryption  2.5 weeks
 - SPRINT4  rapport 1.5 week
 

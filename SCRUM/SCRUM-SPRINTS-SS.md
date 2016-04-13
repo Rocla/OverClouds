@@ -29,7 +29,7 @@
 ### Sprint #2 Details:
   - Sprint number: 2
   - Start date: 2016-03-02
-  - End date: 2016-03-22 (3 weeks)
+  - End date: 2016-04-12 (5 weeks)
   - Sprint Theme: Communication
   - Sprint Backlog:
     - Update Architecture
@@ -69,8 +69,8 @@
 
 ### Sprint #3 Details:
   - Sprint number: 3
-  - Start date: 2016-03-23
-  - End date: 2016-04-05 (2 weeks)
+  - Start date: 2016-04-13
+  - End date: 2016-04-29 (2.5 weeks)
   - Sprint Theme: Encryption
     - Update Architecture
     - State of the art
@@ -84,66 +84,10 @@
   - Deliverable:
     - Demo in the browser for the Encryption
 
- ### Sprint #4 Details:
+### Sprint #4 Details:
   - Sprint number: 4
-  - Start date: 2016-04-06
-  - End date: 2016-04-20 (2 weeks)
-  - Sprint Theme: Trust
-    - Update Architecture
-    - State of the art
-      - [EigenTrust](https://en.wikipedia.org/wiki/EigenTrust)
-      - [TeamSpeak](http://www.teamspeak.com)
-    - Global Rules/Laws of the network
-      - Apply global rules
-      - Verify transactions
-      - Democratic (community decisions)
-      - Data Tribunal
-      - Sharing data
-    - Mesh-of-Trust
-      - Certificate on hardware
-      - Each user has its own identity keys
-      - Signing node+users transactions
-      - Levels of trust (Certificates and Identity)
-      - Trust giving (Manual or Automatic)
-      - Bans
-    - Node certificates
-      - Resetable
-    - Identities
-      - Linked to a "home" node
-      - PKI
-      - Data owner
-      - Public profile
-    - Deliverable:
-      - Demo in the browser for
-        - Mesh-of-Trust
-        - Node/Identities
-        - Global Rules & Data tribunal
-      - Intermediate Report
-
-### Sprint #5 Details:
-  - Sprint number: 5
-  - Start date: 2016-04-20
-  - End date: 2016-05-03 (2 weeks)
-  - Sprint Theme: Storage
-    - Update Architecture
-    - State of the art
-      - Read https://www.usenix.org/conference/atc14/technical-sessions/presentation/bessani
-    - Storing on the network
-      - Data
-      - Rules
-      - Time to live for data
-      - Countdown to go publicly
-      - Public certificates and identities
-      - Flags
-      - No data is send over the network, only the location of the data and the rights
-    - Start Final Report
-  - Deliverable:
-    - Demo in the browser of the Storage
-
-### Sprint #6 Details:
-  - Sprint number: 7
-  - Start date: 2016-05-04
-  - End date: 2016-05-13 (1 week)
+  - Start date: 2016-05-09
+  - End date: 2016-05-13 (1.5 week)
   - Sprint Theme: Report
   - Sprint Backlog:
     - Finish Report
@@ -153,7 +97,7 @@
     - Report
 
 ### Current Sprint backlog
-  - TODO: Looking for what is done currently with TOR (communication plugins, descentralized storage)
+  - TODO: None
   - IN PROGRESS: Sprint #2
   - TESTING: None
 

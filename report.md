@@ -55,27 +55,27 @@ We are aiming that users only need to have a standard Internet connection and a 
 ## The big picture
 ### Concept
 - Anyone can be part of the community right from the browser and no additional software installation.
-- Each user is identified by a virtual identity, and has access to its personal virtual "desktop" right from the browser.
-- The machines used to join the network have also their own certificate, which provide their uniqueness.
-- The trust and the consensus on the network is a combinason of the identities and the hardware certificates.
+- Each user is identified by a virtual identity and has access to its personal virtual "desktop" right from the browser.
+- The machines used to join the network have also their own certificate, which provides their uniqueness.
+- The trust and the consensus on the network is a combination of the identities and the hardware certificates.
 
 ### The consensus
-- Each user of the network is part of the concensus, a democratic community.
-- Overclouds' is directed by rules/laws made and voted by the concensus.
+- Each user of the network is part of the consensus, a democratic community.
+- Overclouds' is directed by rules/laws made and voted by the consensus.
 
 ### The Network
-- The network is joined automatically once the user launch the webpage (locally or on a server).
-- The user is being connected to a random node (from a list of trusted nodes maintained and signed by the concensus on services such as github, twitter, irc, etc...) which will act has a gateway to the network.
-- Once connected, a secure tunnel is created to Overclouds' concensus.
-- Nodes are anonymised by the concensus, however a democratic vote can reveal a node.
-- An existing anonymous network could be used to connect to the concensus such as TOR.
-- Overcloud verifies the transactions on the network by applying the rules from the concensus.
+- The network is joined automatically once the user launches the web page (locally or on a server).
+- The user is being connected to a random node (from a list of trusted nodes maintained and signed by the consensus on services such as Github, Twitter, IRC, etc...) which will act has a gateway to the network.
+- Once connected, a secure tunnel is created to Overclouds' consensus.
+- Nodes are anonymised by the consensus, however, a democratic vote can reveal a node.
+- An existing anonymous network could be used to connect to the consensus such as TOR.
+- Overcloud verifies the transactions on the network by applying the rules from the consensus.
 
 ### Nodes
 - They are the computational power of the network.
-- Nodes can work without an identity attached to it. However the webpage should be running in a browser to work.
-- It can act as a gateway, a rely, a computational source, and a storage.
-- It owns a certificatate that identifies it on the network. A level of trust is given to it, and can be reseted.
+- Nodes can work without an identity attached to it. However, the web page should be running in a browser to work.
+- It can act as a gateway, a relay, a computational source, and a storage.
+- It owns a certificate that identifies it on the network. A level of trust is given to it, and can be reset.
 
 ## Objectives
 ### About

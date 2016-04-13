@@ -128,5 +128,13 @@
              PGP/GPG: trust mesh (vs X.509 trust chains)
         - storage
 
+2016-04-13 meeting with the student
+   - report structure OK, see my changes (in particular: add
+     internal references)
+   - apparently already a bit behind on schedule ? YES
+      - did not get the technology comparison (table)
+      - 1/2 week for the report+tech comparison table
+   - work time documentation missing
+
 OTHER
    - Massimo contract

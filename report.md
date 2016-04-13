@@ -62,6 +62,8 @@ We are aiming that users only need to have a standard Internet connection and a 
 ### The consensus
 - Each user of the network is part of the consensus, a democratic community.
 - Overclouds' is directed by rules/laws made and voted by the consensus.
+- Private keys from the users are owned and stored by the consensus, which allows a control of the data.
+- It follows ownership and transactions of the data.
 
 ### The Network
 - The network is joined automatically once the user launches the web page (locally or on a server).
@@ -76,6 +78,19 @@ We are aiming that users only need to have a standard Internet connection and a 
 - Nodes can work without an identity attached to it. However, the web page should be running in a browser to work.
 - It can act as a gateway, a relay, a computational source, and a storage.
 - It owns a certificate that identifies it on the network. A level of trust is given to it, and can be reset.
+
+### Mesh-of-Trust
+- The consensus uses a combination of nodes' certificates and identities using them.
+- While using (being active on) the network, the level of trust is increasing.
+- The network manages a data tribunal, where the blamed data are automatically banned, but those data owners can require a trial to retrieve those data.
+- During a trial, the network select trusted users to vote on the status of the data (must or must not be banned).
+- By default, the consensus is automatic distributing the trust along users.
+- Users are able to give a manual trust level to specific nodes and/or identities. This allows a customization for the data transfer or storage.
+
+### Storage
+- The data belongs to an identity, however, an identity is anonymous except is the consensus decides otherwise.
+- As long as the identity is anonymous, the data can be managed by the owner as it is pleased.
+- The user can give the rights of read, write, delete, or administration to other identities. (form of sharing)
 
 ## Objectives
 ### About

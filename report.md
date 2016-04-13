@@ -18,6 +18,7 @@ We are aiming that users only need to have a standard Internet connection and a 
 - Introduction...........................................................................................X
 - Objectives.............................................................................................X
 - Specifications.........................................................................................X
+- Management.............................................................................................X
 - State of the art.......................................................................................X
   - Similar products (Existing Networks).................................................................X
   - Transfer Protocols...................................................................................X
@@ -54,6 +55,20 @@ We are aiming that users only need to have a standard Internet connection and a 
 ## Specifications
 ### Goal
 ### Constraints
+## Management
+### Planned
+- SPRINT1  state+planif+draft architecture  2 weeks
+- SPRINT2  communication  2 weeks
+- SPRINT3  encryption  2 weeks
+- SPRINT4  trust  3 weeks
+- SPRINT5  storage  2 weeks
+- SPRINT6  finalizing rapport 1 week
+
+### Effective
+- SPRINT1  state+planif+draft architecture  2 weeks
+- SPRINT2  communication  4 weeks
+- SPRINT3  encryption  2.5 weeks
+- SPRINT4  rapport 1.5 week
 
 # State of the art
 ## Similar products (Existing Networks)
@@ -66,6 +81,19 @@ We are aiming that users only need to have a standard Internet connection and a 
 ## Reputation Management
 ## Operating Systems
 ## Technologies
+
+# Technology comparison
+## Communication
+- WebRTC Basic
+- WebRTC Datachannel
+- ORTC
+
+## Cryptography
+- MSR JavaScript Cryptography Library
+- MDN
+- Stanford Javascript Crypto Library
+- W3C
+- Forge
 
 # Analyse
 ## Communication

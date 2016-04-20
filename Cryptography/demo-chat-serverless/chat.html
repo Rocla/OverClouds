@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Demo serverless chat</title>
+    <script src="js/demo.js"></script>
+    <script src="js/jquery200.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/bootstrap-custom.css" rel="stylesheet">
+</head>
+<body>
+<div class="span4">
+  <Video id="localVideo">
+</div>
+<div class="span4">
+  <Video id="remoteVideo">
+</div>
+<div class="span4">
+  <fieldset class="well">
+    <p class="head muted">
+      Demo: serverless chat
+    </p>
+    <div class="text-info" id="chatlog" style="height:350px; overflow:auto;">
+    </div>
+  </fieldset>
+  <form class="form-inline" onSubmit="return sendMessage()" action="">
+    <input type="text" id="messageTextBox" placeholder="Type your message here">
+    <button type="submit" id="sendMessageBtn" class="btn">Send message</button>
+  </form>
+  <input type="file" id="fileBtn">
+</div>
+
+<div class="modal" id="showLocalOffer" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" hidden>
+  <div class="modal-header">
+    <h3 id="myModalLabel">Send your address</h3>
+  </div>
+  <div class="modal-body">
+    Send the whole content below to the person you want to connect to (securly).
+  <br/>
+  <textarea class="input-large" id="localOffer" name="localOffer" rows="10" cols="100"></textarea>
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-primary" id="offerSentBtn" data-dismiss="modal" aria-hidden="true">I sent it</button>
+  </div>
+</div>
+
+<div class="modal" id="showLocalAnswer" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" hidden>
+  <div class="modal-header">
+    <h3 id="myModalLabel">Send your address</h3>
+  </div>
+  <div class="modal-body">
+    Send the whole content below to the person you want to connect to (securly).
+  <br/>
+  <textarea class="input-large" id="localAnswer" name="localAnswer" rows="10" cols="100"></textarea>
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-primary" id="answerSentBtn" data-dismiss="modal" aria-hidden="true">I sent it</button>
+  </div>
+</div>
+
+<div class="modal" id="getRemoteOffer" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" hidden>
+  <div class="modal-header">
+    <h3 id="myModalLabel">Paste the address</h3>
+  </div>
+  <div class="modal-body">
+    Paste the whole content that someone sent you.
+  <br/>
+  <textarea class="input-large" id="remoteOffer" name="remoteOffer" rows="10" cols="100"></textarea>
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-primary" id="offerRecdBtn" data-dismiss="modal" aria-hidden="true">I pasted it</button>
+  </div>
+</div>
+
+<div class="modal" id="getRemoteAnswer" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" hidden>
+  <div class="modal-header">
+    <h3 id="myModalLabel">Paste the address</h3>
+  </div>
+  <div class="modal-body">
+    Paste the whole content that someone sent you.
+  <br/>
+  <textarea class="input-large" id="remoteAnswer" name="remoteAnswer" rows="10" cols="100"></textarea>
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-primary" id="answerRecdBtn" data-dismiss="modal" aria-hidden="true">I pasted it</button>
+  </div>
+</div>
+
+<div class="modal" id="waitForConnection" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" hidden>
+  <div class="modal-header">
+    <h3 id="myModalLabel">Waiting on the connection</h3>
+  </div>
+  <div class="modal-body">
+    This message will disappear when the connection is made.
+  </div>
+</div>
+
+<div class="modal" id="createOrJoin" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <h3 id="myModalLabel">What can I do?</h3>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" id="joinBtn" data-dismiss="modal" aria-hidden="true">Join a Chat</button>
+    <button class="btn btn-primary" id="createBtn" data-dismiss="modal" aria-hidden="true">Create a Chat</button>
+  </div>
+</div>
+
+<script src="js/serverless.js"></script>
+<script src="js/file-transfer.js"></script>
+</body>
+</html>

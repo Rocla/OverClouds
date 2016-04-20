@@ -312,25 +312,30 @@
     - A TODO list has been made to keep track of the tasks missing until now...
 
 2016-04-06 -> 2016-04-12 Week 8 / 13
-  - TODO:
-    - Start report
-      - Use notes from claret-log (and schaefer-log?)
-      - Details tests, errors, success during the make of the communication demo. (justification of the time spent)
-    - Make the specification for the communication demo
-      - schematics, what is peerjs?
-    - Make the specification for the encryption demo
-    - Make a demo for the encryption
-    - Use google stun server instead of peerjs
-
-  - *NOT STARTED YET: (this part is moving along the scrum, it's stuff I would like to do if I have time)*
-    - Looking up for hidden services
-      - Looking for what is done currently with TOR (communication plugins, decentralized storage)
-      - Decentralized storage: Freenet, I2P
-    - Look at a relay server concept for the communication, to bypass firewall restrictions (the partner's IP adress is blocked)
+  - PROGRESS:
+    - 2016-04-19: 3h30
+      - Prototyping a serverless chat demo with video/audio and bootstrap
 
 2016-04-13 9th Meeting
 
 2016-04-13 -> 2016-04-19 Week 9 / 13
+- PROGRESS:
+  - 2016-04-20: 1h
+    - Fixing prototyping of serverless chat demo
+- TODO:
+  - Start report
+    - Use notes from claret-log (and schaefer-log?)
+    - Details tests, errors, success during the make of the communication demo. (justification of the time spent)
+  - Make the specification for the communication demo
+    - schematics, what is peerjs?
+  - Make the specification for the encryption demo
+  - Make a demo for the encryption
+
+- *NOT STARTED YET: (this part is moving along the scrum, it's stuff I would like to do if I have time)*
+  - Looking up for hidden services
+    - Looking for what is done currently with TOR (communication plugins, decentralized storage)
+    - Decentralized storage: Freenet, I2P
+  - Look at a relay server concept for the communication, to bypass firewall restrictions (the partner's IP adress is blocked)
 
 2016-04-20 10th Meeting
 

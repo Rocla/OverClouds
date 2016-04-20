@@ -136,5 +136,18 @@
       - 1/2 week for the report+tech comparison table
    - work time documentation missing
 
+2016-04-20 meeting with the student
+   - demo serverless avec WebRTC/UTC + STUN Google
+   - project was modified: PeerJS no longer useful.
+   - you will need to
+        - compare the two technologies
+        - explain what you did
+        - explain the used protocols and their possible limitation
+          (p.ex. mode Access Point Client Isolation)
+        - see for example https://andrewjprokop.wordpress.com/2014/07/21/understanding-webrtc-media-connections-ice-stun-and-turn/
+   - time under-investment, and execute goal from previous week.
+
+
+
 OTHER
    - Massimo contract

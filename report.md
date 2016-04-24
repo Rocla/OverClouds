@@ -149,6 +149,20 @@ The requirements are:
 - Stanford Javascript Crypto Library
 - W3C
 - Forge
+### Comparison: Hashing a 0-10MB File
+Based on Dominic Tarr's paper[^1]
+| JS Crypto Libraries | Sha1 (size/ms) | Sha1 (hash/ms) | Sha256 (size/ms) | Sha256 (hash/ms) |
+|---------------------|----------------|----------------|------------------|------------------|
+| sjcl                | ---            | ---            |                  |                  |
+| crypto-js           | --             | --             |                  |                  |
+| forge               | +              | +              |                  |                  |
+| crypto-browserify   | ++             | ++             |                  |                  |
+| crypto-mx           | null           | null           |                  |                  |
+| git-sha1            | +++            | +++            |                  |                  |
+| jshashes            | -              | -              |                  |                  |
+| rusha               | ++++           | ++++           |                  |                  |
+Note:
+- For Sha1: **rusha** is the best implementationbut it's buffering the entire file, so it cannot be used for streaming.
 
 # Analysis
 ## Current global architecture
@@ -175,6 +189,7 @@ The requirements are:
 ## Tools
 ## Languages
 ## References
+[^1]: https://dominictarr.github.io/crypto-bench/
 
 # Annex
 ## Deployment

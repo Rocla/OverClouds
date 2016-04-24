@@ -1,11 +1,8 @@
 /* See also:
     http://www.html5rocks.com/en/tutorials/webrtc/basics/
-    https://code.google.com/p/webrtc-samples/source/browse/trunk/apprtc/index.html
-
-    https://webrtc-demos.appspot.com/html/pc1.html
+    https://github.com/webrtc/samples
 */
 
-// var cfg = {'iceServers': [{'url': 'stun:23.21.150.121'}]} // orignal from the author
 var cfg = {'iceServers': [{url: 'stun:stun.l.google.com:19302'}]} // custom google by Romain
 var con = {'optional': [{'DtlsSrtpKeyAgreement': true}]}
 

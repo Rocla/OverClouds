@@ -268,6 +268,15 @@
   - Received from the teacher a state of the art on a javascript crypto library by Microsoft.
 
 2016-03-30 -> 2016-04-05 Week 7 / 13
+
+2016-04-06 8th Meeting
+  - PREVIEW:
+    - Last week was not productive at all...
+    - I don't think it will be possible to finish the demos for the following sprints.
+      - Sprints maybe should be reduced to only research and the report as deliverables?
+    - A TODO list has been made to keep track of the tasks missing until now...
+
+2016-04-06 -> 2016-04-12 Week 8 / 13
   - PROGRESS:
     - 2016-04-04: 30 min (without the download time)
       - Looking at the *MSR JavaScript Cryptography Library*
@@ -304,42 +313,57 @@
       - https://bitwiseshiftleft.github.io/sjcl/demo/
     - Homemade cryptography. While looking at forums on this subject, a lot of recommendation went into: "Avoid make it yourself".
 
-2016-04-06 8th Meeting
-  - PREVIEW:
-    - Last week was not productive at all...
-    - I don't think it will be possible to finish the demos for the following sprints.
-      - Sprints maybe should be reduced to only research and the report as deliverables?
-    - A TODO list has been made to keep track of the tasks missing until now...
-
-2016-04-06 -> 2016-04-12 Week 8 / 13
-  - PROGRESS:
-    - 2016-04-19: 3h30
-      - Prototyping a serverless chat demo with video/audio and bootstrap
-
 2016-04-13 9th Meeting
 
 2016-04-13 -> 2016-04-19 Week 9 / 13
-- PROGRESS:
-  - 2016-04-20: 1h
-    - Fixing prototyping of serverless chat demo
-- TODO:
-  - Start report
-    - Use notes from claret-log (and schaefer-log?)
-    - Details tests, errors, success during the make of the communication demo. (justification of the time spent)
-  - Make the specification for the communication demo
-    - schematics, what is peerjs?
-  - Make the specification for the encryption demo
-  - Make a demo for the encryption
-
-- *NOT STARTED YET: (this part is moving along the scrum, it's stuff I would like to do if I have time)*
-  - Looking up for hidden services
-    - Looking for what is done currently with TOR (communication plugins, decentralized storage)
-    - Decentralized storage: Freenet, I2P
-  - Look at a relay server concept for the communication, to bypass firewall restrictions (the partner's IP adress is blocked)
+  - PROGRESS:
+    - 2016-04-16: 3h
+      - Mainly Research to make it work serverlessly
+        - webRTC concepts http://www.html5rocks.com/en/tutorials/webrtc/basics/
+      - Research for file transfer & use of audio/video
+        - https://github.com/webrtc/samples
+    - 2016-04-16: 3h
+      - Testings
+        - Playing with the APIs from https://github.com/webrtc/samples
+          - mainly for file/data transfer, audio/video, multi-peers, ice, peer status
+    - 2016-04-19: 3h30
+      - Prototyping a serverless chat demo with video/audio and bootstrap
 
 2016-04-20 10th Meeting
 
 2016-04-20 -> 2016-04-26 Week 10 / 13
+  - PROGRESS:
+    - 2016-04-20: 1h
+      - Fixing prototyping of serverless chat demo
+    - 2016-04-23: 4h
+      - Research javascript cryptography comparaisons
+      - Playing with JS cryptography APIs
+      - Interesting Crypto-JS tutorial: http://tutorialzine.com/2013/11/javascript-file-encrypter/
+    - 2016-04-23: 9h
+      - Playing with WebTorrent (& instant.io)
+      - Made a LaTeX report skeleton
+      - Started comparison of 8 JS Crypto library based on https://github.com/dominictarr/crypto-bench
+
+  - NOTES:
+    - It could be intersting to use the WebTorrent protocole, it's pretty well stuctured.
+      - Would need to make it serverless (using severs at the moment as trackers)
+    - Could be interesting to test other JS Crypto library using https://github.com/dominictarr/crypto-bench benchmark structure
+    - The LaTeX should be good for the TB too.
+
+  - TODO:
+    - Start report
+      - Use notes from claret-log (and schaefer-log?)
+      - Details tests, errors, success during the make of the communication demo. (justification of the time spent)
+    - Make the specification for the communication demo
+      - schematics, what is peerjs?
+    - Make the specification for the encryption demo
+    - Make a demo for the encryption
+
+  - *NOT STARTED YET: (this part is moving along the scrum, it's stuff I would like to do if I have time)*
+    - Looking up for hidden services
+      - Looking for what is done currently with TOR (communication plugins, decentralized storage)
+      - Decentralized storage: Freenet, I2P
+    - Look at a relay server concept for the communication, to bypass firewall restrictions (the partner's IP adress is blocked)
 
 2016-04-27 11th Meeting
 

@@ -1,0 +1,35 @@
+%-------------------------------------------------------
+%	DOCUMENT CONFIGURATIONS
+%-------------------------------------------------------
+
+%-------------------------------------------------------
+%	START OF CRYPTOGRAPHY
+%-------------------------------------------------------
+\subsection{Cryptography}
+\todo[inline]{TODO}
+
+\subsubsection{Compare}
+
+\begin{table}[!h]
+\centering
+\caption{Hashing a 0-10MB File /milliseconds}
+\label{hashing-0-10mb-file}
+\begin{adjustbox}{center, width=\columnwidth-20pt}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+Libraries & Sha1 (size) & Sha1 (hash) & Sha256 (size) & Sha256 (hash) \\ \hline
+sjcl				& ---	& ---	&	&	\\ \hline
+crypto-js			& --	& --	&	&	\\ \hline
+forge				& +		& +		&	&	\\ \hline
+crypto-browserify	& ++	& ++	&	&	\\ \hline
+crypto-mx           & null	& null	&	&	\\ \hline
+git-sha1            & +++	& +++	&	&	\\ \hline
+jshashes            & -		& -		&	&	\\ \hline
+rusha               & ++++	& ++++	&	&	\\ \hline
+\end{tabular}
+\end{adjustbox}
+\end{table}
+
+%-------------------------------------------------------
+%	END OF COMMUNICATION
+%-------------------------------------------------------

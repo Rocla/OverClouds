@@ -1,94 +1,61 @@
 %-------------------------------------------------------
-%	DOCUMENT CONFIGURATIONS
+%    DOCUMENT CONFIGURATIONS
 %-------------------------------------------------------
 
 %-------------------------------------------------------
-%	START OF CRYPTOGRAPHY
+%    START OF CRYPTOGRAPHY
 %-------------------------------------------------------
 \subsection{Cryptography}
-\todo[inline]{TODO}
+As privacy is being an integral part of Overclouds. A research has begun to find the best type of cryptography done on the client-side, from the browser as the highest priority. We were looking for a fair middle between performance and security.
 
-\subsubsection{Compare}
+\subsubsection{From Scratch VS Libraries}
+\paragraph{1st Question} Is it possible and does it exists right from the browser?
 
-\begin{table}[!h]
-\centering
-\caption{Hashing 0-10MB Files /milliseconds based on \cite {Tarr2014PerformanceLibraries.}}
-\label{hashing-0-10mb-files}
-\begin{adjustbox}{center, width=\columnwidth-20pt}
-\begin{tabular}{|l|l|l|l|l|}
-\hline
-Libraries & Sha1 (size) & Sha1 (hash) & Sha256 (size) & Sha256 (hash)	\\ \hline
-sjcl				& - - -	-	& - - - -	& - - - -	& - - -	-	\\ \hline
-crypto-js			& - - -		& - -		& -			& - - -		\\ \hline
-forge				& +			& +			& + + +	+	& + + + +	\\ \hline
-crypto-browserify	& + +		& + +		& + + +		& +	+ +		\\ \hline
-crypto-mx           & null		& null		& +			& -	-		\\ \hline
-git-sha1            & + + +		& + + +		& null		& null		\\ \hline
-jshashes            & -			& -			& - -		& - - -		\\ \hline
-rusha               & + + + +	& + + + +	& null		& null		\\ \hline
-\end{tabular}
-\end{adjustbox}
-See Figures ~\ref{fig:hash-sha1}, ~\ref{fig:hash-ops-sha1}, ~\ref{fig:hash-sha256}, ~\ref{fig:hash-ops-sha256}
-\end{table}
+We started looking at what is done in JavaScript and we found an interesting list of \textit{premium} libraries (maintained by prestigious organizations) such as Stanford Javascript Crypto Library\cite{Stark2012SymmetricJavascript}, MDN\cite{MDN2015MDNCrypto}, W3C\cite{Sleevi2014WebAPI}, Google Closure\cite{Google2015ClosureLibrary}, or msrCrypto\cite{Microsoft2015MSRLibrary}.
 
-\begin{table}[!h]
-\centering
-\caption{Key Derivation (pbkdf2) based on \cite {Tarr2014PerformanceLibraries.}}
-\label{key-derivation-pbkdf2}
-\begin{adjustbox}{center, width=\columnwidth-20pt}
-\begin{tabular}{|l|l|l|l|l|}
-\hline
-Libraries & Sha1 (time) & Sha1 (size) & Sha256 (time) & Sha256 (size)	\\ \hline
-sjcl				& + + + +	& + + + +	& + + + + 	& + + + +		\\ \hline
-crypto-js			& - - - -	& - - - -	& - - - -	& - - - -		\\ \hline
-forge				& + + + +	& + +		& + + + +	& +				\\ \hline
-crypto-browserify	& + + + +	& + +		& + + +		& - -			\\ \hline
-\end{tabular}
-\end{adjustbox}
-See Figures ~\ref{fig:pbkdf2-sha1}, ~\ref{fig:pbkdf2-ops-sha1}, ~\ref{fig:pbkdf2-sha256}, ~\ref{fig:pbkdf2-ops-sha256}
-\end{table}
+Then we looked at other crypto libraries such as forge\cite{DigitalBazaar2016Forge}, jsHashes\cite{Johnston2015JsHashes}, crypto-browserify\cite{Tarr2013Crypto-Browserify}, etc...
 
-\begin{table}[!h]
-\centering
-\caption{Hashing Small Files /milliseconds based on \cite {Tarr2014PerformanceLibraries.}}
-\label{hashing-small-files}
-\begin{adjustbox}{center, width=\columnwidth-20pt}
-\begin{tabular}{|l|l|l|l|l|}
-\hline
-Libraries & Sha1 (size) & Sha256 (size) \\ \hline
-sjcl				& - - -	& - - -		\\ \hline
-crypto-js			& - -	& - -		\\ \hline
-forge				& + +	& + + +		\\ \hline
-crypto-browserify	& + + +	& + + + +	\\ \hline
-crypto-mx           & null	& +			\\ \hline
-git-sha1            & +		& null		\\ \hline
-jshashes            & -		& -			\\ \hline
-rusha               & + + + +	& null	\\ \hline
-\end{tabular}
-\end{adjustbox}
-See Figures ~\ref{fig:small-hash-sha1}, ~\ref{fig:small-hash-sha256}
-\end{table}
+\paragraph{2nd Question} The natural question that followed was: is it worth make it ourselves?
 
-\begin{table}[!h]
-\centering
-\caption{Fastest Hashes /milliseconds based on \cite {Tarr2014PerformanceLibraries.}}
-\label{hashing-small-files}
-\begin{adjustbox}{center, width=\columnwidth-20pt}
-\begin{tabular}{|l|l|l|l|l|}
-\hline
-Libraries & Sha1 (size) & Sha256 (size) & blake2s (size) \\ \hline
-forge	& + + + +	& null		& null		\\ \hline
-rusha	& null		& + + + +	& null		\\ \hline
-blake2s	& null		& null		& + + + +	\\ \hline
-\end{tabular}
-\end{adjustbox}
-See Figure ~\ref{fig:hash-ops-best}
-\end{table}
+The answer came pretty quick while navigating across numerous forums. It's a pretty bad idea if we don't have a team dedicated to it and a pretty strong community to test it out. Even big companies such as Microsoft or Google are struggling a bit on the last part.
 
-\paragraph{blake2s} It is a new algorithm designed specifically for performance and is the fastest implementation. \textbf{rusha} is close behind it, and forge's \textit{sha256}.
+However, for the fun of it, we looked at solutions to start a homemade cryptography library. We found two interesting potential starting points to make it work with the browser, a Symmetric Encryption sample \cite{InfoTech2014SymmetricSample}, or a procedure for Digital Signatures\cite{InfoTech2014DigitalBrowser}.
 
-Note that the above implementations display nearly a completely linear performance.
+\paragraph{Decision} Shortly after the second question, it was pretty clear that it won't be possible to create our own cryptography library in the time given. So we decided to find the \textit{best} library out there for our project.
+
+\subsubsection{Comparison of some JavaScript Cryptography Libraries}
+
+Based on the following tables we can notice that \textbf{sjcl}\cite{Stark2012SymmetricJavascript}, \textbf{crypto browserify}\cite{Tarr2013Crypto-Browserify}, and \textbf{forge}\cite{DigitalBazaar2016Forge} algorithms have been optimized for defined objectives.
+
+\todo[inline]{talk about the tables and graphs}
+See Table ~\ref{tab:hashing-0-10mb-files}
+Related Figures ~\ref{fig:hash-sha1}, ~\ref{fig:hash-ops-sha1}, ~\ref{fig:hash-sha256}, ~\ref{fig:hash-ops-sha256}
+
+See Table ~\ref{tab:key-derivation-pbkdf2}
+Related Figures ~\ref{fig:pbkdf2-sha1}, ~\ref{fig:pbkdf2-ops-sha1}, ~\ref{fig:pbkdf2-sha256}, ~\ref{fig:pbkdf2-ops-sha256}
+
+See Table ~\ref{tab:hashing-small-files}
+Related Figures ~\ref{fig:small-hash-sha1}, ~\ref{fig:small-hash-sha256}
+
+\subsubsection{A killer}
+
+After taking time doing research about the above algorithms, we came across a pretty amazing algorithm: \textbf{BLAKE2}\cite{Guo2014AnalysisBLAKE2,SaarinenM-J.2015TheMAC}.
+
+BLAKE2 outperforms MD5, SHA-1, SHA-2, and SHA-3 on recent Intel CPUs and it has \textbf{no known} security issues. Plus SHA-1, MD5, and SHA-512 are susceptible to length-extension.
+
+It is a \textit{new} algorithm designed specifically for \textbf{performance} and is multifaceted \textbf{BLAKE2s} (optimized for 8to32-bit) and \textbf{BLAKE2b} (optimized for 64-bit)
+
+\subsubsection{Now what}
+
+If we look at the graphic ~\ref{fig:hash-ops-best}, BLAKE2 is dominating the two best above. \textbf{rusha} is close behind it, and forge's \textit{sha256}. Plus we can note that the curves display a nearly completely linear performance.
+
+Also on at the table ~\ref{tab:fastest-hashes} with the figure ~\ref{fig:blake2-sandy}, we notice that BLAKE2 is in its own category. 
+
+\subsubsection{What about OverClouds}
+We can note that we are not really interested in SHA1, because of potential security flaws. SHA256 is much better for us. However, BLACK2 is pretty amazing. We will try to make it work in the following implementation.
+
+Now, if it doesn't work for whatever reason, we will certainly go with forge, crypto-browserify, or sjcl. The problem with forge and crypto-browserify is that we must trust a company or an individual. With sjcl however, we trust an institution.
 
 %-------------------------------------------------------
-%	END OF COMMUNICATION
+%    END OF COMMUNICATION
 %-------------------------------------------------------

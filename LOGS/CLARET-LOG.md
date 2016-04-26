@@ -346,6 +346,9 @@
     - 2016-04-26: 2h30
       - Completed comparison table of JS crypto libraries based on Dominic Tarr's crypto bench
       - Use of Mendeley for the bibliography/references
+    - 2016-04-26: 3h30
+      - Added references to Mendeley
+      - Added Cryptography Analysis to Report (TODO: missing graphs and figures explanation)
 
   - NOTES:
     - It could be interesting to use the WebTorrent protocol, it's pretty well structured.
@@ -358,7 +361,7 @@
       - Use notes from claret-log (and schaefer-log?)
       - Details tests, errors, success during the make of the communication demo. (justification for the time spent)
     - Make the specification for the communication demo
-      - schematics, what is peerjs?
+      - schematics, serverless?
     - Make the specification for the encryption demo
     - Make a demo for the encryption
 
@@ -369,6 +372,9 @@
     - Look at a relay server concept for the communication, to bypass firewall restrictions (the partner's IP address is blocked)
 
 2016-04-27 11th Meeting
+  - PREVIEW:
+    - How to fix the figures postion in the report (it's pretty random...)
+    - No cryptography implementations yet :(
 
 2016-04-27 -> 2016-05-03 Week 11 / 13
 

@@ -12,23 +12,82 @@
 
 \begin{table}[!h]
 \centering
-\caption{Hashing a 0-10MB File /milliseconds}
-\label{hashing-0-10mb-file}
+\caption{Hashing 0-10MB Files /milliseconds based on \cite {Tarr2014PerformanceLibraries.}}
+\label{hashing-0-10mb-files}
 \begin{adjustbox}{center, width=\columnwidth-20pt}
 \begin{tabular}{|l|l|l|l|l|}
 \hline
-Libraries & Sha1 (size) & Sha1 (hash) & Sha256 (size) & Sha256 (hash) \\ \hline
-sjcl				& ---	& ---	&	&	\\ \hline
-crypto-js			& --	& --	&	&	\\ \hline
-forge				& +		& +		&	&	\\ \hline
-crypto-browserify	& ++	& ++	&	&	\\ \hline
-crypto-mx           & null	& null	&	&	\\ \hline
-git-sha1            & +++	& +++	&	&	\\ \hline
-jshashes            & -		& -		&	&	\\ \hline
-rusha               & ++++	& ++++	&	&	\\ \hline
+Libraries & Sha1 (size) & Sha1 (hash) & Sha256 (size) & Sha256 (hash)	\\ \hline
+sjcl				& - - -	-	& - - - -	& - - - -	& - - -	-	\\ \hline
+crypto-js			& - - -		& - -		& -			& - - -		\\ \hline
+forge				& +			& +			& + + +	+	& + + + +	\\ \hline
+crypto-browserify	& + +		& + +		& + + +		& +	+ +		\\ \hline
+crypto-mx           & null		& null		& +			& -	-		\\ \hline
+git-sha1            & + + +		& + + +		& null		& null		\\ \hline
+jshashes            & -			& -			& - -		& - - -		\\ \hline
+rusha               & + + + +	& + + + +	& null		& null		\\ \hline
 \end{tabular}
 \end{adjustbox}
+See Figures ~\ref{fig:hash-sha1}, ~\ref{fig:hash-ops-sha1}, ~\ref{fig:hash-sha256}, ~\ref{fig:hash-ops-sha256}
 \end{table}
+
+\begin{table}[!h]
+\centering
+\caption{Key Derivation (pbkdf2) based on \cite {Tarr2014PerformanceLibraries.}}
+\label{key-derivation-pbkdf2}
+\begin{adjustbox}{center, width=\columnwidth-20pt}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+Libraries & Sha1 (time) & Sha1 (size) & Sha256 (time) & Sha256 (size)	\\ \hline
+sjcl				& + + + +	& + + + +	& + + + + 	& + + + +		\\ \hline
+crypto-js			& - - - -	& - - - -	& - - - -	& - - - -		\\ \hline
+forge				& + + + +	& + +		& + + + +	& +				\\ \hline
+crypto-browserify	& + + + +	& + +		& + + +		& - -			\\ \hline
+\end{tabular}
+\end{adjustbox}
+See Figures ~\ref{fig:pbkdf2-sha1}, ~\ref{fig:pbkdf2-ops-sha1}, ~\ref{fig:pbkdf2-sha256}, ~\ref{fig:pbkdf2-ops-sha256}
+\end{table}
+
+\begin{table}[!h]
+\centering
+\caption{Hashing Small Files /milliseconds based on \cite {Tarr2014PerformanceLibraries.}}
+\label{hashing-small-files}
+\begin{adjustbox}{center, width=\columnwidth-20pt}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+Libraries & Sha1 (size) & Sha256 (size) \\ \hline
+sjcl				& - - -	& - - -		\\ \hline
+crypto-js			& - -	& - -		\\ \hline
+forge				& + +	& + + +		\\ \hline
+crypto-browserify	& + + +	& + + + +	\\ \hline
+crypto-mx           & null	& +			\\ \hline
+git-sha1            & +		& null		\\ \hline
+jshashes            & -		& -			\\ \hline
+rusha               & + + + +	& null	\\ \hline
+\end{tabular}
+\end{adjustbox}
+See Figures ~\ref{fig:small-hash-sha1}, ~\ref{fig:small-hash-sha256}
+\end{table}
+
+\begin{table}[!h]
+\centering
+\caption{Fastest Hashes /milliseconds based on \cite {Tarr2014PerformanceLibraries.}}
+\label{hashing-small-files}
+\begin{adjustbox}{center, width=\columnwidth-20pt}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+Libraries & Sha1 (size) & Sha256 (size) & blake2s (size) \\ \hline
+forge	& + + + +	& null		& null		\\ \hline
+rusha	& null		& + + + +	& null		\\ \hline
+blake2s	& null		& null		& + + + +	\\ \hline
+\end{tabular}
+\end{adjustbox}
+See Figure ~\ref{fig:hash-ops-best}
+\end{table}
+
+\paragraph{blake2s} It is a new algorithm designed specifically for performance and is the fastest implementation. \textbf{rusha} is close behind it, and forge's \textit{sha256}.
+
+Note that the above implementations display nearly a completely linear performance.
 
 %-------------------------------------------------------
 %	END OF COMMUNICATION

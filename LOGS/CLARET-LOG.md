@@ -290,7 +290,7 @@
       - Looking at the *Stanford Javascript Crypto Library*
         - https://jsperf.com/sjcl/14 interesting comparison for the encryption sjcl VS Google Closure
       - [Google Closure](https://developers.google.com/closure/library/) is the javascript cryptography solution by google.
-      - [Forge](https://github.com/digitalbazaar/forge) is a native implementation of TLS in Javascript and tools to write crypto-based and network-heavy webapps.
+      - [Forge](https://github.com/digitalbazaar/forge) is a native implementation of TLS in Javascript and tools to write crypto-based and network-heavy web apps.
         - http://digitalbazaar.github.io/forge/demos/rsa.html
 
   - NOTES:
@@ -301,7 +301,7 @@
     - Added the msrCrypto library because of the slow Microsoft's FTP  servers.
     - About *MSR JavaScript Cryptography Library*: While looking at it I noticed that there is no real breakthrough, W3C, MDN, and Microsoft are almost doing the same thing. They are just making homemade APIs for their own browser.
     - [**ICE**](https://webrtcglossary.com/ice/) in WebRTC
-      - This is a constrain for the "server-less" concept.
+      - This is a constraint for the "server-less" concept.
       - >ICE collects all available candidates (local IP addresses, reflexive addresses – STUN ones and relayed addresses – TURN ones). All the collected addresses are then sent to the remote peer via SDP.
     - [**Trickle ICE**](https://webrtcglossary.com/trickle-ice/) in WebRTC
       - Same as above but it parallelizes the whole process, which makes it faster in some cases.
@@ -343,17 +343,20 @@
       - Playing with WebTorrent (& instant.io)
       - Made a LaTeX report skeleton
       - Started comparison of 8 JS Crypto library based on https://github.com/dominictarr/crypto-bench
+    - 2016-04-26: 2h30
+      - Completed comparison table of JS crypto libraries based on Dominic Tarr's crypto bench
+      - Use of Mendeley for the bibliography/references
 
   - NOTES:
-    - It could be intersting to use the WebTorrent protocole, it's pretty well stuctured.
-      - Would need to make it serverless (using severs at the moment as trackers)
+    - It could be interesting to use the WebTorrent protocol, it's pretty well structured.
+      - Would need to make it serverless (using servers at the moment as trackers)
     - Could be interesting to test other JS Crypto library using https://github.com/dominictarr/crypto-bench benchmark structure
     - The LaTeX should be good for the TB too.
 
   - TODO:
     - Start report
       - Use notes from claret-log (and schaefer-log?)
-      - Details tests, errors, success during the make of the communication demo. (justification of the time spent)
+      - Details tests, errors, success during the make of the communication demo. (justification for the time spent)
     - Make the specification for the communication demo
       - schematics, what is peerjs?
     - Make the specification for the encryption demo
@@ -363,7 +366,7 @@
     - Looking up for hidden services
       - Looking for what is done currently with TOR (communication plugins, decentralized storage)
       - Decentralized storage: Freenet, I2P
-    - Look at a relay server concept for the communication, to bypass firewall restrictions (the partner's IP adress is blocked)
+    - Look at a relay server concept for the communication, to bypass firewall restrictions (the partner's IP address is blocked)
 
 2016-04-27 11th Meeting
 

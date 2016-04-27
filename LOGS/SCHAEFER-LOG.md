@@ -147,7 +147,44 @@
         - see for example https://andrewjprokop.wordpress.com/2014/07/21/understanding-webrtc-media-connections-ice-stun-and-turn/
    - time under-investment, and execute goal from previous week.
 
+2016-04-27 meeting with the student
 
+   - comparison for cryptography routines in the report,
+     questions/criteria/decision well done
+        - what do the + -- mean?
+        - figure 2: add "hashing size/time" text in the caption
+          figure 3-5: enhance caption and explain better
+        - did you do those graphs, or reference? OK
+        - other interesting performance or comparison criteria than just
+          hashing speed (crypto?)
+
+   - JS library comparison (communication) still missing in the report
+
+   - time justification in the report (project management)
+   - impact on planification ?
+
+      - replanify with 5 remaining weeks (not counting the autonomous work week)
+	appx. 12 hours remaining
+	   - communication (1 week)
+		- specification for the communication prototype
+		- adapt the prototype
+		- validation (remaining issues?)
+           - crypto library choice for hashing: probably BLAKE
+             (justified), else/or (?) Stanford: abstraction? API
+             ~OK
+	   - finish the report (1/2 week)
+		technology comparisons (table): missing communication
+                TB CDC + planif
+
+    - replanification for the TB:
+         - crypto (2.5 weeks)
+              - specification (incl. encryption/signing)
+              - prototype
+              - validation (remaining issues? some elements already known
+                about crypto libraries)
+         - report (1 week)
+            - includes CDC of the TB
+     
 
 OTHER
    - Massimo contract

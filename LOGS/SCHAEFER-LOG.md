@@ -184,7 +184,32 @@
                 about crypto libraries)
          - report (1 week)
             - includes CDC of the TB
-     
+
+2016-05-11 meeting with the student
+   - evaluate progress on report
+        much to be done
+        don't go in further theoretical details, present the problem
+        and your results
+           - why blockchain / distributed consensus could be useful ?
+	   - consensus by proof of work diminushed by the participation
+	     (may augment the 51% problem)
+           - refocus on communication encryption
+        remember you need to build a TB on this
+
+   - mandatory
+        - "finish" report
+             general state of the art
+             communication
+             encryption
+             RESULTS
+             including projet management explanations
+             internal (renvois internes) and external references
+        - CDC
+        - quick planif of the TB
+             what are you going to do during the TB ?
+
+   - technical
+      - start latex 3 times
 
 OTHER
    - Massimo contract

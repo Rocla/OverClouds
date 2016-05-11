@@ -394,7 +394,7 @@
         - Didn't work
     - 2016-05-09: 1h
         - Ending loading the ethereum blockchains
-        - Checking that the latest block is the correct one with blockchain.info
+        - Checking that the latest block is the correct one with ethstats.net
         - Research on bitcoin rewarding methods
 
   - NOTES:

@@ -1,0 +1,47 @@
+%-------------------------------------------------------
+%    DOCUMENT CONFIGURATIONS
+%-------------------------------------------------------
+
+%-------------------------------------------------------
+%    START OF BLOCKCHAINS
+%-------------------------------------------------------
+\subsection{Block-Chains}
+\subsubsection{A future?}
+It's important to note that with incoming quantum computers (predicted to appear wildly in 20ish years), the mining structure, the security and the anonymity must change from today's perspectives. 
+As for today, the block-chain technology is at its hype, meaning that at the moment we see it has the best thing in the world.
+
+However, from now the hype will decrease and maybe a new technology will emerge or/and the block-chains technology will evolve or be modeled to go in a direction we didn't expect yet.
+
+\subsubsection{What's next in crypto-currency?}
+
+As of today, considering that the technology of block-chains won't change, and it will still be used for crypto-currency, it could take two types of path.
+
+One of the paths is the neverending death and birth of crypto-currencies. Indeed, once the mining is no more profitable, the security strongly decrease because miners are verifying the transactions and are playing the role of consensus for validating transactions. Miners are mining as long as the hardware technology allows a mining profitably (power consumption, hardware rentability, etc...). In the best case where the technology follows the evolution of the difficulty in the computational power needed to solve the mathematical problems (note that currently we are brute-forcing the solution), based on the model of crypto-currency of Satoshi Nakamoto, the maximum amount of coins will be reached at a point, and the network won't generate coins anymore. At this point, the only income of the miners will be the transaction fees. If the transactions fees are not high enough to motivate the miners to continue mining (and verifying/validation the transactions), the currency will die due to the lack of security. So the miners will move to new profitable crypto-currency (note that they have a pretty advanced hardware for mining at this point, which will help them to start pretty well).
+
+The second path is the modification of the source code of the actual crypto-currencies to make it compliant with the market evolution. For example, increase the maximum amount of coins, or make the public keys quantum proof. Indeed, currently, the ECDSA is not quantum proof (however the hashing is for the moment, but SHA3 is ready, just to be safe). The problem is ECDSA is that during a transaction the public key is sent, and theoretically, a quantum computer can guess the private key from it. However, the address is still secure because it's the hashed public key.
+
+But the second path is \textbf{killing} the concept of a stable currency based an expendable raw material stock, and the social and economical results are pretty hard to define. A derivative question would be: What will happen, if tomorrow, we find a new gold mine, which holds the same amount of gold already retrieved (doubling by this mean the maximum quantity of gold available), and with a retrievable difficulty level a lot decreased so it's again profitable to mine ?
+
+\subsubsection{Predicted evolution in block-chains?}
+This subsection will be pretty short because at the moment, this technology is starting to decedent the hype slope, and the only real evolution that pops out recently is the first version of  \textbf{Ethereum}\cite{VitalikButerin2013APlatform} (2013a) and sooner (2015) the Homestead version of Ethereum\cite{DR.GAVINWOOD2015ETHEREUM:DRAFT}.
+
+The particularity of Ethereum is that use the currency as fuel to run smart contracts on the EVM (Ethereum Virtual Machine) using the power of each node on the network to do calculation, and creating a consensus on the output. This technologies evolution has for example created a new company Slock.it and an alternative "currency" DAO (which is unmineable) that allows the IOT (internet of things) to interact with the crypto-currency Ether. It allows, for example, to control a lock, in a hotel, a door could be locked until a client paid the door to open.
+
+\subsubsection{Attacks on block-chains?}
+Block-chains is designed to be controlled by the consensus of nodes. It means that it can not be owned not controlled by a third party. Until now this goal has been pretty well achieved. However, experiences showed that the system is not infallible.
+
+\paragraph{The 51\% attack}
+It's the most interesting (in a social experiment point of view) and rewarding attack for the attacker. Indeed, if the attacker controls at least 51\% of the consensus, it is possible to manipulate transaction by validating malicious transactions. Pools owners can do this. Note that as it is today (for actives crypto-currencies), it's not more possible to mine on your own and be profitable, miners are forced to join pools and distribute the work and rewards between them. Meaning that it creates a vicious circle, the more miners are in a pool, the more power it has. The more power it has, the more reward are generated. Finally, this results in attracting, even more, miners because they also want a bigger and easier reward for mining, which leads to the security risk of malicious pool chief who will control the currency and the transactions. All around the internet people are always saying that it's dangerous, in fact, they are asking others to stop making a profit for the good of others, which is a human self-fish reasoning. Can't wait to see this case of a figure.
+
+\paragraph{Spam attacks}
+The idea here to make a lot of transactions to the victim's wallet (by its addresses) and paralyze the legit transactions and by this way its incomes. Indeed, the network will have to process all the spam transactions as well as the legit transactions, meaning that the a delay is added before receiving the legit transactions. In some cases, like for Wikileaks\cite{TheBitcoinNews2015BitcoinAttacks}, which is depending on this funds to live, it's pretty bad. Plus, since a lot of transactions appear in a block, its value increase and miners will jump on it to get the reward, meaning that the legit transactions are but a bit behind because generally they have a lower reward. But usually, the current crypto-currencies have an anti-spam solution. They have a minimum fee and they increase the fee after each new transactions.
+
+\paragraph{DDOS on exchange platforms}
+The profit behind this type of attacks is to either steal wallets or ask a reason to release the servers. The crypto-currency is only affected by the depreciation of its value in "real" money because are not able to trade and they generally switch to another exchange platform or currency.
+
+\paragraph{Special dedication to Mining malwares}
+It's funny to see that hacking is evolving with the hype. Now instead of having zombie computers doing nothing waiting for DDOS attacks or whatever they are used to. They are now mining coins (generally connected to a pool). How smart is that? I personally think that it's amazing!
+
+%-------------------------------------------------------
+%    END OF BLOCKCHAINS
+%-------------------------------------------------------

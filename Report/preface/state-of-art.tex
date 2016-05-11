@@ -6,13 +6,18 @@
 %    START OF STATE OF ART PAGE
 %-------------------------------------------------------
 \subsection{State of the Art}
-\todo[inline]{TODO}
+For the project initiation, it was important to do research with the goal of targeting the needs for existing knowledge and technologies. Those information could potentially be used to help achieve this project. This subsection will expose the research done.
 
 %-------------------------------------------------------
 %    SIMILAR PRODUCTS SECTION
 %-------------------------------------------------------
-\subsubsection{Similar products (Existing Networks)}
-\todo[inline]{TODO}
+\subsubsection{Similar products}
+To be straight forward. A comparable project working right from the browser without the help of any third party or background software is nonexistent. At least not from the public knowledge available with my search keywords.
+
+%-------------------------------------------------------
+%    EXISTING NETWORKS SECTION
+%-------------------------------------------------------
+\input{./state-of-art/existing-networks.tex}
 
 %-------------------------------------------------------
 %    TRANSFER SECTION
@@ -41,38 +46,7 @@
 %-------------------------------------------------------
 %    BLOCK-CHAINS SECTION
 %-------------------------------------------------------
-\subsubsection{Block-Chains}
-
-\paragraph{So much hype in this, but what is it?}
-Everybody relate it mainly to \textit{Bitcoin}\cite{SatoshiNakamoto2008Bitcoin:System}, indeed \textit{Bitcoin} introduced this technology (which is its main innovation), but \textit{Bitcoin} is not equivalent to chain-block.
-
-Indeed, the main idea is that no one controls or owns the chain of blocks and forges a system for electronic transactions without relying on trust. A block contains a timestamp and information linking it to a previous block.
-
-Note that a block looks like digital objects that record and confirm when and in what sequence transactions enter in the block chain. 
-
-Blocks created by network users with specialized software or specially designed equipment. Block creator are known as "miners" to reference the gold mining. Bitcoin showed us a pretty amazing evolution in the mining procedure; it was designed at the start by Satoshi Nakamoto for CPUs, then it quickly involved into GPU mining then into programmable chips (FPGA) then now it goes into burned circuits (ASIC).
-
-In a crypto-currency system, miners are incentivized to create blocks to collect two types of rewards: a pre-defined per-block award and fees offered within the transactions themselves, payable to any miner who successfully confirms the transaction.
-Every node in a decentralized system has a copy of the blocks chain; it avoids the need for a trusted authority to timestamp transactions. Decentralized block chains use various timestamping schemes, such as proof-of-work or more recently with PeerCoin the proof-of-participation.
-
-\paragraph{Bitcoin \cite{SatoshiNakamoto2008Bitcoin:System}}
-
-\todo[inline]{TODO}
-
-\paragraph{Ethereum \cite{Ethereum2016EthereumDocumentation}}
-Seen today has the new way to use the block-chains technology. It uses the currency has fuel to execute turing-complete smart contracts. Contracts, see as autonomous agents, are programs that run on the Ethereum Virtual Machine. The EVM is being part of the protocol and runs on each client contributing to the network; they are all doing and storing the same calculations. Note that it's not efficient to compute in parallel redundantly, but it offers a consensus for the computed results. 
-
-\paragraph{Others}
-We can find a lot of forked crypto-currencies from Bitcoin; everybody is trying to make the success theirs. However, no major changes have been made to them expect the genesis block ( the first block that determines how long will be the chain, etc. ). We will just cite some of them that have some special modifications. Note also that they don't provide whitepapers.
-
-\subparagraph{Lite Coin\cite{Litecoin2011LitecoinWiki}}
-The major differences with Bitcoin are the time process focus to generate new blocks of 2.5 mins vs. 10 mins for Bitcoin, the use of the Scrypt\cite{COLINPERCIVAL2012STRONGERFUNCTIONS} library and the maximum cap of coins is 84 million (4 times more than Bitcoin).
-
-\subparagraph{Dodge Coin \cite{MaxK.2013DogecoinCore}}
-It started as a "Joke Currency" but it got capitalized... Its particularity is to have no limits in coins produced, however, the per block reward decreases. 
-
-\subparagraph{Peer Coin \cite{King2012Peercoin}}
-Based on the paper of Scott Nadal and Sunny King \cite{King2012PPCoin:Proof-of-Stake} for the Proof-of-Stake Peer Coin was born.
+\input{./state-of-art/blockchains.tex}
 
 %-------------------------------------------------------
 %    DECENTRALIZATION SECTION

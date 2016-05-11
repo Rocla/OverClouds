@@ -28,7 +28,7 @@
       - Made a draft for the Scrum product backlog
   - Setting up project structure (logs, scrum management)
   - Convert specifications.odt into markdown for versioning purposes
-  - Read the specifications, no explicit modifications has been made
+  - Read the specifications; no explicit modifications has been made
   - Filled up the product backlog in SCRUM.md (I am not sure about if it is correct)
 
 2016-02-17 1st Meeting
@@ -37,7 +37,7 @@
     - What, How, Result
   - TODO for the 2nd meeting
     - Sprint planning
-    - Start of Sprint #1
+    - Start with Sprint #1
 
 2016-02-17 -> 2016-02-23 Week 1 / 13
   - PROGRESS:
@@ -47,7 +47,7 @@
       - Making an architecture for the project
       - Updated the Logs
       - Updated the sprint planning
-  - Start of sprint 1
+  - Start of Sprint 1
   - Made draft of sprints' planning
   - Working on the architecture
 
@@ -56,7 +56,7 @@
   - Should focus on the use of the existant before creating new
     - May be use TOR for the communication base
   - The architecture draft looks more like a mind map than an architecture
-  - The architecture draft looks fine so far, however, it includes mainly the communication
+  - The architecture draft looks fine so far. However, it includes mainly the communication
     - Missing Encryption
     - Missing Trust
     - Missing Storage
@@ -83,17 +83,17 @@
       - Updated the Logs
       - Updated the first model of the Architecture
       - Made a new version of the Architecture (new bases)
-  - Finishing the draft of the architecture #1
+  - Finishing the draft of the Architecture #1
     - Add of Encryption
     - Add of Trust
     - Add of Storage
-  - Making of the architecture draft #2
+  - Making of the Architecture draft #2
     - Use of a decentralized server (with decentralized storage)
       - Identities and Nodes are not doing anything anymore
       - The server is applying the rules made by the identities
       - The server is working as a black-box
         - The connection between the user and the server is secured (not spyable)
-        - Identities can give orders to their data and the server applies them
+        - Identities can give orders to their data, and the server applies them
         - The traffic inside the server is not understandable
           - The work is encrypted and distributed in chunks to nodes
           - The worker node only sees chunks of the information. (even decrypted, there is no real use for it)
@@ -102,7 +102,7 @@
       - Nodes are being used as computing power and storage
       - Nodes' level of trust (certificates) are increasing
         - Over time
-        - With correct "integrity check"
+        - With correct "integrity check."
       - Identities' level of trust is increasing
         - Over time
         - For public data (unblamed)
@@ -113,8 +113,8 @@
 
   - NOTES:
     - Communication by data propagation:
-      - The path optimization won't be possible and the global status of the network will be very difficult to maintain. And being sure that the chunk arrived would not be as easy as well.
-      - But it would be must easier to just push data into the wild...
+      - The path optimization won't be possible, and the global status of the network will be very difficult to maintain. And being sure that the chunk arrived would not be as easy as well.
+      - But it would be must easier just to push data into the wild...
       - An advantage would be total anonymity, but I am not sure it's what we need here.
     - Global Knowledge:
       - It's not necessarily a blockchain
@@ -146,7 +146,7 @@
     - Looking for technologies working from the browser
 
   - NOTES:
-    - The P2P technologies for browsers are always requiring a server to do the first connection (signaling)
+    - The P2P technologies for browsers always require a server to do the first connection (signaling)
     - Currently, we have no choice that to have a list of "trusted" nodes to connect to (like on TOR)
 
 2016-03-09 4th Meeting
@@ -177,12 +177,12 @@
     - **WebRTC Datachannel**
       - Works on top of the basic WebRTC
       - It's fast almost RT (debate: what is RT..?), the main limitation is user's speed connection and JS
-      - Reliable Mode which provides like TCP a guarantee of order and no packet loss.
+      - Reliable Mode, which provides like TCP a guarantee of order and no packet loss.
       - Unreliable Mode which provides like UDP no guarantees for the data transfer
       - Compatible with Chrome & Firefox
       - Data transfer is encrypted
         - People are the treat here (send malicious like virus)
-        - However the transfer cannot unbreakable, the data itself should maybe be encrypted as well
+        - However the transfer cannot be unbreakable, the data itself should maybe be encrypted as well
           - In our case (chunks), it could be a plus
       - Problems are still here:
         - Signaling
@@ -191,7 +191,7 @@
       - **Solution can be found to have a serverless signaling**
     - **ORTC (OBJECT REAL-TIME COMMUNICATIONS)**
       - Pushed by W3C & Microsoft
-      - Newer than WebRTC 2011 vs 2014
+      - Newer than WebRTC 2011 vs. 2014
         - Comparison: https://www.sinch.com/learn/ortc-vs-webrtc/
         - The main difference at the moment is the media protocols supported and the fact that ORTC has not yet a signaling standard
       - It's not clear yet how it is and will be different
@@ -203,16 +203,16 @@
     - **Other technologies**
       - peer5, openpeer, peerjs, etc..
         - Trusting them (and paying them usually) with the backend (signaling, etc..)
-          - I am not favorable for this, not thinking about the money part, how can I ensure they won't shutdown our project because they don't like it or if they are asked to?
+          - I am not favorable for this, not thinking about the money part, how can I ensure they won't shut down our project because they don't like it or if they are asked to?
     - **Applications**
       - Data Sharing
       - CDN
     - **My opinion**
-      - My choice goes to **WebRTC Datachannel** which goes closer to what I am looking for.
+      - My choice goes to **WebRTC Datachannel** which moves closer to what I am looking for.
         - Will look for serverless solutions
         - A trusted signaling node list is not too bad if controlled by the community
     - **Project management**
-      - I am not really sure of the hours spent before 3rd meeting with the teacher on the 2016-03-02 since I didn't think about it. I am used to working late a night sometimes. I never really counted the hours. But I will now. However last week was pretty busy, so I could work as expected.
+      - I am not sure of the hours spent before 3rd meeting with the teacher on the 2016-03-02 since I didn't think about it. I am used to working late a night sometimes. I never actually counted the hours. But I will now. However last week was pretty busy, so I could work as expected.
       - We must move the sprint #2 due time because I haven't done any testing yet, only the theoretical part.
         - Will discuss with the teacher during the 5th meeting
 
@@ -231,12 +231,12 @@
       - Made a custom chat demo with peerJS
 
   - NOTES:
-    - PeerJS offers a nice API to do signaling. It's also Open Source, and we are able to run the server on our own servers for free. They also offer a developer service, 50 connections at the same time for free.
+    - PeerJS offers a nice API to do signaling. It's also Open Source, and we can run the server on our servers for free. They also offer a developer service, 50 connections at the same time for free.
     - I checked on the torrent options for signaling. It's theoretically possible to have a decentralized tracker, or even a javascript tracker running from github.io for example.
       - The client (browser), would connect to a known tracker, which could be run virtually by anyone, and retrieve the list of users ids. It would do the same thing than peerJS (managing the peer ids to initialize the connection between peers).
-    - Wrapping NodeJS in a browser app is a pain... It should be avoided by any mean. NodeJS is not meant to be run from a browser.
+    - Wrapping NodeJS in a browser app is a pain. Any mean should avoid it. NodeJS is not intended to be run from a browser.
     - WebRTC works on Google Chrome and Firefox
-      - I tried Safari and it doesn't work
+      - I tried Safari, and it doesn't work
       - I am using Google Chrome 49.0.2623.87 (64-bit)
     - Made a public repository for the project. https://www.github.com/rocla/OverClouds-public which contains nothing but the web version of the project at the last iteration (maybe). Nothing about the project is explained here. The URL for the web page access is http://rocla.github.io/OverClouds-public
 
@@ -246,7 +246,7 @@
   - It's not possible in this demo to connect to a user with a "strong" firewall.
     - Maybe fixable with a relay server
   - I should start working on the report already
-  - I should document more what I did (tests, etc, even if it's not working)
+  - I should document more what I did (tests, etc., even if it's not working)
 
 2016-03-23 -> 2016-03-29 Week 6 / 13
   - PROGRESS:
@@ -265,7 +265,7 @@
 
 2016-03-30 7th Meeting (not a school week)
   - No meeting was intended here. I was not in Switzerland.
-  - Received from the teacher a state of the art on a javascript crypto library by Microsoft.
+  - Received from the teacher a state of the art on a Javascript crypto library by Microsoft.
 
 2016-03-30 -> 2016-04-05 Week 7 / 13
 
@@ -285,11 +285,11 @@
       - Administration of the project
     - 2016-04-05: 4h
       - Looking at PGP and GPG technology (Pretty_Good_Privacy)
-      - For the signaling, we could be using google's stun server! instead of PeerJS. (must try)
+      - For the signaling, we could be using google's stun server! Instead of PeerJS. (must try)
         - in webrtc.RTCPeerConnection(...) use *iceServers: [{url:'stun:stun.l.google.com:19302'}]*
       - Looking at the *Stanford Javascript Crypto Library*
         - https://jsperf.com/sjcl/14 interesting comparison for the encryption sjcl VS Google Closure
-      - [Google Closure](https://developers.google.com/closure/library/) is the javascript cryptography solution by google.
+      - [Google Closure](https://developers.google.com/closure/library/) is the javascript cryptography solution by Google.
       - [Forge](https://github.com/digitalbazaar/forge) is a native implementation of TLS in Javascript and tools to write crypto-based and network-heavy web apps.
         - http://digitalbazaar.github.io/forge/demos/rsa.html
 
@@ -299,7 +299,7 @@
     - Development enhancement
       - It could be interesting to use Node.js and npm to build the project and automatically optimized and obfuscate.
     - Added the msrCrypto library because of the slow Microsoft's FTP  servers.
-    - About *MSR JavaScript Cryptography Library*: While looking at it I noticed that there is no real breakthrough, W3C, MDN, and Microsoft are almost doing the same thing. They are just making homemade APIs for their own browser.
+    - About *MSR JavaScript Cryptography Library*: While looking at it I noticed that there is no real breakthrough, W3C, MDN, and Microsoft are almost doing the same thing. They are just making native APIs for their browser.
     - [**ICE**](https://webrtcglossary.com/ice/) in WebRTC
       - This is a constraint for the "server-less" concept.
       - >ICE collects all available candidates (local IP addresses, reflexive addresses – STUN ones and relayed addresses – TURN ones). All the collected addresses are then sent to the remote peer via SDP.
@@ -308,7 +308,7 @@
     - The *STUN* server can be disabled if users are not behind an NAT.
     - Warning about Chrome (works for Firefox without), we need to run a local web server rather than put the file path in the URL...
       - python -m SimpleHTTPServer **port** .
-    - *Forge* looks pretty amazing... I think it could be great to use it and it's GNU GPL v2, however, I don't know who is behind Digital Bazaar...
+    - *Forge* looks pretty amazing. I think it could be great to use it, and it's GNU GPL v2. However, I don't know who is behind Digital Bazaar...
     - SJCL interesting demo
       - https://bitwiseshiftleft.github.io/sjcl/demo/
     - Homemade cryptography. While looking at forums on this subject, a lot of recommendation went into: "Avoid make it yourself".
@@ -318,7 +318,7 @@
 2016-04-13 -> 2016-04-19 Week 9 / 13
   - PROGRESS:
     - 2016-04-16: 3h
-      - Mainly Research to make it work serverlessly
+      - Mainly Research to make it work serverless
         - webRTC concepts http://www.html5rocks.com/en/tutorials/webrtc/basics/
       - Research for file transfer & use of audio/video
         - https://github.com/webrtc/samples
@@ -351,7 +351,7 @@
       - Added Cryptography Analysis to Report (TODO: missing graphs and figures explanation)
 
   - NOTES:
-    - It could be interesting to use the WebTorrent protocol, it's pretty well structured.
+    - It could be interesting to use the WebTorrent protocol; it's pretty well structured.
       - Would need to make it serverless (using servers at the moment as trackers)
     - Could be interesting to test other JS Crypto library using https://github.com/dominictarr/crypto-bench benchmark structure
     - The LaTeX should be good for the TB too.
@@ -389,7 +389,7 @@
       - Testing a custom genesis block
         - Works, we can start with any amount of ether with want, setup the maximum of ether, etc..
       - Testing mining ether locally on the Mainnet with GPU
-        - Works, nothing mined
+        - Works, nothing got mined
       - Testing mining ether in a pool on the Mainnet with GPU
         - Didn't work
     - 2016-05-09: 1h
@@ -398,20 +398,26 @@
         - Research on bitcoin rewarding methods
 
   - NOTES:
-    - In conclusion to the research, blockchains are pretty interesting to work with. However, the data stored on the network cannot be more than the size of a transaction.
-    - It could be interesting to use the blockchain technology for transaction consensus. And use another technology to store data.
+    - In conclusion to the research, blockchains are kind of interesting to work with. However, the data stored on the network cannot be more than the size of a transaction.
+    - It could be interesting to use the blockchain technology for the consensus on transactions. And use another technology to store data.
     - The concept of the 51% attack is really interesting as well because in our case it won't be an attack (expect is it's a pool led by a malicious chef, but at the same time it would be like in real life with a president and a party), but democratic parties.
 
 2016-05-11 13th Meeting
   - PREVIEW:
     - No cryptography implementations yet :(
-    - Planning is not respected... But I am already screwed with it anyway... Focusing on complete report
+    - Planning is not respected... But I am already screwed with it anyway... Focusing on completing the report
 
 2016-05-11 -> 2016-05-13 Week 13 / 13
   - PROGRESS:
     - 2016-05-10: 4h
       - Writing report on Blockchains
         - State of the art (missing bitcoin part) and Analyse
+    - 2016-05-11: 5h
+      - Research on Proof-of-Work and Proof-of-Activity (chain-blocks)
+      - Writing report
+        - Blockchains (PoW + PoA)
+        - Readcheck + Corrections to Blockchains (analysis)
+
   - TODO:
     - Finish report
       - Use notes from claret-log (and schaefer-log?)

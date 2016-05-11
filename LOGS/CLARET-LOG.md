@@ -356,8 +356,64 @@
     - Could be interesting to test other JS Crypto library using https://github.com/dominictarr/crypto-bench benchmark structure
     - The LaTeX should be good for the TB too.
 
+2016-04-27 11th Meeting
+
+2016-04-27 -> 2016-05-03 Week 11 / 13
+
+2016-05-04 12th Meeting (not a school week)
+  - No meeting was intended here.
+
+2016-05-04 -> 2016-05-10 Week 12 / 13
+  - PROGRESS:
+    - 2016-05-05: 8h
+      - Research on block-chains technology
+      - Research on Bitcoin
+      - Research on Ethereum
+    - 2016-05-06: 8h
+      - Testing differents clients (Mist, go-ethereum, cpp-ethereum, pyethapp)
+      - Running Bitcoin-Core
+      - Bitcoin-Core is taking forever to load (more than 60GB to load from peer-to-peer)
+    - 2016-05-07: 5h
+      - Research on mining for Bitcoin
+      - Research on mining for Ethereum
+      - Research on ethereumjs-lib
+      - Ethereum Wallet is taking forever to load
+      - Testing online wallets (blockchain.info, CoinBase, GreenAddress, BitGo)
+    - 2016-05-08: 8h
+      - Installing and Setting up Parity from sources (ethereum Rust client)
+      - Installing ethminer from sources and cuda
+      - Research of cloud mining services
+        - Started mining blocks on free services (ether and bitcoins)
+      - Testing mining ether locally on the Testnet with CPU
+        - Works, ether is coming pretty fast 20 in 10 minutes
+      - Testing a custom genesis block
+        - Works, we can start with any amount of ether with want, setup the maximum of ether, etc..
+      - Testing mining ether locally on the Mainnet with GPU
+        - Works, nothing mined
+      - Testing mining ether in a pool on the Mainnet with GPU
+        - Didn't work
+    - 2016-05-09: 1h
+        - Ending loading the ethereum blockchains
+        - Checking that the latest block is the correct one with blockchain.info
+        - Research on bitcoin rewarding methods
+
+  - NOTES:
+    - In conclusion to the research, blockchains are pretty interesting to work with. However, the data stored on the network cannot be more than the size of a transaction.
+    - It could be interesting to use the blockchain technology for transaction consensus. And use another technology to store data.
+    - The concept of the 51% attack is really interesting as well because in our case it won't be an attack (expect is it's a pool led by a malicious chef, but at the same time it would be like in real life with a president and a party), but democratic parties.
+
+2016-05-11 13th Meeting
+  - PREVIEW:
+    - No cryptography implementations yet :(
+    - Planning is not respected... But I am already screwed with it anyway... Focusing on complete report
+
+2016-05-11 -> 2016-05-13 Week 13 / 13
+  - PROGRESS:
+    - 2016-05-10: 4h
+      - Writing report on Blockchains
+        - State of the art (missing bitcoin part) and Analyse
   - TODO:
-    - Start report
+    - Finish report
       - Use notes from claret-log (and schaefer-log?)
       - Details tests, errors, success during the make of the communication demo. (justification for the time spent)
     - Make the specification for the communication demo
@@ -370,18 +426,3 @@
       - Looking for what is done currently with TOR (communication plugins, decentralized storage)
       - Decentralized storage: Freenet, I2P
     - Look at a relay server concept for the communication, to bypass firewall restrictions (the partner's IP address is blocked)
-
-2016-04-27 11th Meeting
-  - PREVIEW:
-    - How to fix the figures postion in the report (it's pretty random...)
-    - No cryptography implementations yet :(
-
-2016-04-27 -> 2016-05-03 Week 11 / 13
-
-2016-05-04 12th Meeting
-
-2016-05-04 -> 2016-05-10 Week 12 / 13
-
-2016-05-11 13th Meeting
-
-2016-05-11 -> 2016-05-13 Week 13 / 13

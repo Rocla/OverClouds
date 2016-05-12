@@ -419,9 +419,15 @@
         - Readcheck + Corrections to Blockchains (analysis)
         - State of the art
         - Restructuring latex
-    - 2016-05-12: 0h30
+    - 2016-05-12: 9h
       - Writing report
         - Correcting quoting in State of the art
+        - Preface: Introduction
+        - Preface: Original Design
+        - Preface: Big picture
+        - Preface: Objectives
+        - Preface: Specifications
+        - Preface: Management
 
   - TODO:
     - Finish report

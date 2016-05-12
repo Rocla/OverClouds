@@ -412,11 +412,16 @@
     - 2016-05-10: 4h
       - Writing report on Blockchains
         - State of the art (missing bitcoin part) and Analyse
-    - 2016-05-11: 5h
+    - 2016-05-11: 8h
       - Research on Proof-of-Work and Proof-of-Activity (chain-blocks)
       - Writing report
         - Blockchains (PoW + PoA)
         - Readcheck + Corrections to Blockchains (analysis)
+        - State of the art
+        - Restructuring latex
+    - 2016-05-12: 0h30
+      - Writing report
+        - Correcting quoting in State of the art
 
   - TODO:
     - Finish report

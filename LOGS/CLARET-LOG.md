@@ -419,7 +419,7 @@
         - Readcheck + Corrections to Blockchains (analysis)
         - State of the art
         - Restructuring latex
-    - 2016-05-12: 10h30
+    - 2016-05-12: 12h30
       - Writing report
         - Correcting quoting in State of the art
         - Preface: Introduction
@@ -429,14 +429,15 @@
         - Preface: Specifications
         - Preface: Management
         - Preface: State of the art Finished
+        - Analyse: Architecture
+        - Remake of tables
+        - ProofReading
+    - 2016-05-12: 7h30
+      - Finishing report
+        -
+        - ProofReading
 
   - TODO:
-    - Finish report
-      - Use notes from claret-log (and schaefer-log?)
-      - Details tests, errors, success during the make of the communication demo. (justification for the time spent)
-    - Make the specification for the communication demo
-      - schematics, serverless?
-    - Make the specification for the encryption demo
     - Make a demo for the encryption
 
   - *NOT STARTED YET: (this part is moving along the scrum, it's stuff I would like to do if I have time)*

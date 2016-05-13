@@ -13,11 +13,11 @@
 
 We started looking at what is done in JavaScript and we found an interesting list of \textit{premium} libraries (maintained by prestigious organizations) such as Stanford Javascript Crypto Library\cite{Stark2009SymmetricJavascript}, MDN\cite{MDN2015MDNCrypto}, W3C\cite{Sleevi2014WebAPI}, Google Closure\cite{Google2015ClosureLibrary}, or msrCrypto\cite{Microsoft2015MSRLibrary}.
 
-Then we looked at other crypto libraries such as forge\cite{DigitalBazaar2016Forge}, jsHashes\cite{Johnston2015JsHashes}, crypto-browserify\cite{Tarr2013Crypto-Browserify}, etc...
+Then we looked at other crypto libraries such as forge\cite{DigitalBazaar2016Forge} (a native implementation of TLS in Javascript and tools designed for crypto-based and network-heavy web apps), jsHashes\cite{Johnston2015JsHashes}, crypto-browserify\cite{Tarr2013Crypto-Browserify}, etc...
 
 \paragraph{2nd Question} The natural question that followed was: is it worth make it ourselves?
 
-The answer came pretty quick while navigating across numerous forums. It's a pretty bad idea if we don't have a team dedicated to it and a pretty strong community to test it out. Even big companies such as Microsoft or Google are struggling a bit on the last part.
+The answer came pretty quick while navigating across numerous forums. It is a pretty bad idea if we do not have a team dedicated to it and a pretty strong community to test it out. Even large enterprises such as Microsoft or Google are struggling a bit on the last part.
 
 However, for the fun of it, we looked at solutions to start a homemade cryptography library. We found two interesting potential starting points to make it work with the browser, a Symmetric Encryption sample \cite{InfoTech2014SymmetricSample}, or a procedure for Digital Signatures\cite{InfoTech2014DigitalBrowser}.
 
@@ -92,7 +92,9 @@ blake2s    & Neutral    & Neutral    & \textbf{Amazing}    \\ \hline
 \end{table}
 We can note that we are not really interested in SHA1, because of potential security flaws. SHA256 is much better for us. However, BLACK2 is pretty amazing. We will try to make it work in the following implementation.
 
-Now, if it doesn't work for whatever reason, we will certainly go with forge, crypto-browserify, or sjcl. The problem with forge and crypto-browserify is that we must trust a company or an individual. With sjcl however, we trust an institution.
+Now, if it does not work for whatever reason, we will certainly go with forge, crypto-browserify, or sjcl. The problem with forge and crypto-browserify is that we must trust a company or an individual. With sjcl however, we are confident into a scholar institution.
+
+\subsubsection{Special Mention} We researched also PGP\cite{PGP2005PGPDirectory} and GPG\cite{Koch2008UsingGuard} technology. We conclude that it is still a good encryption protocol, but too heavy for Overclouds.
 
 %-------------------------------------------------------
 %    END OF COMMUNICATION ANALYSE

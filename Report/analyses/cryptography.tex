@@ -6,7 +6,7 @@
 %    START OF CRYPTOGRAPHY ANALYSE
 %-------------------------------------------------------
 \subsection{Cryptography}
-\paragraph{Privacy} Being an integral part of Overclouds, a research has been made to find the best type of client-side cryptography (right from the browser as the highest priority). We were looking for a fair middle ground between performance and security.
+\paragraph{Privacy} Being an integral part of Overclouds, research has been made to find the best type of client-side cryptography (right from the browser as the highest priority). We were looking for a fair middle ground between performance and security.
 
 \subsubsection{From Scratch VS Libraries}
 \paragraph{1st Question} Is it possible and does it exists right from the browser?
@@ -21,37 +21,75 @@ The answer came pretty quick while navigating across numerous forums. It's a pre
 
 However, for the fun of it, we looked at solutions to start a homemade cryptography library. We found two interesting potential starting points to make it work with the browser, a Symmetric Encryption sample \cite{InfoTech2014SymmetricSample}, or a procedure for Digital Signatures\cite{InfoTech2014DigitalBrowser}.
 
-\paragraph{Decision} Shortly after the second question, it was pretty clear that it won't be possible to create our own cryptography library in the time given. So we decided to find the \textit{best} library out there for our project.
+\paragraph{Decision} Shortly after the second question, it was pretty clear that it will not be possible to create our cryptography library in the time given. So we decided to find the \textit{best} library out there for our project.
 
 \subsubsection{Comparison of some JavaScript Cryptography Libraries}
+\begin{table}[htpb]
+\centering
+\caption{Key Derivation (pbkdf2) based on figures ~\ref{fig:pbkdf2-sha1}, ~\ref{fig:pbkdf2-ops-sha1}, ~\ref{fig:pbkdf2-sha256}, ~\ref{fig:pbkdf2-ops-sha256}}
+\label{tab:key-derivation-pbkdf2}
+\begin{adjustbox}{center, width=\columnwidth-20pt}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+Libraries & Sha1 (time) & Sha1 (size) & Sha256 (time) & Sha256 (size)    \\ \hline
+sjcl                & \textbf{Amazing}    & \textbf{Amazing}    & \textbf{Amazing}     & \textbf{Amazing}        \\ \hline
+crypto-js            & Awful    & Awful    & Awful    & Awful        \\ \hline
+forge                & \textbf{Amazing}    & Nice        & \textbf{Amazing}    & Okay                \\ \hline
+crypto-browserify    & \textbf{Amazing}    & Nice        & Good        & Ugly            \\ \hline
+\end{tabular}
+\end{adjustbox}
+\end{table}
 
-Based on the following tables we can notice that \textbf{sjcl}\cite{Stark2009SymmetricJavascript}, \textbf{crypto browserify}\cite{Tarr2013Crypto-Browserify}, and \textbf{forge}\cite{DigitalBazaar2016Forge} algorithms have been optimized for defined objectives.
+Based on the table ~\ref{tab:key-derivation-pbkdf2} below and the following referenced tables we can notice that \textbf{sjcl}\cite{Stark2009SymmetricJavascript}, \textbf{crypto browserify}\cite{Tarr2013Crypto-Browserify}, and \textbf{forge}\cite{DigitalBazaar2016Forge} algorithms have been optimized for defined objectives.
 
-\todo[inline]{talk about the tables and graphs}
-See Table ~\ref{tab:hashing-0-10mb-files}
-Related Figures ~\ref{fig:hash-sha1}, ~\ref{fig:hash-ops-sha1}, ~\ref{fig:hash-sha256}, ~\ref{fig:hash-ops-sha256}
+Also see Tables ~\ref{tab:hashing-0-10mb-files} and ~\ref{tab:hashing-small-files}
+and their related Figures ~\ref{fig:hash-sha1}, ~\ref{fig:hash-ops-sha1}, ~\ref{fig:hash-sha256}, ~\ref{fig:hash-ops-sha256}, ~\ref{fig:small-hash-sha1}, ~\ref{fig:small-hash-sha256}
 
-See Table ~\ref{tab:key-derivation-pbkdf2}
-Related Figures ~\ref{fig:pbkdf2-sha1}, ~\ref{fig:pbkdf2-ops-sha1}, ~\ref{fig:pbkdf2-sha256}, ~\ref{fig:pbkdf2-ops-sha256}
-
-See Table ~\ref{tab:hashing-small-files}
-Related Figures ~\ref{fig:small-hash-sha1}, ~\ref{fig:small-hash-sha256}
+Read the table as going from Amazing to Awful.
 
 \subsubsection{A killer}
 
-After taking time doing research about the above algorithms, we came across a pretty amazing algorithm: \textbf{BLAKE2}\cite{Guo2014AnalysisBLAKE2,SaarinenM-J.2015TheMAC}.
+After taking time doing research about the above algorithms, we came across a pretty amazing algorithm based on Sha3: \textbf{BLAKE2}\cite{Guo2014AnalysisBLAKE2,SaarinenM-J.2015TheMAC}.
 
 BLAKE2 outperforms MD5, SHA-1, SHA-2, and SHA-3 on recent Intel CPUs and it has \textbf{no known} security issues. Plus SHA-1, MD5, and SHA-512 are susceptible to length-extension.
 
 It is a \textit{new} algorithm designed specifically for \textbf{performance} and is multifaceted \textbf{BLAKE2s} (optimized for 8to32-bit) and \textbf{BLAKE2b} (optimized for 64-bit)
 
 \subsubsection{Now what}
+\begin{figure}[htpb]
+\centering
+\caption{\small \sl y-axis size/time, higher is better
+\label{fig:hash-ops-best}}
+\includegraphics[scale=0.6]{annexes/graphs/hash-ops-best.png}
+\end{figure} 
 
-If we look at the graphic ~\ref{fig:hash-ops-best}, BLAKE2 is dominating the two best above. \textbf{rusha} is close behind it, and forge's \textit{sha256}. Plus we can note that the curves display a nearly completely linear performance.
+\begin{figure}[htpb]
+\centering
+\caption{\small \sl lower is better
+\label{fig:blake2-sandy}}
+\includegraphics[scale=0.3]{annexes/graphs/blake2-sandy.png}
+\end{figure}
+
+If we look at the figure ~\ref{fig:hash-ops-best}, BLAKE2 is dominating the two best above. \textbf{rusha} is close behind it, and forge's \textit{sha256}. Plus we can note that the curves display a nearly completely linear performance.
 
 Also on at the table ~\ref{tab:fastest-hashes} with the figure ~\ref{fig:blake2-sandy}, we notice that BLAKE2 is in its own category. 
 
 \subsubsection{What about OverClouds}
+
+\begin{table}[htpb]
+\centering
+\caption{Fastest Hashes /milliseconds based on figures ~\ref{fig:hash-ops-best}, ~\ref{fig:blake2-sandy}}
+\label{tab:fastest-hashes}
+\begin{adjustbox}{center, width=\columnwidth-20pt}
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+Libraries & Sha1 (size) & Sha256 (size) & Sha3 (size) \\ \hline
+rusha    & \textbf{Amazing}    & Neutral    & Neutral        \\ \hline
+forge    & Neutral    & \textbf{Amazing}    & Neutral        \\ \hline
+blake2s    & Neutral    & Neutral    & \textbf{Amazing}    \\ \hline
+\end{tabular}
+\end{adjustbox}
+\end{table}
 We can note that we are not really interested in SHA1, because of potential security flaws. SHA256 is much better for us. However, BLACK2 is pretty amazing. We will try to make it work in the following implementation.
 
 Now, if it doesn't work for whatever reason, we will certainly go with forge, crypto-browserify, or sjcl. The problem with forge and crypto-browserify is that we must trust a company or an individual. With sjcl however, we trust an institution.

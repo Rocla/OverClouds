@@ -20,6 +20,15 @@
 \usepackage[colorinlistoftodos]{todonotes}
 \usepackage{adjustbox}
 \usepackage[autostyle]{csquotes}
+\usepackage{multicol}
+\usepackage[linktoc=all]{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
 
 %-------------------------------------------------------
 %	START MAIN DOCUMENT
@@ -48,36 +57,43 @@
 %	PREFACE
 %-------------------------------------------------------
 \input{./preface.tex}
+\clearpage
 
 %-------------------------------------------------------
 %	ANALYSES
 %-------------------------------------------------------
 \input{./analyses.tex}
+\clearpage
 
 %-------------------------------------------------------
 %	IMPLEMENTATIONS
 %-------------------------------------------------------
 \input{./implementations.tex}
+\clearpage
 
 %-------------------------------------------------------
 %	EVALUATION
 %-------------------------------------------------------
 \input{./evaluation.tex}
+\clearpage
 
 %-------------------------------------------------------
 %	CONCLUSION
 %-------------------------------------------------------
 \input{./conclusion.tex}
+\clearpage
 
 %-------------------------------------------------------
 %	BIBLIOGRAPHY
 %-------------------------------------------------------
 \input{./bibliography.tex}
+\clearpage
 
 %-------------------------------------------------------
 %	ANNEXES
 %-------------------------------------------------------
 \input{./annexes.tex}
+\clearpage
 
 %-------------------------------------------------------
 %	END MAIN DOCUMENT

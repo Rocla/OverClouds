@@ -2,7 +2,7 @@
 
 2016-05-24 -> 2016-05-27 Week 1 / 13
   - PROGRESS:
-    - 2016-05-24 | 09:00-14:30 => 5h30
+    - 2016-05-24 | 09:00-15:00 => 6h00
       - Restructuring the project for the TB
       - Initial Log + Start-Bachelor-Session tag on git
       - Create and Submit documents to Massimo (his assistant: Laetitia Gauchat)
@@ -11,11 +11,10 @@
       - Looking for Scrum Tools (not free)
         - JIRA, scrumdo
       - Start planning for TB
-        - Creating backlog/springs on VivifyScrum (current done to 4)
+        - Created backlog/springs on VivifyScrum (8 sprints for the project itself)
+        - Created backlog/springs for the report + defense presentation
       -
   - TODO
-    - Make planning for TB
-      - Creating backlog/springs up to 10
     - Setup NodeJS / npm workspace?
     - Travis-CI (Continous Integration) ?
   - NOTES:

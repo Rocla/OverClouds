@@ -16,9 +16,34 @@
       - Launched sprint 1
       - Meeting with teacher
       - Teacher has been invited to VivifyScrum
+    - school: 2016-05-25 | 08:15-14:00 => 5.75
+      - School Forum at St-Imier with companies
+    - development: 2016-05-25 | 16:00-21:00 => 5.00
+      - trying to install an ethereum node on my beaglebone for a private blockchain and mining
+        - beaglebone failed in many levels, too old, and failed at extending the EMMC
+        - bought a raspberry pi 4 should arrive in 5-6 days
+          - existing images with geth preinstalled
+    - research: 2016-05-26 | 10:00-19:30 => 9.5
+      - Looking at NodeJS/NPM dev environment, watching video tutorials
+        - Looking at Browserify for the client-side solution, but don't look like fitting the need
+      - Pouchdb, offline storing right into the browser framework with sync once connected
+      - Looking at Backbone.js
+      - Looking at AngularJS 1 & 2
+      - Looking for concepts: http://www.peer-server.com
+      - Looking at ethereum node in browser solutions
+        - Ethereum-JS
+        - NodeJS (https://www.npmjs.com/package/ethereum.js/)
+        - Parity with RTC (but need to run a client on the user machine)
+        - Looking at ethereum.org forums
+      - Looking at: https://github.com/ethereumjs/ethereumjs.github.io
+        - https://github.com/ethereumjs/browser-builds
+        - https://github.com/ethereumjs/node-blockchain-server
   - TODO
-    - Setup NodeJS / npm workspace?
     - Travis-CI (Continous Integration)?
+      - With nodejs and browserfify also?
+    - Which languages to use on ethereum contracts?
+      - Serpent? etc?
+    - Should deploy on Private blockchain or Test/Mainnet?
   - NOTES:
     - TB requires 340h, 45h per week, 9h per workday, or 8h per workday + 5h extra
     - Officially during the first two weeks
@@ -29,6 +54,8 @@
     - 2 extras sprints (report + defense presentation)
     - For Sprint 1, Monday, and Wednesday are at the charge of the school for booking the day for other activities than TB.
     - JIRA doesn't look as good as VivifyScrum. We should pay them 10$/month instead of JIRA for full access.
+    - Pouchdb stores offline in the browser and sync data once connected to server https://pouchdb.com
+    - Backbone and Angularjs are interesting but it needs a server to work...
 
 2016-02-24 | 15:00 1st Meeting
   - 25th May school vs. companies conference

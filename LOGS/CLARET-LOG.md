@@ -50,7 +50,7 @@
         - Blockchain can be kept small, only synch the last blocks (useful for mining)
       - Research on existing blockchain/consensus technology done right from the browsers
         - none found
-    - research: 2016-05-30 | 12:30-19:00 + 21:00-22:00
+    - research: 2016-05-30 | 12:30-19:00 + 21:00-22:00 => 7.5
       - meeting with the teacher
         - the sprints are now ending on Wednesday
         - review of the current sprints

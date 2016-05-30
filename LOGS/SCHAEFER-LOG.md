@@ -34,8 +34,24 @@ outil SCRUM outil gratuit VivifyScrum ou cf mail DEP
    -> me donner accès OK
 
 2016-05-30 séance étudiant
-   MAS: - déposer documents cf directives
-        - voir pour rdv avec l'expert
+   - signature CDC
+   - bonne utilisation de l'outil Vivify: risque que les tâches soient
+     trop volumineuses -ou trop nombreuses? on verra!
+
+   - bien appliquer liste des tâches (au début de la phase), fin
+     résumé des résultats de phase (aussi pour 1er itération), critères à
+     préciser!
+
+   - copie d'écran des résultats obtenus à chaque itération
+
+   - l'itération 8 est trop courte: à réévaluer à la prochaine rencontre
+
+   - projet très gros, choix à faire.
+
+
+EN COURS
+   - déposer documents cf directives -> inaccessible -> DEP
+   - voir pour rdv avec l'expert -> EN COURS
 
 
 

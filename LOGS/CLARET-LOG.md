@@ -20,7 +20,7 @@
       - School Forum at St-Imier with companies
     - development: 2016-05-25 | 16:00-21:00 => 5.00
       - trying to install an ethereum node on my beaglebone for a private blockchain and mining
-        - beaglebone failed in many levels, too old, and failed at extending the EMMC
+        - beaglebone failed on many levels, too old, and failed at extending the EMMC
         - bought a raspberry pi 4 should arrive in 5-6 days
           - existing images with geth preinstalled
     - research: 2016-05-26 | 10:00-19:30 => 9.5
@@ -38,12 +38,46 @@
       - Looking at: https://github.com/ethereumjs/ethereumjs.github.io
         - https://github.com/ethereumjs/browser-builds
         - https://github.com/ethereumjs/node-blockchain-server
+    - research: 2016-05-30 | 10:00-16:00 => 6.00
+      - Research on Maidsafe
+        - consensus over data existing
+        - no developers API for now
+        - the development moves slowly?
+        - not very popular however there is a lot of hopes from the community itself
+        - the network pays the users for participating in the network
+      - Research on Ethereum
+        - Looking at Docker solutions for mining and custom private net
+        - Blockchain can be kept small, only synch the last blocks (useful for mining)
+      - Research on existing blockchain/consensus technology done right from the browsers
+        - none found
+    - research: 2016-05-30 | 12:30-19:00 + 21:00-22:00
+      - meeting with the teacher
+        - the sprints are now ending on Wednesday
+        - review of the current sprints
+        - subscribed to a recurring plan on vivifyScrum
+          - must document how vivifyScrum is better than a text log (visual is not enough)
+        - discussed of the requirements for the report (a lot of annexes if okay)
+        - Validated the specifications
+      - Research on IDE and Tools for development
+        - Wakanda (not for our project)
+        - Bundle options for standalone version of nodejs with install (deployment)
+        - Learning the basis of NodeJS to be sure that it's what we should go with
+        - Looking at Electron
+        - Angular would be compatible with a bundled nodejs app
+      - As another interesting blockchain for developers Counterparty, based on Bitcoin.
+        - A platform for free and open financial tools on the Bitcoin network.
+      - Ethereum Mist (official client/wallet) uses a bundled nodejs
+      - Testing docker solution for mining (testnet), it works
   - TODO
     - Travis-CI (Continous Integration)?
       - With nodejs and browserfify also?
     - Which languages to use on ethereum contracts?
       - Serpent? etc?
     - Should deploy on Private blockchain or Test/Mainnet?
+    - https://www.youtube.com/watch?v=-u-j7uqU7sI&list=PL6gx4Cwl9DGBMdkKFn3HasZnnAqVjzHn_
+      - or https://www.youtube.com/watch?v=czmulJ9NBP0 ?
+      - and https://www.youtube.com/watch?v=U_LK0t_qaPo ?
+      -
   - NOTES:
     - TB requires 340h, 45h per week, 9h per workday, or 8h per workday + 5h extra
     - Officially during the first two weeks
@@ -55,7 +89,7 @@
     - For Sprint 1, Monday, and Wednesday are at the charge of the school for booking the day for other activities than TB.
     - JIRA doesn't look as good as VivifyScrum. We should pay them 10$/month instead of JIRA for full access.
     - Pouchdb stores offline in the browser and sync data once connected to server https://pouchdb.com
-    - Backbone and Angularjs are interesting but it needs a server to work...
+    - Backbone and Angularjs are interesting, but it needs a server to work...
 
 2016-02-24 | 15:00 1st Meeting
   - 25th May school vs. companies conference

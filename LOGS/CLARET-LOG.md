@@ -67,9 +67,9 @@
         - A platform for free and open financial tools on the Bitcoin network.
       - Ethereum Mist (official client/wallet) uses a bundled nodejs
       - Testing docker solution for mining (testnet), it works
-        - well, actually not really... never received my mined blocks...
+        - well, not really... never received my mined blocks...
 
-    - research: 2016-05-31 | 09:30-16:45 => 7.25
+    - research: 2016-05-31 | 09:30-16:45 + 21:00-22:00=> 8.25
       - research (learning) on workspace setup
         - ioJS, NodeJS, Browserify
       - research on ethereum private network
@@ -98,12 +98,21 @@
         - parity + ethminer (cpp-ethereum)
         - geth
         -http://ethereum.stackexchange.com/questions/3185/running-a-custom-private-go-ethereum-node-cluster-using-docker
+      - research on coding ethereum contracts
+        - visial scripter: http://www.etherscripter.com/0-5-1/
+        - official help wiki: https://github.com/ethereum/wiki/wiki/Ethereum-Contract-ABI
+
+    - research: 2016-06-01 | 09:30-12:45 => 3.25
+      - research ethereum development
+        - Ethereum Development Tutorial: https://github.com/ethereum/wiki/wiki/Ethereum-Development-Tutorial
+        - https://www.ethereum.org/greeter
+      - architecture
+        - making a draft using ethereum as consensus
+        - updated architecture
 
   - TODO
     - Travis-CI (Continous Integration)?
       - With nodejs and browserify also?
-    - Which languages to use on ethereum contracts?
-      - Serpent? etc.?
     - Should deploy on Private blockchain or Test/Mainnet?
     - https://www.youtube.com/watch?v=-u-j7uqU7sI&list=PL6gx4Cwl9DGBMdkKFn3HasZnnAqVjzHn_
       - or https://www.youtube.com/watch?v=czmulJ9NBP0 ?
@@ -127,7 +136,8 @@
     - For Sprint 1, Monday, and Wednesday are at the charge of the school for booking the day for other activities than TB.
     - JIRA doesn't look as good as VivifyScrum. We should pay them 10$/month instead of JIRA for full access.
     - Pouchdb stores offline in the browser and sync data once connected to server https://pouchdb.com
-    - Backbone and AngularJS are interesting, but it needs a server to work...
+    - Backbone and AngularJS are interesting, but it needs a server to work.
+    - On ethereum, Serpent looks like Python; LLL looks like a high-level assembler.
 
 2016-05-24 | 15:00-16:00 1st Meeting
   - 25th May school vs. companies conference
@@ -155,3 +165,4 @@
 
 2016-02-01 | 13:00 2nd Meeting
   - 6th June rdv for master
+  - I usually have a working room; we could meet there if the teacher wants/can

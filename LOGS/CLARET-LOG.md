@@ -110,20 +110,6 @@
         - making a draft using ethereum as consensus
         - updated architecture
 
-  - TODO
-    - Travis-CI (Continous Integration)?
-      - With nodejs and browserify also?
-    - Should deploy on Private blockchain or Test/Mainnet?
-    - https://www.youtube.com/watch?v=-u-j7uqU7sI&list=PL6gx4Cwl9DGBMdkKFn3HasZnnAqVjzHn_
-      - or https://www.youtube.com/watch?v=czmulJ9NBP0 ?
-      - and https://www.youtube.com/watch?v=U_LK0t_qaPo ?
-    - Need an architecture for ethereum private or public network compatibility with
-      - storage
-      - consensus owned currency
-      - manipulable genesis block?
-        - reset genesis block / create a new / edit
-      - ownership
-
   - NOTES:
     - TB requires 340h, 45h per week, 9h per workday, or 8h per workday + 5h extra
       - Planned as 45h per sprint
@@ -162,6 +148,15 @@
   - Validated the specifications
 
 2016-06-01 -> 2016-06-08 Week 2 / 8
+  - none: 2016-06-01 | : - : =>
+
+  - TODO
+    - Travis-CI (Continous Integration)?
+      - With nodejs and browserify also?
+    - Should deploy on Private blockchain or Test/Mainnet?
+    - https://www.youtube.com/watch?v=-u-j7uqU7sI&list=PL6gx4Cwl9DGBMdkKFn3HasZnnAqVjzHn_
+      - or https://www.youtube.com/watch?v=czmulJ9NBP0 ?
+      - and https://www.youtube.com/watch?v=U_LK0t_qaPo ?
 
 2016-02-01 | 13:00 2nd Meeting
   - 6th June rdv for master

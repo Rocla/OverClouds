@@ -48,9 +48,14 @@ outil SCRUM outil gratuit VivifyScrum ou cf mail DEP
 
    - projet très gros, choix à faire.
 
+2016-06-01 séance étudiant
+   - sprint 1: OK
+   - sprint 2:
+        - prise en main de NodeJS
+        - mise en place Ethereum
+        - browserification (fonctionnement, performance vs NodeJS)
 
 EN COURS
-   - déposer documents cf directives -> inaccessible -> DEP
    - voir pour rdv avec l'expert -> EN COURS
 
 

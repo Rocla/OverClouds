@@ -147,6 +147,10 @@
   - discussed of the requirements for the report (a lot of annexes if okay)
   - Validated the specifications
 
+2016-06-01 | 13:00-13:30 2nd Meeting
+  - sprint 1 validated
+  - start of sprint 2
+
 2016-06-01 -> 2016-06-08 Week 2 / 8
   - PROGRESS:
     - development: 2016-06-01 | 13:00-17:00 => 4.00
@@ -201,7 +205,7 @@
         - fail.
         - no documentation found on how to or tutorials.
       - raspberry pi
-        - synch time testnet: 80k/1080k blocks in 12h
+        - synch time testnet: 800k/1100k blocks in 12h
 
     - management: 2016-06-08 | 08:30-09:30 => 1.00
       - updating log
@@ -210,16 +214,10 @@
       - continue to set up the ethereum nodeJS client
         - failed, looks like it's not working. Can't understand the reason
       - setting up a docker multi-node private network
-        - it work
+        - it works
         - ethereum network status webpage works also
       - link Mac to Docker Ethereum Cluster
         - fail
-
-  - TODO
-    - Travis-CI (Continous Integration)?
-      - With nodejs and browserify also?
-    - DEVCON1: Ethereum for Dummies - Dr. Gavin Wood
-      - https://www.youtube.com/watch?v=U_LK0t_qaPo
 
   - NOTES
     - Docker Ethereum Cluster:
@@ -248,11 +246,18 @@
 
           - geth --networkid 456789 --genesis /Users/TimeTraveler/CloneWars/OverClouds/Docker/genesis.json
 
-
-2016-02-01 | 13:00-13:30 2nd Meeting
-  - sprint 1 validated
-  - start of sprint 2
+2016-06-08 | 13:00-16:00 3rd Meeting
+  - tried to debug the NodeJS client
+    - failed
+  - tried to attach mac client to cluster
+    - failed
+  - decided to contact the developers directly by IRC and/or Gitter
+  - make a presentation for the expert for the next meeting
+    - work in parallel to sprint 3
 
 2016-06-08 -> 2016-06-15 Week 3 / 8
-
-2016-06-08 | 13:00- : 3nd Meeting
+  - TODO
+    - Travis-CI (Continous Integration)?
+      - With nodejs and browserify also?
+    - DEVCON1: Ethereum for Dummies - Dr. Gavin Wood
+      - https://www.youtube.com/watch?v=U_LK0t_qaPo

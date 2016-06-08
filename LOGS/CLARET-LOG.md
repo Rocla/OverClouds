@@ -206,7 +206,7 @@
     - management: 2016-06-08 | 08:30-09:30 => 1.00
       - updating log
 
-    - devlopment: 2016-06-08 | 09:30 => 11:30 => 3.00
+    - devlopment: 2016-06-08 | 09:30 => 12:30 => 3.00
       - continue to setting up the ethereum nodeJS client
         - fail, looks like it's not working. Can't understand the reason
       - setting up a docker multi-node private network
@@ -219,8 +219,7 @@
     - Travis-CI (Continous Integration)?
       - With nodejs and browserify also?
     - DEVCON1: Ethereum for Dummies - Dr. Gavin Wood
-      - https://www.youtube.com/watch?v=U_LK0t_qaPo ?
-    -
+      - https://www.youtube.com/watch?v=U_LK0t_qaPo
 
   - NOTES
     - Docker Ethereum Cluster:

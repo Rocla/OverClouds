@@ -148,16 +148,86 @@
   - Validated the specifications
 
 2016-06-01 -> 2016-06-08 Week 2 / 8
-  - none: 2016-06-01 | : - : =>
+  - PROGRESS:
+    - development: 2016-06-01 | 13:00-17:00 => 4.00
+      - Learning NodeJS
+        - Node.js Tutorial for Beginners
+          - https://www.youtube.com/watch?v=-u-j7uqU7sI&list=PL6gx4Cwl9DGBMdkKFn3HasZnnAqVjzHn_
+      - Install and Setup of NodeJS/NPM & IntelliJ IDEA as IDE
+
+    - development: 2016-06-02 | 10:00-17:00 => 7.00
+      - Learning NodeJS
+        - Node.js Tutorial for Beginners
+          - https://www.youtube.com/watch?v=-u-j7uqU7sI&list=PL6gx4Cwl9DGBMdkKFn3HasZnnAqVjzHn_
+      - setting up raspberry pi to run ethereum
+
+    - research: 2016-06-02 | 18:00-21:00 => 3.00
+      - Looking for private blockchain
+        - https://medium.com/@preitsma/setting-up-a-parity-ethereum-node-in-docker-and-connect-safely-f881faa17686
+        #.7q92a57hm
+        - https://github.com/ethcore/parity/wiki/Private-chains
+        - http://ethereum.stackexchange.com/questions/3185/running-a-custom-private-go-ethereum-node-cluster-using-docker
+        - http://tech.lab.carl.pro/kb/ethereum/testnet_setup
+        - http://stackoverflow.com/questions/31816695/ethereum-genesis-block-private-network
+
+    - development: 2016-06-03 | 10:00-13:00 => 3.00
+      - Learning NodeJS
+        - Node.js Tutorial: From Zero to Hero with Nodejs
+          - https://www.youtube.com/watch?v=czmulJ9NBP0
+
+      - research: 2016-06-03 | 13:00-15:00 => 2.00
+        - looking at ethereum smart contracts
+          - https://medium.com/@ConsenSys/a-101-noob-intro-to-programming-smart-contracts-on-ethereum-695d15c1dab4#.6be9ux875
+          - https://www.ethereum.org/greeter
+          - https://github.com/ethereum/wiki/wiki/Ethereum-Development-Tutorial
+          - http://www.etherscripter.com/
+
+    - development: 2016-06-06 | 16:00-18:00 => 2.00
+      - finishing setting up raspberry pi for the testnet
+        - installed geth, eth, parity
+
+    - research: 2016-06-06 | 18:00-21:00 => 3.00
+      - looking at setting up euthereumJS
+        - http://www.richardrodger.com/2013/09/27/how-to-make-simple-node-js-modules-work-in-the-browser/#.V0dDaCJh2sx
+        - https://github.com/ethereumjs/browser-builds
+        - https://github.com/ethereumjs/node-blockchain-server
+        - https://github.com/ethereumjs/ethereumjs-lib
+
+    - management: 2016-06-07 | 12:00-13:00 => 1.00
+      - updating vivifyscrum
+
+    - devlopment: 2016-06-07 | 10:00-12:00 + 13:00-17:30 => 6.30
+      - setting up ethereumJS
+        - fail.
+        - no documentation found on how to or tutorials.
+      - raspberry pi
+        - synch time testnet: 80k/1080k blocks in 12h
+
+    - management: 2016-06-08 | 08:30-09:30 => 1.00
+      - updating log
+
+    - devlopment: 2016-06-08 | 09:30 => 11:30 => 3.00
+      - continue to setting up the ethereum nodeJS client
+        - fail, looks like it's not working. Can't understand the reason
+      - setting up a docker multi-node private network
+        - it work
+        - ethereum network status webpage works also
+      - link Mac to Docker Ethereum Cluster
+        - fail
 
   - TODO
     - Travis-CI (Continous Integration)?
       - With nodejs and browserify also?
-    - Should deploy on Private blockchain or Test/Mainnet?
-    - https://www.youtube.com/watch?v=-u-j7uqU7sI&list=PL6gx4Cwl9DGBMdkKFn3HasZnnAqVjzHn_
-      - or https://www.youtube.com/watch?v=czmulJ9NBP0 ?
-      - and https://www.youtube.com/watch?v=U_LK0t_qaPo ?
+    - DEVCON1: Ethereum for Dummies - Dr. Gavin Wood
+      - https://www.youtube.com/watch?v=U_LK0t_qaPo ?
+    -
 
-2016-02-01 | 13:00 2nd Meeting
-  - 6th June rdv for master
-  - I usually have a working room; we could meet there if the teacher wants/can
+  - NOTES
+
+2016-02-01 | 13:00-13:30 2nd Meeting
+  - sprint 1 validated
+  - start of sprint 2
+
+2016-06-08 -> 2016-06-15 Week 3 / 8
+
+2016-02-08 | 13:00- : 3nd Meeting

@@ -1,0 +1,15 @@
+{
+  "name": "oc-consensus",
+  "version": "1.0.0",
+  "description": "prototype consensus with ethereum",
+  "main": "index.js",
+  "dependencies": {
+    "ethereum.js": "^0.2.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Romain Claret",
+  "license": "ISC"
+}

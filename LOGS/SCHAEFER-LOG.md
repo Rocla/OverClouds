@@ -55,10 +55,7 @@ outil SCRUM outil gratuit VivifyScrum ou cf mail DEP
         - mise en place Ethereum
         - browserification (fonctionnement, performance vs NodeJS)
 
-EN COURS
-   - voir pour rdv avec l'expert -> EN COURS
-
-
-
+2016-06-08 séance étudiant
+   - prép séance avec expert du 15 juin 13h15.
 
      

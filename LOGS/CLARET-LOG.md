@@ -207,8 +207,8 @@
       - updating log
 
     - devlopment: 2016-06-08 | 09:30 => 12:30 => 3.00
-      - continue to setting up the ethereum nodeJS client
-        - fail, looks like it's not working. Can't understand the reason
+      - continue to set up the ethereum nodeJS client
+        - failed, looks like it's not working. Can't understand the reason
       - setting up a docker multi-node private network
         - it work
         - ethereum network status webpage works also
@@ -234,6 +234,20 @@
       - http://ethereum.stackexchange.com/questions/3185/running-a-custom-private-go-ethereum-node-cluster-using-docker
     - Testnet Explorer
       - http://testnet.etherscan.io
+    - Bulk Commands
+      - Ethereum Mining
+          - parity --testnet --author 0x460e4a6063ad089AC6b01179a3FE85b798B019d3  --ipc-path=$HOME/.ethereum/geth.ipc
+          - parity --testnet --author 0x460e4a6063ad089AC6b01179a3FE85b798B019d3  —rpc
+          - parity --author 0xcE802fa0aE9a4E6546f3bEBfF058DcFAEA5F209E  --ipc-path=$HOME/.ethereum/geth.ipc
+
+          - parity --testnet --author 0x460e4a6063ad089AC6b01179a3FE85b798B019d3 &>/dev/null &
+          - geth --testnet &>/dev/null &
+
+          - ethminer -C -t 4
+          - geth --mine --minerthreads=4 --testnet --etherbase 0x460e4a6063ad089AC6b01179a3FE85b798B019d3
+
+          - geth --networkid 456789 --genesis /Users/TimeTraveler/CloneWars/OverClouds/Docker/genesis.json
+
 
 2016-02-01 | 13:00-13:30 2nd Meeting
   - sprint 1 validated

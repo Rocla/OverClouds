@@ -223,6 +223,18 @@
     -
 
   - NOTES
+    - Docker Ethereum Cluster:
+      - docker-compose up -d # load cluster bootstrap
+      - open http://$(docker-machine ip default):3000 # open stats webpage
+      - docker-compose scale eth=3 # scale to 3 nodes
+    - Ethereum Javascript API
+      - https://github.com/ethereum/wiki/wiki/JavaScript-API
+    - Couldn't attach to cluster from mac or pi
+      - https://github.com/ethereum/go-ethereum/wiki/Setting-up-private-network-or-local-cluster
+      - http://ethereum.stackexchange.com/questions/3399/set-up-mist-browser-for-a-private-go-ethereum-docker-cluster
+      - http://ethereum.stackexchange.com/questions/3185/running-a-custom-private-go-ethereum-node-cluster-using-docker
+    - Testnet Explorer
+      - http://testnet.etherscan.io
 
 2016-02-01 | 13:00-13:30 2nd Meeting
   - sprint 1 validated

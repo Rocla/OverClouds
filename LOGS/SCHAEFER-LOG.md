@@ -76,38 +76,14 @@ outil SCRUM outil gratuit VivifyScrum ou cf mail DEP
 
 
    - prép séance avec expert du 15 juin 13h15
-        présenter éta
-t du projet
+        présenter état du projet
+
+2016-06-15 séance étudiant + expert
+
+   - état général du projet
+   - état du projet spécifique
+   - mesures à prendre
+   
 
 
-     
-TODO read
-   remote: Total 18 (delta 2), reused 0 (delta 0), pack-reused 0
-   Unpacking objects: 100% (18/18), done.
-   From github.com:Rocla/OverClouds
-      a374ed0..0bee440  master     -> origin/master
-   Updating a374ed0..0bee440
-   Fast-forward
-    .gitignore                                         |    3 +
-    .gitmodules                                        |   18 +
-    Docker/ethereum-private-multi-nodes                |    1 +
-    Docker/genesis.json                                |   42 +
-    Implementations/Consensus/ethereumjs-all.js        |54122 ++++++++++++++++++++
-    .../Consensus/ethereumjs-browser-builds            |    1 +
-    .../Consensus/ethereumjs-ethereumjs-lib            |    1 +
-    .../Consensus/ethereumjs-node-blockchain-server    |    1 +
-    Implementations/Consensus/ethereumjs-web3s-js      |    1 +
-    Implementations/Consensus/oc-consensus/index.js    |   10 +
-    .../Consensus/oc-consensus/package.json            |   15 +
-    LOGS/CLARET-LOG.md                                 |   98 +-
-    12 files changed, 54305 insertions(+), 8 deletions(-)
-    create mode 100644 .gitmodules
-    create mode 160000 Docker/ethereum-private-multi-nodes
-    create mode 100644 Docker/genesis.json
-    create mode 100644 Implementations/Consensus/ethereumjs-all.js
-    create mode 160000 Implementations/Consensus/ethereumjs-browser-builds
-    create mode 160000 Implementations/Consensus/ethereumjs-ethereumjs-lib
-    create mode 160000 Implementations/Consensus/ethereumjs-node-blockchain-server
-    create mode 160000 Implementations/Consensus/ethereumjs-web3s-js
-    create mode 100644 Implementations/Consensus/oc-consensus/index.js
-    create mode 100644 Implementations/Consensus/oc-consensus/package.json
+   

@@ -1,6 +1,6 @@
 # Log for the student: Romain Claret
 
-2016-05-24 -> 2016-05-27 Week 1 / 8
+2016-05-24 -> 2016-05-27 Week 1 / 8 => 57.75
   - PROGRESS:
     - management: 2016-05-24 | 09:00-18:30 => 9.50
       - Restructuring the project for the TB
@@ -125,7 +125,7 @@
     - Backbone and AngularJS are interesting, but it needs a server to work.
     - On ethereum, Serpent looks like Python; LLL looks like a high-level assembler.
 
-2016-05-24 | 15:00-16:00 1st Meeting
+2016-05-24 | 15:00-16:00 1st Meeting => 1.0
   - 25th May school vs. companies conference
     - The school is taking the hours on their account, should not be punishing for the student (me)
   - 6th June rdv for master
@@ -139,7 +139,7 @@
   - Documentation: complete https://intranet.he-arc.ch/dq/Pages/FOR-REA-ING-BAC.aspx
     - Teacher has done this already
 
-2016-05-30 | 13:00-14:30 1.5th Meeting
+2016-05-30 | 13:00-14:30 1.5th Meeting => 1.5
   - the sprints are now ending on Wednesday
   - review of the current sprints
   - subscribed to a recurring plan on vivifyScrum
@@ -147,11 +147,11 @@
   - discussed of the requirements for the report (a lot of annexes if okay)
   - Validated the specifications
 
-2016-06-01 | 13:00-13:30 2nd Meeting
+2016-06-01 | 13:00-13:30 2nd Meeting => 0.5
   - sprint 1 validated
   - start of sprint 2
 
-2016-06-01 -> 2016-06-08 Week 2 / 8
+2016-06-01 -> 2016-06-08 Week 2 / 8 =>
   - PROGRESS:
     - development: 2016-06-01 | 13:00-17:00 => 4.00
       - Learning NodeJS
@@ -200,7 +200,7 @@
     - management: 2016-06-07 | 12:00-13:00 => 1.00
       - updating vivifyscrum
 
-    - devlopment: 2016-06-07 | 10:00-12:00 + 13:00-17:30 => 6.30
+    - devlopment: 2016-06-07 | 10:00-12:00 + 13:00-17:30 => 6.50
       - setting up ethereumJS
         - fail.
         - no documentation found on how to or tutorials.
@@ -246,16 +246,72 @@
 
           - geth --networkid 456789 --genesis /Users/TimeTraveler/CloneWars/OverClouds/Docker/genesis.json
 
-2016-06-08 | 13:00-16:00 3rd Meeting
+2016-06-08 | 13:00-16:00 3rd Meeting => 3.0
   - tried to debug the NodeJS client
     - failed
   - tried to attach mac client to cluster
     - failed
-  - decided to contact the developers directly by IRC and/or Gitter
+  - decided to contact the developers directly by IRC and Gitter
   - make a presentation for the expert for the next meeting
     - work in parallel to sprint 3
 
-2016-06-08 -> 2016-06-15 Week 3 / 8
+2016-06-08 -> 2016-06-15 Week 3 / 8 =>
+  - PROGRESS:
+    - development: 2016-06-08 | 16:00-18:00 + 19:30:21:00 => 3.50
+      - trying to fix docker ethereum cluster
+      - contacting ethereumJS developers via gitter
+      - contacting go ethereum developers via gitter
+      - looking at IRC
+    - research: 2016-06-09 | 10:00-18:00 => 8.00
+      - looking at geth command lines
+      - tyring to fix docker ethereum cluster
+      - setting up IRC client on rasp
+      - no helpful info from ethereumJS devs
+      - ignored from goEthereum devs?
+    - research: 2016-06-10 | 09:30-16:00  => 6.50
+      - review of architecture
+      - looking for mesh-of-trust like protocols
+        - hardware protocols like digimesh seems to work
+        - no software?
+      - hardware is mostly used to encrypt software info
+    - research: 2016-06-11 | 18:00-19:00 => 1.00
+      - looking at Proof of Work
+    - research: 2016-06-12 | 13:00-14:00 => 1.00
+      - looking at Proof of Stake
+      - looking at Proof of Activity
+    - research: 2016-06-13 | 10:00-14:00 + 15:00-20:00 => 9.00
+      - looking at hardware certifications
+      - looking at trust chains
+      - defining a mesh-of-trust
+        - i don't think it will be how it was planned
+    - research: 2016-06-14 | 09:00-14:00 + 16:00-21:00 => 10.00
+      - Defining Proof of Participation
+      - finalizing brainstorming
+      - finalizing architecture
+      - updating vivifyscrum
+      - deliver planning
+    - research: 2016-06-15 | 09:30-13:00 => 3.50
+      - making presentation
+      - updating git
+
+2016-06-15 | 13:15-14:15 Expert Meeting => 1.0
+  - meeting the expert
+  - project presentation
+  - the expert thinks difficulties will appear during the storage sprint
+
+2016-06-16 | 13:00-00:00 4th Meeting => 0.0
+
+2016-06-15 -> 2016-06-22 Week 4 / 8 =>
+  - PROGRESS:
+    - development: 2016-06-15 | 14:30-18:30 => 4.00
+      - trying to fix ethereumJS with developers
+        - no success yet
+      - contacting again goEthereum developers
+        - nobody seems to be able to help with docker
+      - trying to fix docker solution
+    - management: 2016-06-16 | 11:00-13:00 => 2.00
+      - updating and cleaning log
+
   - TODO
     - Travis-CI (Continous Integration)?
       - With nodejs and browserify also?

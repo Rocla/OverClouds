@@ -160,6 +160,7 @@ outil SCRUM outil gratuit VivifyScrum ou cf mail DEP
    - lectures scientifiques (transitivité du trust, paper e-reputation, mesh of trust
      sans certif matériel)
    - prochains sprints, replanification du reste du projet -> dimanche
+     objectif: retarder la dépendance Ethereum
       - Storage (sprint plus pratique 2 semaines, avec point intermédiaire mercredi suivant)
 	      - point principal: DHT (métadonnées) + fonctionnement I/O
 	      - recherche: stockage distribué "avec" WebTorrent (sauf s'il y a vraiment

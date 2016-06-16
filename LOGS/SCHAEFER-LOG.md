@@ -154,7 +154,33 @@ outil SCRUM outil gratuit VivifyScrum ou cf mail DEP
    - état du projet spécifique
    - mesures à prendre
 
+2016-06-16 séance étudian
+
+   - encore problème avec ethereum/node js: contact en cours avec développeurs
+   - lectures scientifiques (transitivité du trust, paper e-reputation, mesh of trust
+     sans certif matériel)
+   - prochains sprints, replanification du reste du projet -> dimanche
+      - Storage (sprint plus pratique 2 semaines, avec point intermédiaire mercredi suivant)
+	      - point principal: DHT (métadonnées) + fonctionnement I/O
+	      - recherche: stockage distribué "avec" WebTorrent (sauf s'il y a vraiment
+		une raison de prendre autre chose)
+	      - démonstrateur dans le navigateur
+         -> lister les objectifs du projet TB qui seront atteints par cette
+            phase (objectifs de phase)
+      - stockage distribué sécurisé (1 sprint de recherche)
+	(multiples copies, impossible de lire sauf clé(s): distribution des
+	 données et des clés)
+         -> lister les objectifs du projet TB qui seront atteints par cette
+            phase 
+      - 1 à 2 semaines pour:
+         -> lister les objectifs du projet TB qui seront atteints par cette
+            phase 
+          - intégration Ethereum (dépendance développeur)
+          - autres éléments (contrat principal, communautaire, ...)
+
+
 TODO
+   - regarder planif lundi 20
    - signature, formulaire expert
    - recentrer le projet au milieu si problème de timing ou résultats
      pas très probants

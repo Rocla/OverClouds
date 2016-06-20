@@ -154,7 +154,7 @@ outil SCRUM outil gratuit VivifyScrum ou cf mail DEP
    - état du projet spécifique
    - mesures à prendre
 
-2016-06-16 séance étudian
+2016-06-16 séance étudiant
 
    - encore problème avec ethereum/node js: contact en cours avec développeurs
    - lectures scientifiques (transitivité du trust, paper e-reputation, mesh of trust
@@ -179,12 +179,27 @@ outil SCRUM outil gratuit VivifyScrum ou cf mail DEP
           - intégration Ethereum (dépendance développeur)
           - autres éléments (contrat principal, communautaire, ...)
 
+2016-06-20 analyse nouveau planning
+
+Pour info à Adrian: on a discuté que le projet tel qu'initialement planifié n'est pas faisable, notamment à cause des problèmes de dépendances à Ethereum. J'ai donc proposé de se concentrer sur les aspects de stockage en construisant sur des logiciels et protocoles existants (WebTorrent). La nouveauté sera alors l'index de données réparties, et des aspects de distribution/duplication et de propriétaire de données.
+
+Ensuite, on espère que quelque projets seront faits dans Ethereum (contact en parallèle avec les développeurs) ce qui permettrait un démonstrateur, dans ce cadre, d'une ou l'autre application du consensus pour le Data Tribunal ou d'autres aspects. Si Ethereum n'est toujours pas utilisable, alors on fera un démonstrateur `standalone' en fonction du temps.
+
+Donc si je résume, le board Vivify que vous avez modifié, les prochains sprints sont:
+
+    concept stockage décentralisé, basé sur des logiciels et protocoles existants, tournant de préférence dans le Browser; avec comme objectifs secondaires la distribution/duplication des données et la notion de propriétaire de données
+    implémentation dans le browser d'un démonstrateur, utilisant évt. des services externes comme WebTorrent
+    Concept+demo simple de Data Tribunal
+    idem Global Rules
+    intégration des prototypes dans le démonstrateur suivant.
+
+Cela me semble aller dans la bonne direction. On se voit mercredi!
+
+Meilleures salutations.
+
 
 TODO
    - regarder planif lundi 20
-   - signature, formulaire expert
-   - recentrer le projet au milieu si problème de timing ou résultats
-     pas très probants
    
 
 

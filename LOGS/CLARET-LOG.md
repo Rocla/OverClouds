@@ -151,7 +151,7 @@
   - sprint 1 validated
   - start of sprint 2
 
-2016-06-01 -> 2016-06-08 Week 2 / 8 =>
+2016-06-01 -> 2016-06-08 Week 2 / 8 => 38.5
   - PROGRESS:
     - development: 2016-06-01 | 13:00-17:00 => 4.00
       - Learning NodeJS
@@ -255,7 +255,7 @@
   - make a presentation for the expert for the next meeting
     - work in parallel to sprint 3
 
-2016-06-08 -> 2016-06-15 Week 3 / 8 =>
+2016-06-08 -> 2016-06-15 Week 3 / 8 => 43.5
   - PROGRESS:
     - development: 2016-06-08 | 16:00-18:00 + 19:30:21:00 => 3.50
       - trying to fix docker ethereum cluster
@@ -294,14 +294,18 @@
       - making presentation
       - updating git
 
-2016-06-15 | 13:15-14:15 Expert Meeting => 1.0
+2016-06-15 | 13:15-14:15 Expert Meeting => 1.00
   - meeting the expert
   - project presentation
   - the expert thinks difficulties will appear during the storage sprint
 
-2016-06-16 | 13:00-00:00 4th Meeting => 0.0
+2016-06-16 | 13:00-13:30 4th Meeting => 0.50
+  - replanning
+    - mesh-of-trust -> proof of participation
+    - focus during the next 3 weeks on storage
+    - remake planning for sunday
 
-2016-06-15 -> 2016-06-22 Week 4 / 8 =>
+2016-06-15 -> 2016-06-22 Week 4 / 8 => 39
   - PROGRESS:
     - development: 2016-06-15 | 14:30-18:30 => 4.00
       - trying to fix ethereumJS with developers
@@ -311,6 +315,96 @@
       - trying to fix docker solution
     - management: 2016-06-16 | 11:00-13:00 => 2.00
       - updating and cleaning log
+    - research: 2016-06-16 | 14:00-18:00 => 4.00
+      - trying to fix docker
+    - research: 2016-06-17 | 10:00-14:00 + 15:00-19:00 => 8.00
+      - decentralized storage right from the browser only
+    - research: 2016-06-18 | 11:00-13:00 + 14:00-18:00 => 6.00
+      - decentralized storage with blockchains
+        - swarm, filecoin, storj, symform
+    - management: 2016-06-19 | 10:00-18:00 => 1.00
+      - replanify sprints
+      - updating vivifyscrum
+    - research: 2016-06-20 | 10:00-13:00 + 15:00-18:00 => 6.00
+      - decentralized storage with clients
+        - ipfs, SyncNet, Tahoe-LAFS
+    - research: 2016-06-21 | 10:00-12:00 + 14:00-17:00 => 5.00
+      - summeryzing reseach
+      - architectures drafts
+    - management: 2016-06-22 | 09:00-12:00 => 3.00
+      - summeryzing
+      - updating vivifyscrum
+      - git update
+
+  - NOTES:
+    - what-is-the-difference-between-swarm-and-ipfs
+      - http://ethereum.stackexchange.com/questions/2138/what-is-the-difference-between-swarm-and-ipfs
+    - ipfs_vs_swarm
+      - https://www.reddit.com/r/ethereum/comments/3hbqbv/ipfs_vs_swarm/
+    - IPFS-&-SWARM
+      - https://github.com/ethersphere/go-ethereum/wiki/IPFS-&-SWARM
+    - ipfs-introduction-by-example
+      - http://whatdoesthequantsay.com/2015/09/13/ipfs-introduction-by-example/
+    - Filecoin: A Cryptocurrency Operated File Storage Network
+      - http://filecoin.io/filecoin.pdf
+    - An Introduction to IPFS
+      - https://medium.com/@ConsenSys/an-introduction-to-ipfs-9bba4860abd0#.84oj2rmel
+    - Using ipfs for decentralized file synchronization
+      - https://github.com/ipfs/ipfs/issues/120
+    - Secret Sharing and Erasure Coding: A Guide for the Aspiring Dropbox Decentralizer
+      -  https://blog.ethereum.org/2014/08/16/secret-sharing-erasure-coding-guide-aspiring-dropbox-decentralizer/
+    - Cryptographic proof of custody for incentivized file-sharing
+      - https://docs.google.com/document/d/1F81ulKEZFPIGNEVRsx0H1gl2YRtf0mUMsX011BzSjnY/edit?pref=2&pli=1#heading=h.jg7ixtogbbv3
+    - Tahoe-LAFS is a Free and Open decentralized cloud storage system. It distributes your data across multiple servers
+      - https://tahoe-lafs.org/trac/tahoe-lafs
+    - A JavaScript library for reading/writing Tahoe-LAFS files and directories.
+      - https://github.com/nejucomo/lafs-wapi
+    - SyncNet: A Decentralized Web Browser
+      - http://jack.minardi.org/software/syncnet-a-decentralized-web-browser/
+      - https://github.com/jminardi/syncnet
+    - A JavaScript library for providing multiple simultaneous, stable, fault-tolerant and resumable/restartable uploads via the HTML5 File API.
+      - https://github.com/23/resumable.js/tree/master
+    - slice-large-file-into-chunks-and-upload-using-ajax-and-html5-filereader
+      - http://stackoverflow.com/questions/20212851/slice-large-file-into-chunks-and-upload-using-ajax-and-html5-filereader
+    - splitting-a-file-into-chunks-with-javascript
+      - http://stackoverflow.com/questions/32898082/splitting-a-file-into-chunks-with-javascript
+    - WebTorrent: How I built a BitTorrent client in the browser
+      - https://www.youtube.com/watch?v=3w_6dfqrpzk
+    - A decentralization of GitHub using BitTorrent and Bitcoin
+      - http://blog.printf.net/articles/2015/05/29/announcing-gittorrent-a-decentralized-github/
+      - https://github.com/cjb/gittorrent
+      - https://news.ycombinator.com/item?id=9625840
+    - IPFS implementation in JavaScript http://ipfs.io/
+      - https://github.com/ipfs/js-ipfs
+    - A decentralized, secure file storage, sharing and social network that's surveillance resistant and doesn't expose your friend network.
+      - https://github.com/Peergos/Peergos/blob/master/papers/wuala-cryptree.pdf
+      - https://github.com/Peergos/Peergos
+    - DEVCON1: Swarm - Daniel Nagy, Viktor Tron
+      - https://www.youtube.com/watch?v=VOC45AgZG5Q
+    - Daniel Nagy: "Swarm: Distributed storage for Ethereum, the Turing-complete blockchain"
+      - https://www.youtube.com/watch?v=N_vtxw6nfmQ
+    - Not retainted decentralized storage technologies
+      - Symform.com
+      - Stroj.io
+      - filecoin
+      - Tahoe-LAFS
+    - Bittorent
+      - https://en.wikipedia.org/wiki/BitTorrent
+      - http://www.howtogeek.com/141257/htg-explains-how-does-bittorrent-work/
+      - BitTorrent visiualisation
+        - http://mg8.org/processing/bt.html
+      - https://www.quora.com/How-does-BitTorrent-work
+      - https://en.wikipedia.org/wiki/BitTorrent_protocol_encryption
+      - http://wiki.vuze.com/w/Message_Stream_Encryption
+
+2016-06-22 | 13:00- 5th Meeting =>
+  - help choose solution 1 or 2
+
+2016-06-22 -> 2016-06-29 Week 5 / 8 =>
+  - PROGRESS:
+    - research: 2016-06-22 | 00:00- =>
+
+  - NOTES:
 
   - TODO
     - Travis-CI (Continous Integration)?

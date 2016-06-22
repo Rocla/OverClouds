@@ -197,10 +197,19 @@ Cela me semble aller dans la bonne direction. On se voit mercredi!
 
 Meilleures salutations.
 
-
-TODO
-   - regarder planif lundi 20
-   
+2016-06-22 séance étudiant
+   - revue résultats de sprint
+        recherche pour code dans le browser
+        4 concepts de stockage réparti
+           2 premières intéressantes
+           IPFS: pas de duplic. de fichiers (ID unique) mais de chunk;
+                 JS disponible, API seul (pas de démo); nécessite serveur non
+                 browser
+           WebTorrent: browser-only, déjà démontré, mais pas l'unicité
+   - à faire rapidement: les fonctions de WebTorrent, et les fonctions de
+     OCTracker; en gras les plus importantes.
+   - ensuite mini-conception puis impl. de l'API et du démonstrateur
+   - licence du projet à préciser à la fin
 
 
    

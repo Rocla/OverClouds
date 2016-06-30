@@ -211,5 +211,33 @@ Meilleures salutations.
    - ensuite mini-conception puis impl. de l'API et du démonstrateur
    - licence du projet à préciser à la fin
 
+2016-06-30 séance étudiant
+   - architecture latest + README.md du démonstrateur OK
+        technologies client-side innovantes (service worker, app cache, etc)
+        peut-être utiliser l'indexed API pour la persistance
+        nodejs pour partie OC Portal (gateway)        
+   - revue résultats de sprint
+        - web-app décentralisé (sauf nodejs: problème validation cross-domain,
+          gateway peut être supprimée, serveur HTML+JS doit rester, en SSL ou
+          localhost)
+        - chiffrement par WebRTC (via WebTorrent)
+        - appcache
+        - tracker (DHT) WebTorrent
+   - manque
+      - redondance
+      - chiffrement des données
+      - data ownership/data tribunal
 
-   
+replanification
+   - 3j approche théorique (ve -> mardi)
+     a) comment rendre l'accès à des clés privées protégé par un consensus?
+        (propriétaire OU le réseau)
+     b) comment utiliser a) pour rendre décision Data Tribunal
+     c) transfert de droit par consensus
+     -> déliverables: mini-rapport (étude)
+
+   - mercredi: réfléchir à quelle démonstration
+   - séance mercredi ou jeudi
+   - jeudi -> mercredi: dernière démonstration
+   - séance mercredi ou jeudi
+   - jeudi/vendredi: mise en forme des déliverables

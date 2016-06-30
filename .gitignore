@@ -20,3 +20,9 @@ Implementations/Consensus/oc-consensus/node_modules/web3/lib/web3/methods
 Implementations/Consensus/oc-consensus/node_modules
 Architecture/Overclouds-Architecture-Draft-3.mindnode
 Architecture/Overclouds-Architecture-Draft-4-Latest.mindnode
+Architecture/storage/Overclouds-Storage-Architecture-Latest.mindnode
+Implementations/Storage/oc-core/node_modules
+Implementations/Storage/tests
+Implementations/Storage/oc-core/secret/index.js
+Implementations/Storage/oc-core/static/bundle.js
+Implementations/Storage/oc-core/static/main.css

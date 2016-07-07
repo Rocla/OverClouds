@@ -26,3 +26,7 @@ Implementations/Storage/tests
 Implementations/Storage/oc-core/secret/index.js
 Implementations/Storage/oc-core/static/bundle.js
 Implementations/Storage/oc-core/static/main.css
+architecture/webgate/oc-webgate-architecture-latest.mindnode
+architecture/oc-architecture-draft-3.mindnode
+architecture/oc-architecture-draft-4-latest.mindnode
+architecture/storage/oc-storage-architecture-latest.mindnode

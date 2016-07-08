@@ -298,23 +298,23 @@ replanification
 
 
 2016-07-13 séance avec étudiant
-   - faire le point sur l'implémentation
+   - faire le point sur l'implémentation réalisée
    - définir le travail des 2 derniers jours
-   - après le rendu: rapport!
+   - après le rendu: rapport! (voir recommandations ci-dessous)
 
 
-
-
-
-
-
-
-
-
-
-
-
-REMARQUES
+RECOMMANDATIONS POUR LE RAPPORT
    - important de bien comprendre les fonctions de base imaginées et
      leur interaction avec des composants logiciels existants ou à créer
-   - plus proactif dans l'annonce des étapes
+   - important de bien faire ressortir les itérations et leurs résultats
+     obtenus
+   - détail: documenter la semaine finissant le 6 juillet, car le
+     résultat présenté (schémas) ne justifie pas le temps passé: 
+     recherches théoriques?  essais logiciels?
+
+
+POINTS A AMELIORER AU FUTUR
+   - plus proactif dans l'annonce des étapes et problèmes, ne pas
+     laisser passer une semaine sans envoyer un petit mail en cas
+     de problèmes, ou alors changer soi-même d'objectif et informer.
+   - plus systématique dans le journal

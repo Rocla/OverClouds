@@ -2,20 +2,55 @@
 <html lang="en">
 
 <head>
-    <title></title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="main.css" charset="utf-8">
+  <title>Overclouds Webgate</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="main.css" charset="utf-8">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="apple-mobile-web-app-title" content="Overclouds">
+  <meta name="application-name" content="Overclouds">
+  <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
     <h1 class="header">Overclouds: Webgate</h1>
     <h2 class="header">Your gateway to the serverless interweb</h2>
-    <div id="main-content">
+    <div id="main">
+        <h2>Load content</h2>
         <p>Paste a site infohash below to go to the address. Please <strong>be patient</strong>, you are connecting to other people (just like you) to retrieve the content, it may take a while to load.</p>
         <form><input id="location" type="text" value=""><input id="go-button" type="submit" value="Load"></form>
         <p>With chrome, you <strong>must</strong> leave this page open while using Overclouds!
         </p>
+        <br/><br/>
+        <h2>Quick-Share content</h2>
+        <h2 id="logHeading" style="display: none">Log</h2>
+        <div class="speed"></div>
+        <div class="log"></div>
+        <p>Drag-and-drop a file, files, or folder to begin sharing. Or choose a file:
+          <input type="file" name="upload" multiple>
+        </p>
     </div>
+    <footer>
+      <p>
+        <small>
+          Overclouds is open source, the code is available on <a href="https://github.com/rocla/Overclouds" target="_blank">GitHub</a> under a to be determined License.
+        </small>
+      </p>
+      <p>
+        <small>
+          Overclouds is using <a href="http://webtorrent.io" target="_blank">WebTorrent</a> protocol which is powered by JavaScript and WebRTC. Works in Chrome, Firefox, and Opera (desktop and Android).
+        </small>
+      </p>
+      <p>
+        <small>
+          Run <code>localStorage.debug = '*'</code> in the console and refresh to enable verbose logs.
+        </small>
+      </p>
+    </footer>
     <script src="bundle.js"></script>
 </body>
 

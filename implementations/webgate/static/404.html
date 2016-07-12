@@ -1,0 +1,17 @@
+<!DOCTYPE 'html'>
+<html>
+  <head>
+    <title>Overclouds Webgate</title>
+  </head>
+  <body>
+    <h1>Overclouds' Webgate background service is missing.<h1>
+    <h2>The webgate service must run in a background tab to have access to Overclouds' decentralized web.</h2>
+    <h3>This page will now be loaded as the Overclouds' background service and a new tab will be openned with the requested content.</h3>
+    <h4>You will be redirected to the request decentralized page in 3 seconds</h4>
+    <br/>Popups must be allowed on Overclouds.ch for the automatic redirection to work properly
+  </body>
+  <script type='text/javascript'>
+    var url = (window.location.href).split('/goto/')[1];
+    setTimeout(function(){window.location.assign('/?/'+url);}, 3000);
+  </script>
+</html>

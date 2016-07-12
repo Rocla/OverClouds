@@ -9,6 +9,10 @@ var pug = require('pug')
 var path = require('path')
 var url = require('url')
 var twilio = require('twilio')
+var cors = require('cors')
+var downgrade = require('downgrade')
+var parallel = require('run-parallel')
+var unlimited = require('unlimited')
 
 var config = require('../config')
 var secret = require('../secret')
@@ -16,6 +20,13 @@ var secret = require('../secret')
 var app = express()
 
 var httpServer = http.createServer(app)
+
+var CORS_WHITELIST = [
+  'http://overclouds.ch',
+  'https://overclouds.ch'
+]
+
+unlimited()
 
 // Templating
 app.set('views', __dirname + '/views')
@@ -30,9 +41,20 @@ app.use(compress())
 // https://github.com/hashobject/twilio-stun-turn
 
 app.use(function (req, res, next) {
+  // Force SSL
+  if (config.isProd && req.protocol !== 'https') {
+    return res.redirect('https://' + (req.hostname || 'overclouds.ch') + req.url)
+  }
+
+  // Redirect www to non-www
+  if (config.isProd && req.hostname === 'www.overclouds.ch') {
+    return res.redirect('https://overclouds.ch' + req.url)
+  }
+
   // Strict transport security (to prevent MITM attacks on the site)
+  // Lasts 1 year, incl. subdomains, allow browser preload list
   if (config.isProd) {
-    res.header('Strict-Transport-Security', 'max-age=31536000')
+    res.header('Strict-Transport-Security', 'max-age=31536000; includeSubDomains; preload')
   }
 
   // Add cross-domain header for fonts, required by spec, Firefox, and IE.
@@ -52,8 +74,6 @@ app.use(function (req, res, next) {
 
   // Force IE to use latest rendering engine or Chrome Frame
   res.header('X-UA-Compatible', 'IE=Edge,chrome=1')
-
-  //res.status(404).send('404: Page not Found')
 
   next()
 })
@@ -95,7 +115,14 @@ function updateIceServers () {
 setInterval(updateIceServers, 60 * 60 * 4 * 1000).unref()
 updateIceServers()
 
-app.get('/rtcConfig', function (req, res) {
+app.get('/rtcConfig', cors({
+  origin: function (origin, cb) {
+    var allowed = CORS_WHITELIST.indexOf(origin) >= 0 ||
+      /https?:\/\/localhost(:|$)/.test(origin) ||
+      /https?:\/\/[^.\/]+\.localtunnel\.me$/.test(origin)
+    cb(null, allowed)
+  }
+}), function (req, res) {
   if (!iceServers) res.status(404).send({ iceServers: [] })
   else res.send({ iceServers: iceServers })
 })
@@ -123,16 +150,34 @@ app.get('*', function (req, res) {
   res.end();
 })
 
+var tasks = [
+  function (cb) {
+    httpServer.listen(config.ports.http, config.host, cb)
+  }
+]
+
+// if (httpsServer) {
+//   tasks.push(function (cb) {
+//     httpsServer.listen(config.ports.https, config.host, cb)
+//   })
+// }
+
 // error handling middleware
 app.use(function (err, req, res, next) {
   error(err)
   res.status(500).render('error', { message: err.message || err })
 })
 
-httpServer.listen(config.ports.http, 'localhost', function (err) {
+parallel(tasks, function (err) {
   if (err) throw err
   debug('listening on port %s', JSON.stringify(config.ports))
+  downgrade()
 })
+
+// httpServer.listen(config.ports.http, 'localhost', function (err) {
+//   if (err) throw err
+//   debug('listening on port %s', JSON.stringify(config.ports))
+// })
 
 function error (err) {
   console.error(err.stack || err.message || err)

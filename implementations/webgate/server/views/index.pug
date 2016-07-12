@@ -4,8 +4,12 @@ block body
   title= Overclouds Webgate
   h1.header
     | Overclouds Webgate
+  h2#logHeading(style='display: none') Log
+    .speed
+    .log
 
   #main-content
+    h2 Load content
     p.
       Paste a site infohash below to open a specific site, or leave the default to
       open an example image gallery. Please #[strong be patient] since it may take a
@@ -15,5 +19,15 @@ block body
       input#go-button(type='submit', value='Load', disabled)
     p.
       With chrome, you #[strong must] leave this page open while browsing the serverless web!
+
+    h2 Quick-Share content
+    p
+      | Drag-and-drop a file (or files) to begin sharing. Or choose a file:
+      | #{ ' ' }
+      input(type='file', name='upload', multiple)
+
+    footer
+      p: small <a href="http://webtorrent.io" target="_blank">WebTorrent</a> is powered by JavaScript and WebRTC. Works in Chrome, Firefox, and Opera (desktop and Android).
+      p: small Code is available on <a href="https://github.com/feross/instant.io" target="_blank">GitHub</a> under MIT License. Run <code>localStorage.debug = '*'</code> in the console and refresh to enable verbose logs.
 
   script(src='/bundle.js')

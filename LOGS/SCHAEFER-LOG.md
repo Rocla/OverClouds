@@ -241,3 +241,80 @@ replanification
    - jeudi -> mercredi: dernière démonstration
    - séance mercredi ou jeudi
    - jeudi/vendredi: mise en forme des déliverables
+
+2016-07-07 séance étudiant
+   - pas de log de travail cette semaine
+   - présentation approche théorique (cf ci-dessus)
+
+        a) webtorrent pas dynamique: notion de node master (node,
+           groupe de node, etc), pas nécessaire tout à jour en même
+           temps, élu par consensus -> 1ère impl. 1 master
+
+           toutes clés privées sur master, mais ne peut pas reconstituer
+           sans tout essayer: approche où il faudrait au moins 3 master
+           pour reconstituer une clé privée serait meilleure
+           -> 1ère impl. avec un seul master et évaluer risque
+
+           -> sujet de recherche avancé (pas d'état de l'art)
+
+        b) data tribunal
+              concept de points (selon contrats)
+                 -> blâmage se fait sur tous ceux qui transmettent
+                    volontairement, pas d'identité associée.
+                 -> mentionner les points sur identité évt. pour contenu
+                    populaire même si plus seedé (réclamation des points),
+                    possible uniquement avec une espèce de preuve que
+                    les données vous appartiennent; à voir si c'est faisbale
+
+              (attention moral != populaire)
+
+        notion d'upload anonyme sans redondance, etc
+        création d'identité: contenu privé, favori, réputation.
+        page principale à laisser ouverte
+        interaction
+
+        bouts stockés localement sont chiffrés -> on ne peut y accéder
+        que si on connaît le hash global du fichier les contenant
+        (sinon risque légal)
+
+        question de chiffrement partie partie vs fichier, laisser ouverte
+        (de toute façon symétrique avec des IV)
+
+        renommer "master node" en "master node abstraction" partout
+
+        éviter blocage décisions par une notion de fonction majorité (cas
+        des N nodes élus comme master node)        
+        
+        c) transfert de droit par master abstract node / consensus
+
+   - let's encrypt à documenter dans le rapport
+
+   - réfléchir à quelle démonstration
+        - implémenter share chiffré (démo): OC Webgate (2-3 j)
+        - évt. notion de streaming progressif (1/2 j)
+        - évt. identité + master node (mini-démonstrateur: *API* avec mockup)
+
+   - lancer implémentation -> mercredi 13.
+
+
+2016-07-13 séance avec étudiant
+   - faire le point sur l'implémentation réalisée
+   - définir le travail des 2 derniers jours
+   - après le rendu: rapport! (voir recommandations ci-dessous)
+
+
+RECOMMANDATIONS POUR LE RAPPORT
+   - important de bien comprendre les fonctions de base imaginées et
+     leur interaction avec des composants logiciels existants ou à créer
+   - important de bien faire ressortir les itérations et leurs résultats
+     obtenus
+   - détail: documenter la semaine finissant le 6 juillet, car le
+     résultat présenté (schémas) ne justifie pas le temps passé: 
+     recherches théoriques?  essais logiciels?
+
+
+POINTS A AMELIORER AU FUTUR
+   - plus proactif dans l'annonce des étapes et problèmes, ne pas
+     laisser passer une semaine sans envoyer un petit mail en cas
+     de problèmes, ou alors changer soi-même d'objectif et informer.
+   - plus systématique dans le journal

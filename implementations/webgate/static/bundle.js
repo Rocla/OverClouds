@@ -96,8 +96,16 @@ if (!Peer.WEBRTC_SUPPORT || !navigator.serviceWorker) {
 var locationField = document.getElementById('location')
 var goButton = document.getElementById('go-button')
 
+locationField.addEventListener("keyup", function(event) {
+    event.preventDefault()
+    if (event.keyCode == 13) {
+        goButton.click()
+    }
+})
+
 goButton.addEventListener('click', function () {
   loadPage(locationField.value)
+  locationField.value=""
 })
 
 function syncLocation (firstLoad) {
@@ -167,9 +175,14 @@ window.addEventListener('beforeunload', onBeforeUnload)
 
 function onFiles (files) {
   debug('got files:')
-  files.forEach(function (file) {
+  var isIndex = false
+  files.forEach(function (file){
     debug(' - %s (%s bytes)', file.name, file.size)
+    if(file.name == "index.html"){isIndex == true}
   })
+  if(!isIndex){
+    files.push(createGenericIndex())
+  }
 
   // .torrent file = start downloading the torrent
   files.filter(isTorrentFile).forEach(downloadTorrentFile)
@@ -177,6 +190,29 @@ function onFiles (files) {
   // everything else = seed these files
   seed(files.filter(isNotTorrentFile))
 }
+
+function createFileFrom(blob){
+  // Construct file
+  var file = new File(blob, 'index.html', {
+      //static date to keep same hash
+      lastModified: new Date(0), // optional - default = now
+      type: "overide/mimetype" // optional - default = ''
+  })
+  return file
+}
+
+function createGenericIndex(){
+  var genericIndex = [
+    new Blob(["<!DOCTYPE HTML><html><head><meta charset='utf-8'><title>OC Content Page</title></head><body><h1>This page has been automatically generated because you didn't add a \"index.html\" file with your shared files. A single file would also produce this page.</h1><h2>The reason for this file is that every shared on Overclouds are considered as a webapps.</h2><h3>You can either edit \"index.html\" or simply call your file by adding its name to the url path</h3>For example:<br/>If your file was named \"movie.mp4\", and your url path \"https://overclouds.ch/goto/abcde..ghij/\". You need to add the file name to end of your url path.<br/>The result would be \"https://overclouds.ch/goto/abcde..ghij/movie.mp4\".</body></html>"], {type: 'text/html'})
+  ]
+  return createFileFrom(genericIndex)
+}
+
+// function createVideoApp(file){}
+//
+// function createAudioApp(file){}
+//
+// function createMusicApp(file){}
 
 function isTorrentFile (file) {
   var extname = path.extname(file.name).toLowerCase()
@@ -229,7 +265,7 @@ function onTorrent (torrent) {
 
   util.log(
     'Torrent info hash: ' + torrent.infoHash + ' ' +
-    '<a href="/#' + torrent.infoHash + '" onclick="prompt(\'Share this link with anyone you want to download this torrent:\', this.href);return false;">[Share link]</a> ' +
+    '<a href="/goto/' + torrent.infoHash + '" onclick="prompt(\'Share this link with anyone you want to download this torrent:\', this.href);return false;">[Share link]</a> ' +
     '<a href="' + torrent.magnetURI + '" target="_blank">[Magnet URI]</a> ' +
     '<a href="' + torrent.torrentFileBlobURL + '" target="_blank" download="' + torrentFileName + '">[Download .torrent]</a>'
   )
@@ -381,6 +417,7 @@ navigator.serviceWorker.register('/service-worker.js').then(function (registrati
   if (!registration.active) {
     // Refresh to activate the worker
     location.reload()
+    //console.log("worker not active")
     return
   }
   worker = registration.active
@@ -15924,7 +15961,7 @@ function renderMedia (file, getElem, cb) {
 
   function onLoadStart () {
     elem.removeEventListener('loadstart', onLoadStart)
-    elem.play()
+    elem.pause()
   }
 
   function onCanPlay () {

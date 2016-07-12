@@ -20,12 +20,18 @@
     <h1 class="header">Overclouds: Webgate</h1>
     <h2 class="header">Your gateway to the serverless interweb</h2>
     <div id="main">
+      <div id="content-load">
         <h2>Load content</h2>
         <p>Paste a site infohash below to go to the address. Please <strong>be patient</strong>, you are connecting to other people (just like you) to retrieve the content, it may take a while to load.</p>
-        <form><input id="location" type="text" value=""><input id="go-button" type="submit" value="Load"></form>
+        <!-- <form> -->
+        <input id="location" type="text" value=""/>
+        <button id="go-button" type="button">Load</button>
+        <!-- </form> -->
         <p>With chrome, you <strong>must</strong> leave this page open while using Overclouds!
         </p>
-        <br/><br/>
+      </div>
+      <br/><br/>
+      <div id="content-quick-share">
         <h2>Quick-Share content</h2>
         <h2 id="logHeading" style="display: none">Log</h2>
         <div class="speed"></div>
@@ -33,6 +39,7 @@
         <p>Drag-and-drop a file, files, or folder to begin sharing. Or choose a file:
           <input type="file" name="upload" multiple>
         </p>
+      </div>
     </div>
     <footer>
       <p>

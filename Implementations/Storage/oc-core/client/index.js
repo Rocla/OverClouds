@@ -1,16 +1,21 @@
-var debug = require('debug')('http')
+var debug = require('debug')('overclouds.ch')
 var mime = require('mime')
 var Peer = require('simple-peer')
 var thunky = require('thunky')
 var WebTorrent = require('webtorrent')
 var xhr = require('xhr')
 
-var TRACKER_URL = 'wss://tracker.webtorrent.io'
+var TRACKER_URL_01 = 'wss://tracker.webtorrent.io'
+var TRACKER_URL_02 = 'wss://tracker.btorrent.xyz'
+var TRACKER_URL_03 = 'wss://tracker.openwebtorrent.com'
+var TRACKER_URL_04 = 'wss://tracker.fastcast.nz'
+var TRACKER_URL_05 = 'wss://tracker.webtorrent.io'
+var TRACKER_URL_06 = 'wss://tracker.webtorrent.io'
 
-global.WEBTORRENT_ANNOUNCE = [ TRACKER_URL ]
+global.WEBTORRENT_ANNOUNCE = [ TRACKER_URL_01, TRACKER_URL_02, TRACKER_URL_03, TRACKER_URL_04 ]
 
 if (!Peer.WEBRTC_SUPPORT || !navigator.serviceWorker) {
-	alert('This browser is unsupported. Please use a browser with WebRTC support and ServiceWorker support.')
+	alert('This browser is unsupported. Please use a browser with WebRTC support and ServiceWorker support. https://jakearchibald.github.io/isserviceworkerready/')
 	return
 }
 
@@ -176,7 +181,7 @@ function loadPage (loc) {
 		var path = matches[2] || ''
 		var a = document.createElement('a')
 		a.target = '_blank'
-		a.href = '/sandbox/' + hash + '/' + path
+		a.href = '/goto/' + hash + '/' + path
 		a.click()
 	} else {
 		console.log(loc)

@@ -1,0 +1,19 @@
+extends layout
+
+block body
+  title= Overclouds Webgate
+  h1.header
+    | Overclouds Webgate
+
+  #main-content
+    p.
+      Paste a site infohash below to open a specific site, or leave the default to
+      open an example image gallery. Please #[strong be patient] since it may take a
+      while for the site to appear.
+    form
+      input#location(type='text', value='')
+      input#go-button(type='submit', value='Load', disabled)
+    p.
+      With chrome, you #[strong must] leave this page open while browsing the serverless web!
+
+  script(src='/bundle.js')

@@ -8,7 +8,7 @@ var FILES = [
 'service-worker.js',
 ''
 ]
-
+console.log("event message")
 function storeStatic () {
   var requests = FILES.map(function (path) {
     return new Request('/' + path)
@@ -125,6 +125,7 @@ function resetTimer (pageId) {
 }
 
 self.addEventListener('message', function (event) {
+  console.log("event message")
   var data = event.data
   switch (data.type) {
     case 'returnpipe':

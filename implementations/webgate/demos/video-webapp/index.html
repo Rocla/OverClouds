@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Test Video</title>
+  <script>
+  var filename = "BigBuckBunny_320x180.mp4"
+
+  function loadContent () {
+    var rootAddress = (window.location.href).split('index.html')[0]
+    var video = document.createElement("video");
+    video.id = "video";
+    video.poster = "oc-loading.gif";
+    video.preload = "auto";
+    video.setAttribute("controls","controls");
+    video.style = "left: 50%; position: absolute; top: 50%; transform: translate(-50%, -50%); width: 80%;"
+    var source = document.createElement("source");
+    source.type = "video/mp4";
+    source.src = rootAddress + filename;
+    video.appendChild(source);
+    var text = document.createElement("div");
+    text.innerHTML = "Your browser does not support the video tag."+
+    "<br/>Click here: <a href=\""+rootAddress+filename+"\">"+filename+"</a>"
+    video.appendChild(text);
+    document.body.appendChild(video);
+
+    var info = document.createElement("div");
+    info.id = "info"
+    document.body.appendChild(info);
+
+    video.addEventListener('loadeddata', function() { video.setAttribute('poster','');});
+    video.addEventListener('error', function(event) {
+      info.innerHTML = "We are sorry, the content couldn't be loaded :( try to refresh the page";
+      info.style = "color: red; text-align: center;";
+      video.setAttribute('poster','');
+      console.log(event)
+    }, true);
+  }
+
+  window.onload = loadContent ;
+  </script>
+</head>
+<body></body>
+</html>

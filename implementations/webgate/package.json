@@ -1,7 +1,7 @@
 {
   "name": "oc-webgate",
   "description": "Overclouds Webgate",
-  "version": "0.0.1",
+  "version": "0.4.256",
   "author": {
     "name": "Romain Claret",
     "email": "contact@rocla.ch",
@@ -28,12 +28,12 @@
     "throttleit": "^1.0.0"
   },
   "devDependencies": {
-    "standard": "^3.1.1",
     "browserify": "^13.0.1",
-    "watchify": "^3.7.0",
+    "nib": "^1.0.3",
     "nodemon": "^1.9.2",
+    "standard": "^3.1.1",
     "stylus": "^0.51.0",
-    "nib": "^1.0.3"
+    "watchify": "^3.7.0"
   },
   "scripts": {
     "build": "mkdir -p static && npm run build-css && npm run build-js",

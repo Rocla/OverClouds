@@ -14,11 +14,15 @@
   <meta name="apple-mobile-web-app-title" content="Overclouds">
   <meta name="application-name" content="Overclouds">
   <meta name="theme-color" content="#ffffff">
+  <link href="http://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" />
+  <script src="crypto-js-aes.js"></script>
 </head>
 
 <body>
-    <h1 class="header">Overclouds: Webgate</h1>
-    <h2 class="header">Your gateway to the serverless interweb</h2>
+    <h1 align="center" class="header">Overclouds: Webgate</h1>
+    <img style="position: relative; left: 50%; margin-right: -50%; transform: translate(-50%, 0%)" src="oc-logo.png"/>
+    <h2 align="center" class="header">Your gateway to the serverless interweb</h2>
+    <br/>
     <div id="main">
       <div id="content-load">
         <h2>Load content</h2>
@@ -33,12 +37,12 @@
       <br/><br/>
       <div id="content-quick-share">
         <h2>Quick-Share content</h2>
-        <h2 id="logHeading" style="display: none">Log</h2>
-        <div class="speed"></div>
-        <div class="log"></div>
         <p>Drag-and-drop a file, files, or folder to begin sharing. Or choose a file:
           <input type="file" name="upload" multiple>
         </p>
+        <h2 id="logHeading" style="display: none">Sharing log</h2>
+        <div class="speed"></div>
+        <div class="log"></div>
       </div>
     </div>
     <footer>

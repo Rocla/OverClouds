@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>allinone encryption/decryption binary test</title>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="crypto-js-core.js"></script>
+    <script src="crypto-js-lib-typedarrays.js"></script>
+    <script src="crypto-js-enc-base64.js"></script>
+    <script src="crypto-js-enc-utf16.js"></script>
+    <script src="sjcl.js"></script>
+    <script src="crypto-js-aes.js"></script>
+  </head>
+  <body>
+  <form id="fileform">
+      <div id="filepicker">
+        <input type="file" id="files" name="files[]" multiple />
+        <output id="list"></output>
+      </div>
+      <div id="password-area">
+	<label for="encrypt-password">Encryption Password: </label>
+	<input type="text" id="encrypt-password" name="Encryption Password" />
+      </div>
+      <div id="submitter">
+        <input type="button" value="CryptoJS Encrypt" id="cryptojs-encrypt-button" />
+        <input type="button" value="SJCL Encrypt" id="sjcl-encrypt-button" />
+        <input type="reset" value="Reset" id="reset-button" />
+      </div>
+  </form>
+  <div id="encrypted-data">
+    <p id="cryptojs-encrypted">CryptoJS results go here</p>
+    <p id="sjcl-encrypted">SJCL results go here</p>
+  </div>
+  <form id="decrypt-form">
+    <div>
+      <input type="button" value="CryptoJS Decrypt" id="cryptojs-decrypt-button">
+      <input type="button" value="SJCL Decrypt" id="sjcl-decrypt-button">
+    </div>
+  </form>
+  <div id="decrypted-links">
+    <p>
+      <a id="cryptojs-decrypted-link"></a>
+      <a id="sjcl-decrypted-link"></a>
+    </p>
+  </div>
+    <script src="crypt.js"></script>
+  </body>
+</html>

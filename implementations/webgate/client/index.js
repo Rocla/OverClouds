@@ -33,11 +33,11 @@ if (!isLocalhost && window.location.protocol !== 'https:')
 {
   if((window.location.href).split('/?/').length > 1)
   {
-    return window.location.assign('https://' + (window.location.hostname || 'overclouds.ch') + (window.location.href).split('/?/')[1])
+    return window.location.assign('https://' + (window.location.hostname || 'overclouds.ch') + '/?/' + (window.location.href).split('/?/')[1])
   }
   else if ((window.location.href).split('/goto/').length > 1)
   {
-    return window.location.assign('https://' + (window.location.hostname || 'overclouds.ch') + (window.location.href).split('/goto/')[1])
+    return window.location.assign('https://' + (window.location.hostname || 'overclouds.ch') + '/goto/' + (window.location.href).split('/goto/')[1])
   }
   else {
     return window.location.assign('https://' + (window.location.hostname || 'overclouds.ch'))
@@ -134,7 +134,7 @@ function onFiles (files) {
   var isIndex = false
   files.forEach(function (file){
     debug(' - %s (%s bytes)', file.name, file.size)
-    if(file.name == "index.html"){isIndex == true}
+    if(file.name == "index.html"){isIndex = true}
   })
   if(!isIndex){
     files.push(createGenericIndex())
@@ -147,13 +147,21 @@ function onFiles (files) {
   seed(files.filter(isNotTorrentFile))
 }
 
-function createFileFrom(blob){
+function createIndexFileFrom(blob){
   // Construct file
   var file = new File(blob, 'index.html', {
       //static date to keep same hash
-      lastModified: new Date(0), // optional - default = now
-      type: "overide/mimetype" // optional - default = ''
+      lastModified: new Date(0), // default = now
+      type: 'text/html' // default = ''
   })
+  var reader = new window.FileReader()
+  reader.readAsDataURL(file)
+  reader.onloadend = function() {
+    base64data = reader.result
+    console.log(base64data)
+    var encrypted = CryptoJS.AES.encrypt(base64data, "12345")
+    console.log(encrypted)
+  }
   return file
 }
 
@@ -161,7 +169,7 @@ function createGenericIndex(){
   var genericIndex = [
     new Blob(["<!DOCTYPE HTML><html><head><meta charset='utf-8'><title>OC Content Page</title></head><body><h1>This page has been automatically generated because you didn't add a \"index.html\" file with your shared files. A single file would also produce this page.</h1><h2>The reason for this file is that every shared on Overclouds are considered as a webapps.</h2><h3>You can either edit \"index.html\" or simply call your file by adding its name to the url path</h3>For example:<br/>If your file was named \"movie.mp4\", and your url path \"https://overclouds.ch/goto/abcde..ghij/\". You need to add the file name to end of your url path.<br/>The result would be \"https://overclouds.ch/goto/abcde..ghij/movie.mp4\".</body></html>"], {type: 'text/html'})
   ]
-  return createFileFrom(genericIndex)
+  return createIndexFileFrom(genericIndex)
 }
 
 // function createVideoApp(file){}
@@ -197,7 +205,7 @@ function downloadTorrentFile (file) {
 
 function seed (files) {
   if (files.length === 0) return
-  util.log('Seeding ' + files.length + ' files')
+  util.log('<br/><br/>Seeding ' + files.length + ' files')
 
   // Seed from WebTorrent
   getClient(function (err, client) {
@@ -220,10 +228,10 @@ function onTorrent (torrent) {
   })
 
   util.log(
-    'Torrent info hash: ' + torrent.infoHash + ' ' +
-    '<a href="/goto/' + torrent.infoHash + '" onclick="prompt(\'Share this link with anyone you want to download this torrent:\', this.href);return false;">[Share link]</a> ' +
+    'Torrent info hash: <strong>' + torrent.infoHash + '</strong> ' +
+    '<br/><a href="/goto/' + torrent.infoHash + '" onclick="prompt(\'Share this link with anyone you want to download this torrent:\', this.href);return false;">[Share link]</a> ' +
     '<a href="' + torrent.magnetURI + '" target="_blank">[Magnet URI]</a> ' +
-    '<a href="' + torrent.torrentFileBlobURL + '" target="_blank" download="' + torrentFileName + '">[Download .torrent]</a>'
+    '<a href="' + torrent.torrentFileBlobURL + '" target="_blank" download="' + torrentFileName + '">[Download .torrent]</a><br/><br/>'
   )
 
   function updateSpeed () {
@@ -243,9 +251,9 @@ function onTorrent (torrent) {
 
   torrent.files.forEach(function (file) {
     // append file
-    file.appendTo(util.logElem, function (err, elem) {
-      if (err) return util.error(err)
-    })
+    // file.appendTo(util.logElem, function (err, elem) {
+    //   if (err) return util.error(err)
+    // })
 
     // append download link
     file.getBlobURL(function (err, url) {
@@ -255,7 +263,7 @@ function onTorrent (torrent) {
       a.target = '_blank'
       a.download = file.name
       a.href = url
-      a.textContent = 'Download ' + file.name
+      a.textContent = 'Download encrypted file: ' + file.name
       util.log(a)
     })
   })

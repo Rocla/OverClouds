@@ -67,10 +67,31 @@ var TRACKER_URL_06 = 'wss://tracker.webtorrent.io'
 
 global.WEBTORRENT_ANNOUNCE = [ TRACKER_URL_01, TRACKER_URL_02, TRACKER_URL_03, TRACKER_URL_04 ]
 
+document.getElementById('shouldEncrypt').addEventListener('click', function () {
+  showKey()
+})
+
+function showKey()
+{
+  if (document.getElementById('shouldEncrypt').checked)
+  {
+      document.getElementById("show-key").style.display = 'block'
+  } else {
+      document.getElementById("show-key").style.display = 'none'
+  }
+}
+showKey()
+
+document.getElementById('generate-key-button').addEventListener('click', function () {
+  document.getElementById("encryptionKey").value = CryptoJS.lib.WordArray.random(16)
+})
+
 var isLocalhost = false
 if (window.location.hostname == "localhost")
 {
   isLocalhost = true
+  var pjson = require('../package.json')
+  document.getElementById("dev_version").innerHTML = "Local mode version: " + pjson.version
 }
 
 if (!isLocalhost && window.location.protocol !== 'https:')
@@ -176,36 +197,75 @@ window.addEventListener('beforeunload', onBeforeUnload)
 function onFiles (files) {
   debug('got files:')
   var isIndex = false
+  var isTorrent = false
   files.forEach(function (file){
     debug(' - %s (%s bytes)', file.name, file.size)
+    if(isTorrentFile(file)){isTorrent = true}
     if(file.name == "index.html"){isIndex = true}
   })
-  if(!isIndex){
-    files.push(createGenericIndex())
+  if(isTorrent)
+  {
+    // .torrent file = start downloading the torrent
+    // todo decrypt
+    files.forEach(downloadTorrentFile)
   }
+  else {
+    if(!isIndex){
+      files.push(createGenericIndex())
+    }
 
-  // .torrent file = start downloading the torrent
-  files.filter(isTorrentFile).forEach(downloadTorrentFile)
-
-  // everything else = seed these files
-  seed(files.filter(isNotTorrentFile))
+    if(document.getElementById("shouldEncrypt").checked){
+      encryptFiles(files, document.getElementById("encryptionKey").value)
+    }
+    else{
+      seed(files)
+    }
+  }
 }
 
-function createIndexFileFrom(blob){
-  // Construct file
+function initEncryptedSeed(encryptedFiles){
+  encryptedSeed(encryptedFiles)
+}
+
+function encryptFiles(files, key){
+  var encryptedFiles = []
+  var itemsProcessed = 0
+  files.forEach(function (file){
+    encryptFile(file, key, function(encrypted) {
+      blobEncryptedFile = new Blob([encrypted], {type : "application/octet-stream"})
+      encryptedFile = new File([blobEncryptedFile], file.name, {
+          fullPath: "test/test.html",
+          lastModified: new Date(0),
+          type: 'application/octet-stream'
+      })
+      encryptedFiles.push(encryptedFile)
+      // console.log('Finished encrypting: ' + encryptedFile)
+      itemsProcessed++
+      if(itemsProcessed === files.length) {
+        initEncryptedSeed(encryptedFiles)
+      }
+    })
+  })
+}
+
+function encryptFile(file, key, callback){
+  var salt = "abc"
+  var iv = "abc"
+  var reader = new window.FileReader()
+  reader.readAsDataURL(file)
+  reader.onloadend = function() {
+    base64data = reader.result
+    var encrypted = CryptoJS.AES.encrypt(base64data, key, salt, iv)
+    callback(encrypted)
+  }
+}
+
+function createIndexFile(blob){
   var file = new File(blob, 'index.html', {
       //static date to keep same hash
       lastModified: new Date(0), // default = now
       type: 'text/html' // default = ''
   })
-  var reader = new window.FileReader()
-  reader.readAsDataURL(file)
-  reader.onloadend = function() {
-    base64data = reader.result
-    console.log(base64data)
-    var encrypted = CryptoJS.AES.encrypt(base64data, "12345")
-    console.log(encrypted)
-  }
   return file
 }
 
@@ -213,7 +273,7 @@ function createGenericIndex(){
   var genericIndex = [
     new Blob(["<!DOCTYPE HTML><html><head><meta charset='utf-8'><title>OC Content Page</title></head><body><h1>This page has been automatically generated because you didn't add a \"index.html\" file with your shared files. A single file would also produce this page.</h1><h2>The reason for this file is that every shared on Overclouds are considered as a webapps.</h2><h3>You can either edit \"index.html\" or simply call your file by adding its name to the url path</h3>For example:<br/>If your file was named \"movie.mp4\", and your url path \"https://overclouds.ch/goto/abcde..ghij/\". You need to add the file name to end of your url path.<br/>The result would be \"https://overclouds.ch/goto/abcde..ghij/movie.mp4\".</body></html>"], {type: 'text/html'})
   ]
-  return createIndexFileFrom(genericIndex)
+  return createIndexFile(genericIndex)
 }
 
 // function createVideoApp(file){}
@@ -248,6 +308,18 @@ function downloadTorrentFile (file) {
 }
 
 function seed (files) {
+  if (files.length === 0) return
+  util.log('<br/><br/>Seeding ' + files.length + ' files')
+
+  // Seed from WebTorrent
+  getClient(function (err, client) {
+    if (err) return util.error(err)
+    client.seed(files, onTorrent)
+  })
+}
+
+function encryptedSeed (files) {
+  //TODO fix folder name error due to fullpath in files
   if (files.length === 0) return
   util.log('<br/><br/>Seeding ' + files.length + ' files')
 
@@ -513,16 +585,16 @@ if((window.location.href).split('/?/').length > 1)
   var matches = MATCH_PATH.exec(hashAddress)
   if (matches)
   {
-    document.title = "Overclouds Webgate";
+    document.title = "Overclouds Webgate"
     a.href = ((window.location.href).split('/?/')[0]+"/goto/"+hashAddress)
-    setTimeout(function(){a.click();}, 1000)
+    setTimeout(function(){a.click()}, 1000)
   } else {
     alert('The hash must be 40 characters long')
   }
 }
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./tools":1,"debug":45,"drag-drop":48,"mime":50,"path":13,"pretty-bytes":52,"simple-peer":55,"throttleit":62,"thunky":63,"upload-element":64,"webtorrent":65,"xhr":189}],3:[function(require,module,exports){
+},{"../package.json":197,"./tools":1,"debug":45,"drag-drop":48,"mime":50,"path":13,"pretty-bytes":52,"simple-peer":55,"throttleit":62,"thunky":63,"upload-element":64,"webtorrent":65,"xhr":189}],3:[function(require,module,exports){
 
 },{}],4:[function(require,module,exports){
 arguments[4][3][0].apply(exports,arguments)
@@ -22163,4 +22235,54 @@ module.exports = function (headers) {
 }
 },{"for-each":193,"trim":194}],196:[function(require,module,exports){
 arguments[4][44][0].apply(exports,arguments)
-},{"dup":44}]},{},[2]);
+},{"dup":44}],197:[function(require,module,exports){
+module.exports={
+  "name": "oc-webgate",
+  "description": "Overclouds Webgate",
+  "version": "0.5.104",
+  "author": {
+    "name": "Romain Claret",
+    "email": "contact@rocla.ch",
+    "url": "http://romainclaret.ch"
+  },
+  "dependencies": {
+    "debug": "^2.0.0",
+    "express": "^4.8.5",
+    "webtorrent": "^0.95.2",
+    "simple-peer": "^5.3.0",
+    "xhr": "^2.0.0",
+    "thunky": "^0.1.0",
+    "compression": "^1.0.9",
+    "pug": "^2.0.0-beta3",
+    "mime": "^1.3.4",
+    "twilio": "^2.1.0",
+    "cors": "^2.7.1",
+    "downgrade": "^1.0.0",
+    "run-parallel": "^1.0.0",
+    "unlimited": "^1.1.0",
+    "drag-drop": "^2.0.0",
+    "upload-element": "^1.0.1",
+    "pretty-bytes": "^3.0.0",
+    "throttleit": "^1.0.0"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.1",
+    "nib": "^1.0.3",
+    "nodemon": "^1.9.2",
+    "standard": "^3.1.1",
+    "stylus": "^0.51.0",
+    "watchify": "^3.7.0"
+  },
+  "scripts": {
+    "build": "mkdir -p static && npm run build-css && npm run build-js",
+    "build-css": "stylus -u nib css/main.styl -o static/ -c",
+    "build-js": "browserify client > static/bundle.js",
+    "start": "node server",
+    "test": "standard",
+    "watch": "npm run watch-css & npm run watch-js & DEBUG=http* nodemon server -e js,jade -d 1",
+    "watch-css": "stylus -u nib css/main.styl -o static/ -w",
+    "watch-js": "watchify client -o static/bundle.js -dv"
+  }
+}
+
+},{}]},{},[2]);

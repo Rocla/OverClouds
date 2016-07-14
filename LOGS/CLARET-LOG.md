@@ -488,6 +488,8 @@
     - A bitcoin full node in the browser
       - http://bcoin.io/browser.html
       - https://github.com/bcoin-org/bcoin
+    - Distributed Encrypted Peer-To-Peer Storage
+      - http://publications.lib.chalmers.se/records/fulltext/203144/203144.pdf
 
 2016-06-07 | 14:00-14:30 7th Meeting => 0.50
   - presentation of the reputation + webgate concept
@@ -550,8 +552,8 @@ hours to go until 340h => 340-318.75 = 21.25h
   - PROGRESS:
     - development: 2016-07-13 | 13:30-18:30 + 20:00-22:00 => 7.00
       - testing & comparing cryptography libraries
-    - development: 2016-07-14 | 09:30-12:00 + 12:30- =>
-      - getting ready for minor version iteration (5)
+    - development: 2016-07-14 | 09:30-12:00 + 12:30-16:00 + 20:30-01:00 => 10.50
+      - added basic encryption
 
   - NOTES:
     - Creating a File Encryption App with JavaScript
@@ -584,6 +586,18 @@ hours to go until 340h => 340-318.75 = 21.25h
       - https://github.com/drostie/sha3-js
     - BLAKE2s cryptographic hash function in JavaScript https://dchest.github.io/blake2s-js/
       - https://github.com/dchest/blake2s-js
+    - File interface
+      - https://developer.mozilla.org/en-US/docs/Web/API/File
+    - FileReader interface
+      - https://developer.mozilla.org/en/docs/Web/API/FileReader
+    - JavaScript Cryptography api encryption
+      - http://cryptojs.altervista.org/api/#.V4d9J5N96sw
+    - Example Interoperable AES encryption with Java and JavaScript
+      - https://github.com/mpetersen/aes-example
+    - FileSystem APIs
+      - http://www.html5rocks.com/en/tutorials/file/filesystem/
+    - Encrypting data with Crypto-JS in JavaScript
+      - http://ramkulkarni.com/blog/encrypting-data-with-crypto-js-in-javascript/
 
   - TODO
     - Travis-CI (Continous Integration)?

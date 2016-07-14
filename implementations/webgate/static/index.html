@@ -14,55 +14,60 @@
   <meta name="apple-mobile-web-app-title" content="Overclouds">
   <meta name="application-name" content="Overclouds">
   <meta name="theme-color" content="#ffffff">
-  <link href="http://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" />
   <script src="crypto-js-aes.js"></script>
 </head>
 
 <body>
-    <h1 align="center" class="header">Overclouds: Webgate</h1>
-    <img style="position: relative; left: 50%; margin-right: -50%; transform: translate(-50%, 0%)" src="oc-logo.png"/>
-    <h2 align="center" class="header">Your gateway to the serverless interweb</h2>
-    <br/>
-    <div id="main">
-      <div id="content-load">
-        <h2>Load content</h2>
-        <p>Paste a site infohash below to go to the address. Please <strong>be patient</strong>, you are connecting to other people (just like you) to retrieve the content, it may take a while to load.</p>
-        <!-- <form> -->
-        <input id="location" type="text" value=""/>
-        <button id="go-button" type="button">Load</button>
-        <!-- </form> -->
-        <p>With chrome, you <strong>must</strong> leave this page open while using Overclouds!
-        </p>
-      </div>
-      <br/><br/>
-      <div id="content-quick-share">
-        <h2>Quick-Share content</h2>
-        <p>Drag-and-drop a file, files, or folder to begin sharing. Or choose a file:
-          <input type="file" name="upload" multiple>
-        </p>
-        <h2 id="logHeading" style="display: none">Sharing log</h2>
-        <div class="speed"></div>
-        <div class="log"></div>
-      </div>
+  <p id="dev_version"></p>
+  <h1 align="center" class="header">Overclouds: Webgate</h1>
+  <img style="position: relative; left: 50%; margin-right: -50%; transform: translate(-50%, 0%)" src="oc-logo.png"/>
+  <h2 align="center" class="header">Your gateway to the serverless interweb</h2>
+  <br/>
+  <div id="main">
+    <div id="content-load">
+      <h2>Load content</h2>
+      <p>Paste a site infohash below to go to the address. Please <strong>be patient</strong>, you are connecting to other people (just like you) to retrieve the content, it may take a while to load.</p>
+      <!-- <form> -->
+      <input id="location" type="text" value=""/>
+      <button id="go-button" type="button">Load</button>
+      <!-- </form> -->
+      <p>With chrome, you <strong>must</strong> leave this page open while using Overclouds!
+      </p>
     </div>
-    <footer>
-      <p>
-        <small>
-          Overclouds is open source, the code is available on <a href="https://github.com/rocla/Overclouds" target="_blank">GitHub</a> under a to be determined License.
-        </small>
+    <br/><br/>
+    <div id="content-quick-share">
+      <h2>Quick-Share content</h2>
+      <p><label><input id="shouldEncrypt" type='checkbox' checked><strong>Encryption</strong>: check before uploading</label></p>
+      <p id="show-key"><label>Encryption Key: <input id="encryptionKey" type="text" value="12345" size="40"/></label>
+      <button id="generate-key-button" type="button">Generate</button>
       </p>
-      <p>
-        <small>
-          Overclouds is using <a href="http://webtorrent.io" target="_blank">WebTorrent</a> protocol which is powered by JavaScript and WebRTC. Works in Chrome, Firefox, and Opera (desktop and Android).
-        </small>
+      <p>Drag-and-drop a file, files, or folder to begin sharing. Or choose a file:
+        <input type="file" name="upload" multiple>
       </p>
-      <p>
-        <small>
-          Run <code>localStorage.debug = '*'</code> in the console and refresh to enable verbose logs.
-        </small>
-      </p>
-    </footer>
-    <script src="bundle.js"></script>
+      <h2 id="logHeading" style="display: none">Sharing log</h2>
+      <div class="speed"></div>
+      <div class="log"></div>
+    </div>
+  </div>
+  <footer>
+    <p>
+      <small>
+        Overclouds is open source, the code is available on <a href="https://github.com/rocla/Overclouds" target="_blank">GitHub</a> under a to be determined License.
+      </small>
+    </p>
+    <p>
+      <small>
+        Overclouds is using <a href="http://webtorrent.io" target="_blank">WebTorrent</a> protocol which is powered by JavaScript and WebRTC. Works in Chrome, Firefox, and Opera (desktop and Android).
+      </small>
+    </p>
+    <p>
+      <small>
+        Run <code>localStorage.debug = '*'</code> in the console and refresh to enable verbose logs.
+      </small>
+    </p>
+  </footer>
+  <script src="bundle.js"></script>
 </body>
 
 </html>

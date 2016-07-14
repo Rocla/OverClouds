@@ -1,6 +1,6 @@
 # Log for the student: Romain Claret
 
-2016-05-24 -> 2016-05-27 Week 1 / 8 => 57.75
+2016-05-24 -> 2016-05-27 Week 1 / 8 =>> 57.75
   - PROGRESS:
     - management: 2016-05-24 | 09:00-18:30 => 9.50
       - Restructuring the project for the TB
@@ -151,7 +151,7 @@
   - sprint 1 validated
   - start of sprint 2
 
-2016-06-01 -> 2016-06-08 Week 2 / 8 => 38.5
+2016-06-01 -> 2016-06-08 Week 2 / 8 =>> 38.5
   - PROGRESS:
     - development: 2016-06-01 | 13:00-17:00 => 4.00
       - Learning NodeJS
@@ -255,7 +255,7 @@
   - make a presentation for the expert for the next meeting
     - work in parallel to sprint 3
 
-2016-06-08 -> 2016-06-15 Week 3 / 8 => 43.5
+2016-06-08 -> 2016-06-15 Week 3 / 8 =>> 44.0
   - PROGRESS:
     - development: 2016-06-08 | 16:00-18:00 + 19:30:21:00 => 3.50
       - trying to fix docker ethereum cluster
@@ -305,7 +305,7 @@
     - focus during the next 3 weeks on storage
     - remake planning for sunday
 
-2016-06-15 -> 2016-06-22 Week 4 / 8 => 39
+2016-06-15 -> 2016-06-22 Week 4 / 8 =>> 41.00
   - PROGRESS:
     - development: 2016-06-15 | 14:30-18:30 => 4.00
       - trying to fix ethereumJS with developers
@@ -397,17 +397,193 @@
       - https://en.wikipedia.org/wiki/BitTorrent_protocol_encryption
       - http://wiki.vuze.com/w/Message_Stream_Encryption
 
-2016-06-22 | 13:00- 5th Meeting =>
-  - help choose solution 1 or 2
+2016-06-22 | 13:00-15:00 5th Meeting => 2.00
+  - discussion on solution webtorrent vs custom
+    - retained webtorrent
 
-2016-06-22 -> 2016-06-29 Week 5 / 8 =>
+2016-06-22 -> 2016-06-29 Week 5 / 8 =>> 45.50
   - PROGRESS:
-    - research: 2016-06-22 | 00:00- =>
+    - development: 2016-06-22 | 16:00-18:00 + 19:00-00:00 => 7.0
+      - learning webtorrent api
+    - development: 2016-06-23 | 10:00-14:00 + 15:00-20:00 => 9.0
+      - playing with webtorrent api
+    - development: 2016-06-24 | 10:00-13:30 + 14:00-19:00 => 8.50
+      - trying to make a storage portal from scratch with API
+    - development: 2016-06-27 | 09:00-12:00 + 13:00-18:00 + 21:00-22:00 => 9.00
+      - looking and understanding instant.io source code
+      - improving from scratch code
+    - development: 2016-06-28 | 11:00-14:00 + 14:30-19:00 + 21:30-23:00 => 9.00
+      - improving service worker
+    - development: 2016-06-29 | 10:00-12:00 => 2.00
+      - improvinf service worker
+  - NOTES:
+    - Streaming torrent client for the web https://webtorrent.io
+      - https://github.com/feross/webtorrent
+    - Streaming torrent client for OS X, Windows, and Linux. https://webtorrent.io/desktop
+      - https://github.com/feross/webtorrent-desktop
+    - Streaming file transfer over WebTorrent https://instant.io
+      - https://github.com/feross/instant.io
+    - WebTorrent (with WebRTC support in Node.js) https://webtorrent.io
+      - https://github.com/feross/webtorrent-hybrid
+    - share files via webtorrent http://bgm.binux.me
+      - https://github.com/binux/webtorrent-share
+    - PeerSurf is a demo (and kind of a library) of P2P websites powered by WebTorrent
+      - https://github.com/matthaywardwebdesign/PeerSurf
+    - A p2p chat client which is more like a BitTorrent sync application
+      - https://github.com/Quantum-Sicarius/p2pChat
+    - Prototype of a decentralized video streaming platform using P2P (bittorent) directly in the web browser with WebTorrent and Angular 2.
+      - https://github.com/Chocobozzz/PeerTube
+    - Decentralized web hosting over WebTorrent
+      - https://github.com/jhiesey/peercloud
+    - Share file via WebTorrent and WEBRTC http://fs.lunik.xyz
+      - https://github.com/Lunik/Instant-Share
+    - package and encrypt content then distribute it over webtorrent and webrtc https://mtos.co/
+      - https://github.com/m-t-o-s/mtos
+    - A distributed, uncensorable web page archiver built on webtorrent, assetgraph & mongodb's gridfs
+      - https://github.com/jscinoz/everarchive
+
+2016-06-30 | 13:00-13:30 6th Meeting => 0.50
+  - show of storage demo with webtorrent
+
+2016-06-29 -> 2016-07-06 Week 6 / 8 =>> 30.00
+  - PROGRESS:
+    - research: 2016-06-29 | 13:00-18:00 + 20:00-21:00 => 6.00
+      - state of the art for data tribunal
+      - add let's encrypt to overclouds.ch
+    - research: 2016-06-30 | 13:30-18:00 => 5.50
+      - continue state of the art
+    - research: 2016-07-01 | 10:00-15:00 => 5.00
+      - basic webgate architecture
+    - research: 2016-07-04 | 11:00-13:30 + 14:30-17:00 => 5.00
+      - improve webgate concept webgate
+      - improve webgate architecture
+    - research: 2016-07-05 | 10:00-13:00 + 13:30-18:00 => 7.50
+      - reputation concept
+      - making basic data architecture
+      - state of art browsers service workers + webrtc
+    - research: 2016-07-06 | 10:00-12:00 => 2.00
+      - looking for mobile implementation with webrtc+service worker
+  - NOTES:
+    - no state of the art for the data tribunal
+    - Javascript bitcoin library for node.js and browsers http://bcoin.io
+      - https://github.com/bcoin-org/bcoin
+    - Brings Ethereum to your browser
+      - https://metamask.io
+    - An experimental Raft implementation in Javascript.
+      - https://github.com/benbjohnson/raft.js
+    - Crypto 2.0 Comparison Chart
+      - https://docs.google.com/spreadsheets/u/1/d/1FdxxnujeMb_1kWlz1Esqut_jmmWNicbS3Meh1F83tUo/htmlview
+    - Javascript implementation of the Tor (or Tor like) anonymizer project (The Onion Router)
+      - https://github.com/Ayms/node-Tor
+    - Best solution for private torrents?
+      - https://github.com/feross/webtorrent/issues/386
+    - Decentralized search
+      - https://github.com/feross/webtorrent/issues/186
+    - Blockchain Applications. Written in JavaScript. Running on Sidechains.
+      - https://lisk.io
+    - Namecoin
+      - https://namecoin.info
+    - Crypti - A Decentralized Application Platform
+      - https://crypti.me
+    - A bitcoin full node in the browser
+      - http://bcoin.io/browser.html
+      - https://github.com/bcoin-org/bcoin
+
+2016-06-07 | 14:00-14:30 7th Meeting => 0.50
+  - presentation of the reputation + webgate concept
+  - presentation of the architectures
+
+2016-07-06 -> 2016-07-13 Week 7 / 8 =>> 44.00
+  - PROGRESS:
+    - research: 2016-07-06 | 13:00-18:00 => 5.00
+      - improve reputation concept
+      - improve data architecture
+    - research: 2016-07-07 | 10:00-12:30 = 2.50
+      - filtering & scanning documents
+      - checking for constitency
+    - development: 2016-07-07 | 13:30-14:00 + 15:00-18:30 + 20:00-22:00 => 6.00
+      - forced HTTPS
+      - basic video demo
+    - development: 2016-07-08 | 10:00-13:00 + 14:00-20:00 => 9.00
+      - basic quick-share
+    - development: 2016-07-11 | 11:00-14:00 + 14:30-21:00 => 9.50
+      - quick-share improved
+      - webgate forced in background
+    - development: 2016-07-12 | 10:00-13:00 + 14:00-19:00 + 23:00-00:30 => 9.50
+      - basic webapp generator
+      - testings with browser only version
+      - testings on overclouds.ch
+    - development: 2016-07-13 | 10:00-12:30 => 2.50
+      - updating demo video webapp
 
   - NOTES:
+    - progressive streaming is not possible due to bittorrent protocol itself
+    - This website demonstrates basic usage of the Web Cryptography API developed by w3c.
+      - http://nick.bleeken.eu/demos/web-crypto-samples/
+    - Web cryptography API samples
+      - https://github.com/nvdbleek/web-crypto-samples
+    - WebCrypto: Encrypt and Decrypt with AES
+      - https://coolaj86.com/articles/webcrypto-encrypt-and-decrypt-with-aes/
+    - Web Cryptography API Examples Demo: https://diafygi.github.io/webcrypto-examples/
+      - https://github.com/diafygi/webcrypto-examples
+    - Web Cryptography API Live Table
+      - https://diafygi.github.io/webcrypto-examples/
+    - Comparing Performance of JavaScript Cryptography Libraries
+      - https://medium.com/@encryb/comparing-performance-of-javascript-cryptography-libraries-42fb138116f3#.km32e1gzu
+    - JavaScript Cryptographic Library with performance in mind.
+      - https://github.com/vibornoff/asmcrypto.js/
+    - Stanford Javascript Crypto Library http://bitwiseshiftleft.github.com/sjcl/
+      - https://github.com/bitwiseshiftleft/sjcl
+    - A native implementation of TLS in Javascript and tools to write crypto-based and network-heavy webapps
+      - https://github.com/digitalbazaar/forge
+    - Triple Security for the browser and Node.js https://keybase.io/triplesec
+      - https://github.com/keybase/triplesec
+
+2016-07-13 | 8th Meeting => 0.00
+  - meeting cancel
+
+current total hours => 300.75h
+falling hours due to school => 9x2 = 18h
+hours to go until 340h => 340-318.75 = 21.25h
+
+2016-07-13 -> 2016-07-15 Week 8 / 8 =>>
+  - PROGRESS:
+    - development: 2016-07-13 | 13:30-18:30 + 20:00-22:00 => 7.00
+      - testing & comparing cryptography libraries
+    - development: 2016-07-14 | 09:30-12:00 + 12:30- =>
+      - getting ready for minor version iteration (5)
+
+  - NOTES:
+    - Creating a File Encryption App with JavaScript
+      - http://tutorialzine.com/2013/11/javascript-file-encrypter/
+    - Encrypt and decrypt content with Nodejs
+      - http://lollyrock.com/articles/nodejs-encryption/
+    - Encrypts files using Node's built-in Cipher class.
+      - https://www.npmjs.com/package/file-encryptor
+    - implementation of crypto for the browser
+      - https://www.npmjs.com/package/crypto-browserify
+    - test javascript hash implementations
+      - http://brillout.github.io/test-javascript-hash-implementations/
+    - SJCl - AES encryption problem for large string
+      - https://github.com/bitwiseshiftleft/sjcl/issues/66
+    - Split file with JavaScript or jQuery
+      - http://stackoverflow.com/questions/12055386/split-file-with-javascript-or-jquery
+    - Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.
+      - http://getbootstrap.com
+    - Foundation - The most advanced responsive front-end framework in the world.
+      - http://foundation.zurb.com
+    - Should You Use Bootstrap or Foundation?
+      - http://blog.teamtreehouse.com/use-bootstrap-or-foundation
+    - Magister Free html5 template by GetTemplate
+      - http://usebootstrap.com/preview/magister/
+    - P2P Encrypted File Sharing In Your Browser via WebRTC https://instafile.io
+      - https://github.com/blakelapierre/instantFile
+    - Exchange files p2p and e2e encrypted over a fully meshed network in your browser using WebRTC. https://pguth.github.io/peermesh/
+      - https://github.com/pguth/peermesh
+    - Implementing various SHA-3 candidates in Javascript
+      - https://github.com/drostie/sha3-js
+    - BLAKE2s cryptographic hash function in JavaScript https://dchest.github.io/blake2s-js/
+      - https://github.com/dchest/blake2s-js
 
   - TODO
     - Travis-CI (Continous Integration)?
-      - With nodejs and browserify also?
-    - DEVCON1: Ethereum for Dummies - Dr. Gavin Wood
-      - https://www.youtube.com/watch?v=U_LK0t_qaPo

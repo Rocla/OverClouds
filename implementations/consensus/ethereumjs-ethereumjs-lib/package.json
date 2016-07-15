@@ -1,0 +1,39 @@
+{
+  "name": "ethereumjs-lib",
+  "version": "3.0.0",
+  "description": "NodeJS and browser JS library for Ethereum",
+  "main": "./index.js",
+  "license": "MPL-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ethereumjs/ethereumjs-lib.git"
+  },
+  "keywords": [
+    "ethereum",
+    "bitcoin",
+    "crypto",
+    "library"
+  ],
+  "dependencies": {
+    "devp2p": "^0.0.5",
+    "devp2p-dpt": "^1.0.1",
+    "ethashjs": "^0.0.7",
+    "ethereumjs-account": "^2.0.1",
+    "ethereumjs-block": "^1.2.1",
+    "ethereumjs-blockchain": "^1.4.0",
+    "ethereumjs-tx": "^1.1.1",
+    "ethereumjs-util": "^4.0.0",
+    "ethereumjs-vm": "^1.2.0",
+    "merkle-patricia-tree": "^2.1.0"
+  },
+  "author": {
+    "name": "Ethereum",
+    "url": "http://ethereum.org"
+  },
+  "contributors": [
+    "Vitalik Buterin (https://github.com/vbuterin)",
+    "Martin Becze <wanderer.github.io> (github.com/wanderer)",
+    "Ethers (github.com/ethers)",
+    "Aaron Kumavis <http://aaron.kumavis.me/> (https://github.com/kumavis)"
+  ]
+}

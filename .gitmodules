@@ -1,15 +1,1 @@
-[submodule "/Users/TimeTraveler/CloneWars/OverClouds/Implementations/Consensus/ethereumjs-browser-builds"]
-	path = /Users/TimeTraveler/CloneWars/OverClouds/Implementations/Consensus/ethereumjs-browser-builds
-	url = git@github.com:ethereumjs/browser-builds.git
-[submodule "Implementations/Consensus/ethereumjs-browser-builds"]
-	path = Implementations/Consensus/ethereumjs-browser-builds
-	url = git@github.com:ethereumjs/browser-builds.git
-[submodule "Implementations/Consensus/ethereumjs-ethereumjs-lib"]
-	path = Implementations/Consensus/ethereumjs-ethereumjs-lib
-	url = git@github.com:ethereumjs/ethereumjs-lib.git
-[submodule "Implementations/Consensus/ethereumjs-node-blockchain-server"]
-	path = Implementations/Consensus/ethereumjs-node-blockchain-server
-	url = git@github.com:ethereumjs/node-blockchain-server.git
-[submodule "Implementations/Consensus/ethereumjs-web3s-js"]
-	path = Implementations/Consensus/ethereumjs-web3s-js
-	url = git@github.com:ethereum/web3.js.git
+

@@ -544,20 +544,18 @@
 2016-07-13 | 8th Meeting => 0.00
   - meeting cancel
 
-current total hours => 300.75h
-falling hours due to school => 9x2 = 18h
-hours to go until 340h => 340-318.75 = 21.25h
-
 2016-07-13 -> 2016-07-15 Week 8 / 8 =>>
   - PROGRESS:
     - development: 2016-07-13 | 13:30-18:30 + 20:00-22:00 => 7.00
       - testing & comparing cryptography libraries
     - development: 2016-07-14 | 09:30-12:00 + 12:30-16:00 + 20:30-01:00 => 10.50
       - added basic encryption
-    - development: 2016-07-15 | 11:00-12:30 + 13:00- =>
+    - development: 2016-07-15 | 11:00-12:30 + 13:00-15:30 => 4.00
       - added decryption skeleton
       - updated user interface
       - finishing up project for release
+    - management: 2016-07-15 | 15:30-16:30 => 1.00
+      - licensing & releasing project
 
   - NOTES:
     - Creating a File Encryption App with JavaScript
@@ -605,3 +603,11 @@ hours to go until 340h => 340-318.75 = 21.25h
 
   - TODO
     - Travis-CI (Continous Integration)?
+
+Admin:
+  - current total hours => 323.25h
+  - falling hours due to school => 9x2 = 18h
+    - 1 day because of exams
+    - 1 day because school organized meeting with compagnies
+  - total hours with the falling hours = 341.25h
+  - hours to go until 340h => 340-341.25 = -1.25h (made 1.25h extra on a 340h project)

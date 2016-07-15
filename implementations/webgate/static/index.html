@@ -1,11 +1,15 @@
 <!DOCTYPE html>
+<!-- Overclouds -->
+<!-- Author: Romain Claret -->
+<!-- Latest update: 15th July 2016 -->
 <html lang="en">
 
 <head>
   <title>Overclouds Webgate</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="main.css" charset="utf-8">
+  <meta name="description" content="Overclouds, your gateway to the serverless interweb">
+	<meta name="author"      content="Romain Claret (github.com/Rocla)">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
@@ -14,60 +18,176 @@
   <meta name="apple-mobile-web-app-title" content="Overclouds">
   <meta name="application-name" content="Overclouds">
   <meta name="theme-color" content="#ffffff">
+  <!-- Bootstrap itself -->
+	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <!-- Custom styles -->
+	<link rel="stylesheet" href="style.css">
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet" />
+	<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Wire+One' rel='stylesheet' type='text/css'>
   <script src="crypto-js-aes.js"></script>
 </head>
 
-<body>
-  <p id="dev_version"></p>
-  <h1 align="center" class="header">Overclouds: Webgate</h1>
-  <img style="position: relative; left: 50%; margin-right: -50%; transform: translate(-50%, 0%)" src="oc-logo.png"/>
-  <h2 align="center" class="header">Your gateway to the serverless interweb</h2>
-  <br/>
-  <div id="main">
-    <div id="content-load">
-      <h2>Load content</h2>
-      <p>Paste a site infohash below to go to the address. Please <strong>be patient</strong>, you are connecting to other people (just like you) to retrieve the content, it may take a while to load.</p>
-      <!-- <form> -->
-      <input id="location" type="text" value=""/>
-      <button id="go-button" type="button">Load</button>
-      <!-- </form> -->
-      <p>With chrome, you <strong>must</strong> leave this page open while using Overclouds!
-      </p>
+<body class="theme-invert">
+  <nav class="mainmenu">
+    <div class="container">
+      <div class="dropdown">
+        <button type="button" class="navbar-toggle" data-toggle="dropdown"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <!-- <a data-toggle="dropdown" href="#">Dropdown trigger</a> -->
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+          <li><a href="#head" class="active">Home</a></li>
+          <li><a href="#advanced" class="advancedMenu">Advanced</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Get in touch</a></li>
+        </ul>
+      </div>
     </div>
-    <br/><br/>
-    <div id="content-quick-share">
-      <h2>Quick-Share content</h2>
-      <p><label><input id="shouldEncrypt" type='checkbox' checked><strong>Encryption</strong>: check before uploading</label></p>
-      <p id="show-key"><label>Encryption Key: <input id="encryptionKey" type="text" value="12345" size="40"/></label>
-      <button id="generate-key-button" type="button">Generate</button>
+  </nav>
+
+<!-- Home section -->
+<section class="section" id="head">
+  <p id="dev_version"></p>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 text-center">
+        <h1 class="title">Overclouds</h1>
+        <h2 class="subtitle">Your gateway to the serverless interweb</h2>
+        <h3 class="tagline">
+          <p><code>Currently, Overclouds has been tested only on Google Chrome Canary 54.0.2795.0</code></p>
+          <font color="#991f00">You <strong>must</strong> leave this page open in a tab while using Overclouds!</font>
+        </h3>
+
+        <div id="main">
+          <div id="content-load">
+            <h2>Go to webapp by entering the infohash below</h2>
+            <p>Please <strong>be patient</strong>, you are connecting to other people (just like you) to retrieve the content, it may take a while to load.</p>
+            <!-- <form> -->
+            <input id="location" type="text" value="" size="50"/>
+            <button id="go-button" type="button">Load Webapp</button>
+            <!-- </form> -->
+          </div>
+          <br/><br/>
+          <div id="content-quick-share">
+            <h2>Quick-Share content</h2>
+            <p><strong>Drag-and-drop</strong> a file, files, or folder to begin sharing.<strong>Or use the uploader</strong>:</p>
+            <p><label><input type="file" name="upload" multiple></label></p>
+
+            <p>Note that your content will be converted into a webapp if no <strong>"index.html"</strong> file is found</p>
+          </div>
+        </div>
+
+        <br/><p><a href="#advanced" class="btn btn-default btn-lg customfadein">Advanced</a></p><br/>
+        <h2 id="logHeading" style="display: none">Sharing log</h2>
+        <div class="speed"></div>
+        <div class="log"></div>
+      </div> <!-- /col -->
+    </div> <!-- /row -->
+  <br/><br/>
+    <footer>
+      <p>
+        <small>
+          Overclouds is open source are available on <a href="https://github.com/rocla/Overclouds" target="_blank">GitHub</a> under a to be determined License.
+        </small>
       </p>
-      <p>Drag-and-drop a file, files, or folder to begin sharing. Or choose a file:
-        <input type="file" name="upload" multiple>
+      <p>
+        <small>
+          Overclouds is using <a href="http://webtorrent.io" target="_blank">WebTorrent</a> protocol which is powered by JavaScript and WebRTC. Other browser may or may not work. They need to support webworkers and webrtc.
+        </small>
       </p>
-      <h2 id="logHeading" style="display: none">Sharing log</h2>
-      <div class="speed"></div>
-      <div class="log"></div>
+      <p>
+        <small>
+          Run <code>localStorage.debug = '*'</code> in the console and refresh to enable verbose logs.
+        </small>
+      </p>
+      <p>
+        <small>
+          Version: 0.5.116
+        </small>
+      </p>
+    </footer>
+  </div>
+</section>
+
+<!-- Advanced section -->
+<section class="section" id="advanced">
+  <div class="container">
+    <div id="main">
+      <div id="content-load">
+        <h2>Load content</h2>
+        <p>Paste a site infohash below to go to the address. Please <strong>be patient</strong>, you are connecting to other people (just like you) to retrieve the content, it may take a while to load.</p>
+        <!-- <form> -->
+        <input id="location" type="text" value="" size="50"/>
+        <button id="go-button" type="button">Load</button>
+        <p><label><input id="isEncrypted" type='checkbox'><strong>Encryption</strong>: check if the webapp is encrypted</label></p>
+        <p id="show-decryption-key"><label>Encryption Key: <input id="decryptionKey" type="text" value="12345" size="40"/></label>
+        <!-- </form> -->
+      </div>
+      <br/><br/>
+      <div id="content-quick-share">
+        <h2>Quick-Share content</h2>
+        <p><label><input id="shouldEncrypt" type='checkbox'><strong>Encryption</strong>: check before uploading</label></p>
+        <p id="show-key"><label>Encryption Key: <input id="encryptionKey" type="text" value="12345" size="40"/></label>
+        <button id="generate-key-button" type="button">Generate</button>
+        </p>
+        <p>Drag-and-drop a file, files, or folder to begin sharing. Or choose a file:
+          <input type="file" name="upload" multiple>
+        </p>
+        <h2 id="logHeading" style="display: none">Sharing log</h2>
+        <div class="speed"></div>
+        <div class="log"></div>
+      </div>
+      <br/><br/>
+      <p><a href="#head" class="btn btn-default btn-lg customfadein">Return to Home</a></p>
     </div>
   </div>
-  <footer>
-    <p>
-      <small>
-        Overclouds is open source, the code is available on <a href="https://github.com/rocla/Overclouds" target="_blank">GitHub</a> under a to be determined License.
-      </small>
-    </p>
-    <p>
-      <small>
-        Overclouds is using <a href="http://webtorrent.io" target="_blank">WebTorrent</a> protocol which is powered by JavaScript and WebRTC. Works in Chrome, Firefox, and Opera (desktop and Android).
-      </small>
-    </p>
-    <p>
-      <small>
-        Run <code>localStorage.debug = '*'</code> in the console and refresh to enable verbose logs.
-      </small>
-    </p>
-  </footer>
+</section>
+
+<!-- About section -->
+<section class="section" id="about">
+  <div class="container">
+    <h2 class="text-center title">About Overclouds</h2>
+    <div class="row">
+      <div class="col-sm-4 col-sm-offset-2">
+        <h5><strong>Description<br></strong></h5>
+        <p>The initiative behind the project is to create a new generation of internet data sharing tools, suited for today's paranoia for privacy on the internet and the preservation of knowledge for the next humanity generations.
+        <br/>
+        The idea is to give the ability to the user to not rely on corporate servers, or farms of servers anymore. On Overclouds, everybody and everything are now anonymous nodes, and he or she connect one to another freely and anonymously.</p>
+      </div>
+      <div class="col-sm-4">
+        <h5><strong><br></strong></h5>
+        <p>
+        The network is a democratic mesh of nodes. The data is moving from a node to another across the network via other nodes and is ruled by the consensus of users.
+        <br/>
+        We are aiming that users only need to have a standard Internet connection and a browser with JavaScript capabilities to use the service.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact section -->
+<section class="section" id="contact">
+  <div class="container">
+    <h2 class="text-center title">Get in touch</h2>
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2 text-center">
+        <p class="lead">Have a question about the project, want to suggest a new feature, or want to participate to the project?</p>
+        <p>Feel free to contact me via Github or Twitter!</p>
+        <ul class="list-inline list-social">
+          <li><a href="https://github.com/Rocla" class="btn btn-link"><i class="fa fa-github fa-fw"></i> Github</a></li>
+          <li><a href="https://twitter.com/romainclaret" class="btn btn-link"><i class="fa fa-twitter fa-fw"></i> Twitter</a></li>
+          <li><a href="https://linkedin.com/in/romainclaret" class="btn btn-link"><i class="fa fa-linkedin fa-fw"></i> LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
   <script src="bundle.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+  <script src="modernizr-custom.js"></script>
+  <script src="theme.js"></script>
 </body>
 
 </html>

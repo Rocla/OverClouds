@@ -1,4 +1,8 @@
-// https://github.com/feross/instant.io
+// Overclouds
+// Author: Romain Claret
+// Latest update: 15th July 2016
+
+// based on https://github.com/feross/instant.io
 
 var logElem = exports.logElem = document.querySelector('.log')
 var speed = document.querySelector('.speed')

@@ -1,4 +1,8 @@
-// https://github.com/feross/instant.io
+// Overclouds
+// Author: Romain Claret
+// Latest update: 15th July 2016
+
+// based on https://github.com/feross/instant.io
 
 var debug = require('debug')('overclouds.ch')
 var mime = require('mime')
@@ -24,10 +28,10 @@ var TRACKER_URL_06 = 'wss://tracker.webtorrent.io'
 global.WEBTORRENT_ANNOUNCE = [ TRACKER_URL_01, TRACKER_URL_02, TRACKER_URL_03, TRACKER_URL_04 ]
 
 document.getElementById('shouldEncrypt').addEventListener('click', function () {
-  showKey()
+  showEncryptionKey()
 })
 
-function showKey()
+function showEncryptionKey()
 {
   if (document.getElementById('shouldEncrypt').checked)
   {
@@ -36,7 +40,22 @@ function showKey()
       document.getElementById("show-key").style.display = 'none'
   }
 }
-showKey()
+showEncryptionKey()
+
+document.getElementById('isEncrypted').addEventListener('click', function () {
+  showDecryptionKey()
+})
+
+function showDecryptionKey()
+{
+  if (document.getElementById('isEncrypted').checked)
+  {
+      document.getElementById("show-decryption-key").style.display = 'block'
+  } else {
+      document.getElementById("show-decryption-key").style.display = 'none'
+  }
+}
+showDecryptionKey()
 
 document.getElementById('generate-key-button').addEventListener('click', function () {
   document.getElementById("encryptionKey").value = CryptoJS.lib.WordArray.random(16)
@@ -71,6 +90,7 @@ if (!Peer.WEBRTC_SUPPORT || !navigator.serviceWorker) {
 }
 
 var locationField = document.getElementById('location')
+var decryptionKeyField = document.getElementById('decryptionKey')
 var goButton = document.getElementById('go-button')
 
 locationField.addEventListener("keyup", function(event) {
@@ -81,8 +101,15 @@ locationField.addEventListener("keyup", function(event) {
 })
 
 goButton.addEventListener('click', function () {
-  loadPage(locationField.value)
-  locationField.value=""
+  if(document.getElementById("isEncrypted").checked){
+    loadEncryptedPage(locationField.value, decryptionKeyField.value)
+    locationField.value=""
+    decryptionKeyField.value=""
+  }
+  else{
+    loadPage(locationField.value)
+    locationField.value=""
+  }
 })
 
 function syncLocation (firstLoad) {
@@ -500,7 +527,7 @@ navigator.serviceWorker.register('/service-worker.js').then(function (registrati
 
 var MATCH_PATH = /\/?([a-fA-F0-9]{40})(?:\/(.*))?$/
 
-// Loads the correct content
+// Init content load
 function loadPage (loc) {
   var matches = MATCH_PATH.exec(loc)
   if (matches) {
@@ -515,6 +542,23 @@ function loadPage (loc) {
     alert('The hash must be 40 characters long')
   }
 }
+
+// Init encrypted content load
+function loadEncryptedPage (loc, key) {
+  var matches = MATCH_PATH.exec(loc)
+  if (matches) {
+    var hash = matches[1]
+    var path = matches[2] || ''
+    var a = document.createElement('a')
+    a.target = '_blank'
+    a.href = '/secure/' + key + "/to/" + hash + '/' + path
+    a.click()
+  } else {
+    console.log(loc)
+    alert('The hash must be 40 characters long')
+  }
+}
+
 
 function getRtcConfig (url, cb) {
   xhr(url, function (err, res) {

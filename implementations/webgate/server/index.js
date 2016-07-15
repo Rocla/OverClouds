@@ -1,5 +1,9 @@
+// Overclouds
+// Author: Romain Claret
+// Latest update: 15th July 2016
+
 // based on https://github.com/feross/webtorrent-desktop
-// https://github.com/feross/instant.io
+// based on https://github.com/feross/instant.io
 
 var compress = require('compression')
 var debug = require('debug')('overclouds.ch')

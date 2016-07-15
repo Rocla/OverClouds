@@ -554,6 +554,10 @@ hours to go until 340h => 340-318.75 = 21.25h
       - testing & comparing cryptography libraries
     - development: 2016-07-14 | 09:30-12:00 + 12:30-16:00 + 20:30-01:00 => 10.50
       - added basic encryption
+    - development: 2016-07-15 | 11:00-12:30 + 13:00- =>
+      - added decryption skeleton
+      - updated user interface
+      - finishing up project for release
 
   - NOTES:
     - Creating a File Encryption App with JavaScript

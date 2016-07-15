@@ -1,11 +1,11 @@
 {
   "name": "oc-webgate",
   "description": "Overclouds Webgate",
-  "version": "0.5.104",
+  "version": "0.5.116",
   "author": {
     "name": "Romain Claret",
     "email": "contact@rocla.ch",
-    "url": "http://romainclaret.ch"
+    "url": "https://github.com/Rocla/OverClouds"
   },
   "dependencies": {
     "debug": "^2.0.0",
@@ -36,13 +36,11 @@
     "watchify": "^3.7.0"
   },
   "scripts": {
-    "build": "mkdir -p static && npm run build-css && npm run build-js",
-    "build-css": "stylus -u nib css/main.styl -o static/ -c",
+    "build": "mkdir -p static && npm run build-js",
     "build-js": "browserify client > static/bundle.js",
     "start": "node server",
     "test": "standard",
-    "watch": "npm run watch-css & npm run watch-js & DEBUG=http* nodemon server -e js,jade -d 1",
-    "watch-css": "stylus -u nib css/main.styl -o static/ -w",
+    "watch": "npm run watch-js & DEBUG=http* nodemon server -e js,jade -d 1",
     "watch-js": "watchify client -o static/bundle.js -dv"
   }
 }

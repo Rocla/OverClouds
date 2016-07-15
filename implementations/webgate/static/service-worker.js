@@ -1,3 +1,7 @@
+// Overclouds
+// Author: Romain Claret
+// Latest update: 15th July 2016
+
 /*global self, caches, fetch, Request */
 
 var OFFLINE_STORAGE = 'offline'
@@ -25,7 +29,11 @@ function storeStatic () {
   })
 }
 
+//http://www.regexpal.com/
+
 var MATCH_PATH = /\/goto\/([a-fA-F0-9]{40})(?:\/([^\?]*))?(?:\?|$)/
+
+var ENCRYPTED_MATCH_PATH = /\/secure\/[a-fA-F0-9]+\/to\/([a-fA-F0-9]{40})(?:\/([^\?]*))?(?:\?|$)/
 
 var HEARTBEAT_TIMEOUT = 10 // seconds
 
@@ -35,9 +43,32 @@ self.addEventListener('install', function (event) {
 
 self.addEventListener('fetch', function (event) {
   var matches = MATCH_PATH.exec(event.request.url)
+  var encryptedMatches = MATCH_PATH.exec(event.request.url)
+  // console.log(matches)
+  // console.log(encryptedMatches)
 
   if (event.request.method === 'GET') {
     if (matches) {
+      var hash = matches[1]
+      var path = matches[2] || 'index.html'
+      event.respondWith(new Promise(function (resolve, reject) {
+        fetchFromTorrent(hash, path, function (err, response) {
+          if (err) {
+            reject(err)
+          } else {
+            resolve(new Response(new Blob([response.body]), {
+              status: 200,
+              headers: {
+                'Content-Type': response.mime,
+                'Content-Length': response.body.byteLength,
+                'Content-Security-Policy': 'sandbox allow-scripts allow-popups'
+              }
+            }))
+          }
+        })
+      }))
+    } else if (encryptedMatches) {
+      console.log("secure worked")
       var hash = matches[1]
       var path = matches[2] || 'index.html'
       event.respondWith(new Promise(function (resolve, reject) {

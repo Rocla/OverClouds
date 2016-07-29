@@ -179,12 +179,12 @@
         - Node.js Tutorial: From Zero to Hero with Nodejs
           - https://www.youtube.com/watch?v=czmulJ9NBP0
 
-      - research: 2016-06-03 | 13:00-15:00 => 2.00
-        - looking at ethereum smart contracts
-          - https://medium.com/@ConsenSys/a-101-noob-intro-to-programming-smart-contracts-on-ethereum-695d15c1dab4#.6be9ux875
-          - https://www.ethereum.org/greeter
-          - https://github.com/ethereum/wiki/wiki/Ethereum-Development-Tutorial
-          - http://www.etherscripter.com/
+    - research: 2016-06-03 | 13:00-15:00 => 2.00
+      - looking at ethereum smart contracts
+        - https://medium.com/@ConsenSys/a-101-noob-intro-to-programming-smart-contracts-on-ethereum-695d15c1dab4#.6be9ux875
+        - https://www.ethereum.org/greeter
+        - https://github.com/ethereum/wiki/wiki/Ethereum-Development-Tutorial
+        - http://www.etherscripter.com/
 
     - development: 2016-06-06 | 16:00-18:00 => 2.00
       - finishing setting up raspberry pi for the testnet
@@ -544,7 +544,7 @@
 2016-07-13 | 8th Meeting => 0.00
   - meeting cancel
 
-2016-07-13 -> 2016-07-15 Week 8 / 8 =>>
+2016-07-13 -> 2016-07-15 Week 8 / 8 =>> 22.5
   - PROGRESS:
     - development: 2016-07-13 | 13:30-18:30 + 20:00-22:00 => 7.00
       - testing & comparing cryptography libraries

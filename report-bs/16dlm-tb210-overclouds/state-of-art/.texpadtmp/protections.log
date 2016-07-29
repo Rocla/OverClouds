@@ -1,0 +1,170 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdftex 2015.12.11)  29 JUL 2016 11:16
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**/Users/TimeTraveler/CloneWars/OverClouds/report-bs/16dlm-tb210-overclouds/state-of-art/protections.tex
+(/Users/TimeTraveler/CloneWars/OverClouds/report-bs/16dlm-tb210-overclouds/state-of-art/protections.tex
+/Users/TimeTraveler/CloneWars/OverClouds/report-bs/16dlm-tb210-overclouds/state-of-art/protections.tex:8: Undefined control sequence.
+l.8 \subsubsection
+                  {Protections}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/TimeTraveler/CloneWars/OverClouds/report-bs/16dlm-tb210-overclouds/state-of-art/protections.tex:10: Undefined control sequence.
+l.10 \paragraph
+               {Honeypot}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/TimeTraveler/CloneWars/OverClouds/report-bs/16dlm-tb210-overclouds/state-of-art/protections.tex:11: Undefined control sequence.
+l.11 \todo
+          {Honeypot}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/TimeTraveler/CloneWars/OverClouds/report-bs/16dlm-tb210-overclouds/state-of-art/protections.tex:12: Undefined control sequence.
+l.12 Description from the official website \cite
+                                                {ArkOSArkOS}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/TimeTraveler/CloneWars/OverClouds/report-bs/16dlm-tb210-overclouds/state-of-art/protections.tex:13: Undefined control sequence.
+l.13 \blockquote
+                {In computer terminology, a honeypot is a computer security ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/TimeTraveler/CloneWars/OverClouds/report-bs/16dlm-tb210-overclouds/state-of-art/protections.tex:15: Undefined control sequence.
+l.15 \paragraph
+               {Penetration Testing Lab}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/TimeTraveler/CloneWars/OverClouds/report-bs/16dlm-tb210-overclouds/state-of-art/protections.tex:16: Undefined control sequence.
+l.16 \todo
+          {Penetration Testing Lab}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/TimeTraveler/CloneWars/OverClouds/report-bs/16dlm-tb210-overclouds/state-of-art/protections.tex:17: Undefined control sequence.
+l.17 Description from the official website \cite
+                                                {ArkOSArkOS}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/TimeTraveler/CloneWars/OverClouds/report-bs/16dlm-tb210-overclouds/state-of-art/protections.tex:18: Undefined control sequence.
+l.18 \blockquote
+                {Use of multiples OS to target penetration type on a network...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/TimeTraveler/CloneWars/OverClouds/report-bs/16dlm-tb210-overclouds/state-of-art/protections.tex:20: Undefined control sequence.
+l.20 \paragraph
+               {Two-factor authentication}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/TimeTraveler/CloneWars/OverClouds/report-bs/16dlm-tb210-overclouds/state-of-art/protections.tex:21: Undefined control sequence.
+l.21 \todo
+          {Two-factor authentication}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/TimeTraveler/CloneWars/OverClouds/report-bs/16dlm-tb210-overclouds/state-of-art/protections.tex:22: Undefined control sequence.
+l.22 Description from the official website \cite
+                                                {ArkOSArkOS}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/TimeTraveler/CloneWars/OverClouds/report-bs/16dlm-tb210-overclouds/state-of-art/protections.tex:23: Undefined control sequence.
+l.23 \blockquote
+                {That provides identification of users by means of the combi...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/TimeTraveler/CloneWars/OverClouds/report-bs/16dlm-tb210-overclouds/state-of-art/protections.tex:25: Undefined control sequence.
+l.25 \paragraph
+               {Let's Encrypt}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/TimeTraveler/CloneWars/OverClouds/report-bs/16dlm-tb210-overclouds/state-of-art/protections.tex:26: Undefined control sequence.
+l.26 \todo
+          {Let's Encrypt}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/TimeTraveler/CloneWars/OverClouds/report-bs/16dlm-tb210-overclouds/state-of-art/protections.tex:27: Undefined control sequence.
+l.27 Description from the official website \cite
+                                                {ArkOSArkOS}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/TimeTraveler/CloneWars/OverClouds/report-bs/16dlm-tb210-overclouds/state-of-art/protections.tex:28: Undefined control sequence.
+l.28 \blockquote
+                {A new Certificate Authority: Itâ€™s free, automated, and op...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no â in font cmr10!
+Missing character: There is no € in font cmr10!
+Missing character: There is no ™ in font cmr10!
+)
+! Emergency stop.
+<*> ...210-overclouds/state-of-art/protections.tex
+                                                  
+*** (job aborted, no legal \end found)
+
+!  ==> Fatal error occurred, no output PDF file produced!

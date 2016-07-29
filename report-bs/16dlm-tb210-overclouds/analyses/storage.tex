@@ -1,0 +1,63 @@
+%-------------------------------------------------------
+%    DOCUMENT CONFIGURATIONS
+%-------------------------------------------------------
+
+%-------------------------------------------------------
+%    START OF STORAGE ANALYSE
+%-------------------------------------------------------
+\subsection{Storage} A lot of work and effort has been in the last few year on the decentralized storage. In our case, storage is controlled by the consensus; storage allows the identities to save data into the distributed nodes of the network. Integrity checks are done by the consensus as multiple nodes are doing the same computation work and chunks storage including redundancy. The storage is divided into two parts, the data stored by the users and the data generated and manipulated by contracts. Contracts' data if composed of the genesis block, keys, and identities info. The figures~\ref{fig:oc-concept-storage-1},~\ref{fig:oc-concept-storage-2},~\ref{fig:oc-concept-storage-3},~\ref{fig:oc-concept-storage-4} from the annexes relate to the analysis.
+
+\paragraph{Data} Stored across the network, it is spread on the network as encrypted chunks belonging to an identity, the private and public keys for the data are spread across the network and belongs to the network as well. Each chunk has redundancy which is also spread across the network.
+
+\paragraph{Verbs} Only Read, Write and Destroy makes current sense in our latest architecture. Indeed, Edit has an only sense if data versioning is integrated, which has no use currently since the shared data have a unique hash. To think in term of versioning, each version has its hash. We could work with the data addresses to keep a consistency and a low network load for Readers.
+
+\paragraph{Flags} Used to filters, and to ban, they must be persistent in the file, identity.
+
+\subparagraph{Bans} Data and identities can be banned from the network after a trial or directly from the consensus. A flag, seen globally by the network, is raised for the banished content or identities. During a trial, a random amount of random identities is asked to vote on the event that led to the trial, with the help from the comments left by the blamers.
+
+\subparagraph{Flags} Node can flag specific certificates or nodes on the network and apply rules on them, such as filters for minimum certification level required to be able to connect to them as a relay. The network then uses the flags, and route communications depending on the nodes' preferences.
+
+For example, in the case of a node receiving data from another node that is not matching its filter, the data would be rejected at entrance. In the event of spam, which assumes that the attacker knows what destination (that he sees as void) to target, the target node will indeed consume power to deny requests. A solution has to be found for a case of a figure and prevent spam.
+
+Another example, the node rerouting. A node can decide not to relay data. In this case, the data is either sent back, which can result in a load problem. Either the data is lost, which is in the event of a UDP-like protocol bad. In the case of a TCP-like protocol, the node would be searching for another node to go through. The second option could on another hand surcharge by exploring new paths.
+
+\subparagraph{Blames} An identity can anonymously blame chunks or identities and leave a reason for the blame from the list of multilingual generic reasons. Note that the consensus can also create new categories. Each node can blame a specific data only once. A blaming identity is then linked to the note used to blame, by this mean it cannot vote more than once per data. Plus the first identity to use the node gets the blame validated.
+
+Blames are telling the network that an identity or a chunk is not appropriate to the other nodes. Multiple blames on a node may result in a ban of its certificate. Multiples blame on a particular chunk or chunks belonging to the same data resumes into a revocation of all rights given to nodes even the owner.
+
+\paragraph{Global knowledge} Blockchains technology could be interesting for this purpose, however, we concluded that it is not the only possibility. Indeed, technologies such as VCS can be compatible also like directories (free track of a list of nodes, activities, etc.) or versioning (pull requests, etc.).
+
+\paragraph{P2P} While looking at innovative solutions to distribute data across the clients connected to the network, the peer to peer solution got retained. More precisely the bittorrent protocol looked promising for the needs of the project. Luckily a javascript and webrtc implementation of the bittorrent protocol named WebTorrent\cite{Torrent2015WebTorrent} has been found and is working right from the browser.
+
+\subparagraph{Data owners} The owning rights are given and managed by the network to a particular identity. The owner can give as he wishes the reading, writing, and executing rights to any nodes or identity on the network. He can also set a public access for trust levels. The ownership is, of course, revocable or transferable by the consensus. However, the owner can also transfer the property to another identity. Both parties must accept the transfer. Note that he cannot transfer blamed data.
+
+\subsubsection{Content Management} Based on the Webgate and Storage architecture, the content management provides the concepts and features for Overclouds' decentralized storage. The figure~\ref{fig:oc-concept-key-content-management} from the annexes shows the concept.
+
+\subsubsection{Data Tribunal} Providing a democratic authority for the data stored on the network. Allows to blame and ban data and users. The ban hammer also provides a digital tribunal with the selection of random judges during a trial. Once the required amount of blames reached the network, select not related random identities and asks them to rate the blame. The digital judges would be able to read the reasons left during the blaming phase. However, they are not able to read the content of the data itself. Except if is the consensus decides otherwise. Owners can ask for a second trial if they think the judgment was unfair and add a generic argument. For the second trial, different unrelated random nodes will have to rate the blame again. The decision from the second trial is definitive. The data is either archived, either the owner and related nodes get their rights back. The figure~\ref{fig:oc-concept-data-tribunal} from the annexes relates to the data tribunal concept.
+
+\subsubsection{Data Sharing} The content is distributed differently depending on user's willing to use an identity or not. In the case of anonymity, the shared data is only active as long as the user is connected to the network or that an identity decides to add it to its account. For identities, they have the choice to save it to their account, and by this mean retrieve the data during another session.
+
+\subsubsection{Existing solutions} They are mainly all requiring a client to work, they also most of the time provide gateways to connect to a server running a client from the browser.
+
+\paragraph{Swarm\cite{EthersphereIPFSSWARM}} It's a smart contract which provides a decentralized storage using the power of ethereum, but it's not convincing at the moment. It has potential, however. It comes close to what overclouds wants to do, but it's expensive (in currency value) while no scaling is done on ethereum to interact with the data. Indeed, an interaction (read/modify) costs an amount of Ether.
+
+\paragraph{Filecoin\cite{2014Filecoin:Network}} is a project maintained by the creators of ipfs, however, it's not open yet. The paper is interesting and promising.
+
+\paragraph{SyncNet\cite{MinardiSyncNet:Browser}} is a browser with decentralized content. The approach here is interesting because the client is right into a custom browser, which serves only decentralized content.
+
+\paragraph{Storj\cite{WilkinsonStorjNetwork}} is a decentralized service based on their own crypto-currency. Users are paying or paid for using or giving storage to the network. They are like AWS or Google Storage companies. They are monetizing the storage.
+
+\paragraph{Symform} is a dropbox like decentralized storage. Users give storage to obtain storage; it's based on a win-win concept. The data is chunked and distributed into across the network. However the DHT is owned by the company, and they do all the dirty work for the redundancy control, etc.. Of course they resell storage.
+
+\paragraph{Bittorrent\cite{Ferreira2012ContentBitTorrent}} is a good old protocol that is well known for proving the reliability. They are by default chunking the data, and all current clients are encrypting the communications between peers. However, the data is sent in a whole, not only parts and spread across the network.
+
+\paragraph{Webtorrent\cite{Sivek2004WebTorrent:Servers}} is a javascript implementation working right from the browser. The webtorrent client (browsers) can talk directly to each other via webRTC. Gateway client which can talk bittorrent and webtorrent exists as well and allows a bridge between bittorrent (UDP/TCP) and webtorrent (webrtc).
+
+\paragraph{IPFS\cite{BenetIPFS3}} It is really interesting but no protection is done right at base level. They are mainly providing a client that allows unduplicated data across the network. As it's only working at base level, many layers must be put on the top of it. A browserify version exists but isn't friendly at the moment; it's a bunch of APIs. The files are also chunked by default (if the size is bigger than the threshold). We would have to implement the layer of encryption with keys and forcing redundancy. And provide a browser-only solution.
+
+\subsubsection{Overclouds Storage solution} In our case, we are looking for a solution that is a browser only, data encrypted, keys distributed, with redundancy, spread across the network. We will be using webtorrent and implementing the layer of encryption with keys and forcing redundancy. But we start with a proven to work browser client. We talked over Gitter.im with developers of IPFS and WebTorrent for more information about the chunking of files. Webtorrent responded that it works exactly like the bittorrent protocol. If a peer is not providing data, it's excluded from the list, the client may then choose only to share some files of a whole downloaded folder.
+
+
+%-------------------------------------------------------
+%    END OF STORAGE ANALYSE
+%-------------------------------------------------------

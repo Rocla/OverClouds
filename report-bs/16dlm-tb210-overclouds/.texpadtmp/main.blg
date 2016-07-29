@@ -1,0 +1,80 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: /Users/TimeTraveler/CloneWars/OverClouds/report-bs/16dlm-tb210-overclouds/.texpadtmp/main.aux
+The style file: abbrv.bst
+Database file #1: ../Mendeley.bib
+Database file #2: ../custom-biblio.bib
+Warning--to sort, need author or key in 2014Filecoin:Network
+Warning--to sort, need author or key in LetsEncrypt
+Warning--to sort, need author or key in Honeypot
+Warning--to sort, need author or key in PenetrationLab
+Warning--to sort, need author or key in Two-factorAuthentication
+Warning--to sort, need author or key in XBeeDigimesh
+Warning--to sort, need author or key in TeamSpeak
+Warning--to sort, need author or key in EigenTrust
+Warning--to sort, need author or key in Prism-Break
+Warning--empty author in 2014Filecoin:Network
+Warning--empty journal in 2014Filecoin:Network
+Warning--there's a number but no volume in Benet2014IPFS-ContentSystem
+Warning--empty journal in BenetIPFS3
+Warning--empty year in BenetIPFS3
+Warning--empty journal in Bentov2013ProofStake
+Warning--empty journal in COLINPERCIVAL2012STRONGERFUNCTIONS
+Warning--empty journal in DR.GAVINWOOD2015ETHEREUM:DRAFT
+Warning--empty journal in Foodists2003TheInternet
+Warning--empty journal in Gardner-stephen2011TheTelecommunications
+Warning--there's a number but no volume in Gardner-stephen2011TheTelecommunications
+Warning--there's a number but no volume in Koch2008UsingGuard
+Warning--empty journal in PGP2005PGPDirectory
+Warning--there's a number but no volume in PGP2005PGPDirectory
+Warning--empty journal in Point2014VPNR76
+Warning--there's a number but no volume in Point2014VPNR76
+Warning--empty journal in SatoshiNakamoto2008Bitcoin:System
+Warning--empty journal in Sivek2004WebTorrent:Servers
+Warning--empty journal in VitalikButerin2013APlatform
+Warning--empty journal in Warren2012Bitmessage:System
+Warning--empty journal in Webber2016GNUDocumentation
+Warning--empty journal in WilkinsonStorjNetwork
+Warning--empty year in WilkinsonStorjNetwork
+You've used 112 entries,
+            2118 wiz_defined-function locations,
+            986 strings with 15053 characters,
+and the built_in function-call counts, 24559 in all, are:
+= -- 2190
+> -- 946
+< -- 6
++ -- 396
+- -- 284
+* -- 1035
+:= -- 3989
+add.period$ -- 246
+call.type$ -- 112
+change.case$ -- 477
+chr.to.int$ -- 0
+cite$ -- 144
+duplicate$ -- 946
+empty$ -- 2462
+format.name$ -- 284
+if$ -- 5261
+int.to.chr$ -- 0
+int.to.str$ -- 112
+missing$ -- 32
+newline$ -- 473
+num.names$ -- 206
+pop$ -- 861
+preamble$ -- 1
+purify$ -- 366
+quote$ -- 0
+skip$ -- 1006
+stack$ -- 0
+substring$ -- 843
+swap$ -- 143
+text.length$ -- 6
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 448
+warning$ -- 32
+while$ -- 234
+width$ -- 115
+write$ -- 903
+(There were 32 warnings)

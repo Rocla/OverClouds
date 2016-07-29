@@ -1,0 +1,54 @@
+%-------------------------------------------------------
+%    DOCUMENT CONFIGURATIONS
+%-------------------------------------------------------
+
+%-------------------------------------------------------
+%    START OF CONSENSUS
+%-------------------------------------------------------
+\subsection{Consensus}
+We worked with Ethereum for the consensus. We were able to create and deploy a scalable private blockchain using the clients made in the following languages \textit{Rust, Go, and Cpp} in docker. The tracking of the node is done using the official monitor webapp.
+
+Sadly during the deployment using the Javascript client, a lot of problems occurred, we contacted the developers via the Gitter chat messaging, but they weren't able to us solve the problems such as the bootstrap connection.
+
+\paragraph{Tests} We could test the Go, C++ and Rust clients on Mac and Raspberry Pi. Ethereum is not anonymous as it is. The port is 30303, and the IP is not protected.
+
+\paragraph{nodeJS client} We tried to set up and test the official ethereumJS; however, it was a pain. No documentation, no tutorials were available. The teacher and the student spent hours on trying to understand and debug, and we are still not sure how it works, the client returns no outputs. The blockchain folder was not increasing either. The developers couldn't help us either.
+
+\paragraph{Docker} We could set up a Docker solution for a scalable private blockchain. Ethereum Network Status included. However, we couldn't attach to the Docker cluster from a Mac or a Raspberry Pi.
+
+
+\paragraph{Browser only} We at the NodeJS and Browserified solution.
+
+\paragraph{Javascript APIs} We could test the basic Javascript APIs for the Go, Rust, and C++ clients.
+
+\subsubsection{Docker Deployement} Execute the commands from the root folder.
+
+\paragraph{Build}
+\begin{itemize}
+\item command: docker-compose build
+\end{itemize}
+
+\paragraph{Mount and Run}
+\begin{itemize}
+\item command: docker-compose up -d
+\end{itemize}
+
+\paragraph{Scale}
+\begin{itemize}
+\item command: docker-compose scale eth=3
+\end{itemize}
+
+\paragraph{Open the netstats}
+\begin{itemize}
+\item command: open http://\$(docker-machine ip default):3000
+\end{itemize}
+
+\paragraph{Unmount} 
+\begin{itemize}
+\item docker-compose down
+\end{itemize}
+
+%-------------------------------------------------------
+%    END OF COMMUNICATION
+%-------------------------------------------------------
+

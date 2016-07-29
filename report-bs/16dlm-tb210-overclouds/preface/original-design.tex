@@ -1,0 +1,105 @@
+%-------------------------------------------------------
+%    DOCUMENT CONFIGURATIONS
+%-------------------------------------------------------
+
+%-------------------------------------------------------
+%    START OF THE ORIGINAL DESIGN
+%-------------------------------------------------------
+\subsection{Spring Project}
+During the spring project, where this project starts from, we bootstrapped global solutions and concepts, resulting into a first comprehensive overview of the project emerged. However note that during the bachelor project new research and analyses have been made, and the project has evolved, which resulted in new architectures, and new recommendations explained in the next chapters.
+
+\paragraph{Architecture}
+The main point of this architecture was to create a consensus-driven network. The nodes running on machines connected to the network are acting not more than clients. This version of the global architecture can be found on figure ~\ref{fig:latest-architecture} in the annexes.
+
+\subparagraph{Consensus-driven} Working as a black-box, the goal is to apply the rules made by the identities. Overclouds control the security between the nodes. Indeed, from client's point of view, they are talking with the network and not a particular node from the network. The network work is split into encrypted and distributed chunks to nodes. Note that the chunks are encrypted for a particular node as the keys are stored and owned by the consensus. Each node is participating by default to the network storage and computation power.
+
+\subparagraph{Storage} Controlled by the consensus and being the second part of Overclouds' black-box, storage allows the identities to save data into the distributed nodes of the network. Integrity checks are done by the consensus as multiple nodes are doing the same computation work and chunks storage including redundancy.
+
+\subparagraph{Nodes} Considered as clients to the network, they have a trust level, which is stored on the network. This level increases over time with proof-of-participation and correct integrity checks. Identities' confidence level is rising on the other hand for good behavior. This last point is described in the Big Picture chapter.
+
+\paragraph{Communication} The main problem we were confronted with while doing research on WebRTC, was the incompatibility with Overclouds' vision of \textit{browser only}, read as the user should not install any software expect a browser to be able to connect to the network. We finally found a solution to use the very promising WebRTC, however, the downside is the signaling procedure, which centralizes the tracking of nodes on the network, but it could be accepted if the server is trusted and maintained by the consensus. To our greatest pleasure, during the implementation, we found a solution to make the signaling procedure \textbf{serverless}. Users will still need to communicate their secret peer address somehow, but the addresses will not be managed via a 3rd party. The next step will be to find a procedure to transmit the peer address securely. The figure ~\ref{fig:stun-scheme} from the annexes schematize how the hole is made in the firewall with STUN servers.
+
+\paragraph{Cryptography}
+As privacy is being an integral part of Overclouds, research has been made to find the best type of client-side cryptography right from the browser. We were looking for a fair middle ground between performance and security. We found that Stanford Javascript Crypto Library\cite{Stark2009SymmetricJavascript}, forge\cite{DigitalBazaar2016Forge}, CryptoJS\cite{Brix2013CryptoJS} and cryptojs-browserify\cite{Tarr2013Crypto-Browserify} were on the top for the cryptography javascript client-side libraries. Implementation and testings have been made with SJCL and CryptoJS.
+
+\paragraph{Blockchain}
+It is important to note that with the incoming quantum computers (predicted to appear wildly in 20ish years), the mining structure, the security and the anonymity must change from today's perspectives. As for today, the blockchain technology is at its hype, meaning that we see it has the best thing in the world.
+
+However, from now the hype will decrease and maybe a new technology will emerge or/and the blockchains technology will evolve or be modeled to go in a direction we did not expect yet. So from today's perspective, the timeframe is pretty significant, it is worth the interest.
+
+\subparagraph{Internal crypto-currency} Nodes are automatically retrieving units of the internal crypto-currency with their proof-of-activity. The network owns the currency. Rewards are given to identities for good behavior and participation. The coins are transferable to unbanned identities. However, an identity has no interaction access to its balance during the trial phase. If the identity is banned, its currency balance is returned to the network. The use of the crypto-currency is not clear for the moment, but it could be employed as a fuel like on Ethereum\cite{Ethereum2016EthereumDocumentation}.
+
+\paragraph{Consensus}
+The blockchains technology being very popular nowadays, it sometimes can put eye cups on our field of decisions. Blockchains have indeed proved that it works as a consensus. However, a consensus with highly fault tolerant networks and overcome the Byzantine (Two Generals Problem) is not something that only blockchains have. Just for taking one example, Maidsafe\cite{MaidSafe2014MaidSafe.netCommunity} uses another technology to obtain a consensus\cite{Nick2015CONSENSUSBLOCKCHAIN}. Instead of using the whole network to validate a transaction, they give the consensus role to a random group of nodes.
+
+\paragraph{Concept of Mesh of trust}
+Acting like a consensus of trusted nodes on a node network.
+
+\subparagraph{Proof of Activity}
+The protocol from Bentov, Lee, Mizrahi and Rosenfeld \cite{Bentov2013ProofStake} which is implemented into PeerCoin (and its clones), is considered as a hybrid of the PoW and PoS. The nodes are doing PoW work by mining blocks and at the same time with the PoS (meaning that the blockchain includes both types of blocks).
+
+\subparagraph{Certificates} Each node has a unique nontransferable certificate, which can be regenerated as a new one. It is used to individualize nodes, and allow nodes to trust each other. The network is storing the certificates, and keep track of its proof-of-activity\cite{Bentov2013ProofStake} ranking.
+
+Indeed, the certificate level increases over time by providing proof-of-activity. The level is also influenced by the amount of trust given to other nodes from the network. Note that nodes alone are not aware of others trust interactions, they kept informed of the sum of nodes willing to share their data with it.
+
+\subparagraph{Identities} Users can use any node from the network. For a user to identify himself, he needs to generate at least one unique identity. Identities are created from an existing node that is already part of the network. Each identity has a public and private key, a parent node (hardware of generation), and optional information (languages, avatar, name, etc.) for internal applications to the network.
+
+An identity cannot be alternated. The user must generate a new one with the previous one was banned, and restart the process of acquiring trust from the network. Depending on situations, they must also need use another node.
+
+\subparagraph{Democracy} Identities can create votes and of course votes for submitted proposals, which are creations or modification of the rules governing every transaction on the network. Each identity is weighted by default to the initial vote unit and can vote once. However, the consensus can decide to give more weight or votes to distinct identities. By default, nodes can be used only once to give a vote (except if the consensus agrees else-wise).
+
+\subparagraph{Bans} Certificates and identities can be banned from the network after a trial or directly from the consensus. A flag, seen globally by the network, is raised for the banished nodes or identities. During a trial, a random amount of random identities is asked to vote on the event that led to the trial.
+
+\subparagraph{Flags} Node can flag specific certificates or nodes on the network and apply rules on them, such as filters for minimum certification level required to be able to connect to them as a relay. The network then uses the flags, and route communications depending on the nodes' preferences.
+
+For example, in the case of a node receiving data from another node that is not matching its filter, the data would be rejected at entrance. In the event of spam, which assumes that the attacker knows what destination (that he sees as void) to target, the target node will indeed consume power to deny requests. A solution has to be found for a case of a figure and prevent spam.
+
+Another example, the node rerouting. A node can decide not to relay data. In this case, the data is either sent back, which can result in a load problem. Either the data is lost, which is in the event of a UDP-like protocol bad. In the case of a TCP-like protocol, the node would be searching for another node to go through. The second option could on another hand surcharge by exploring new paths.
+
+\subparagraph{Blames} A node can anonymously blame chunks or nodes and leave a reason for the blame from the list of multilingual generic reasons. Note that the consensus can also create new categories. Each node can blame a specific data only once. A blaming identity is then linked to the note used to blame, by this mean it cannot vote more than once per data. Plus the first identity to use the node gets the blame validated.
+
+Blames are telling the network that a node or a chunk is not appropriate to the other nodes. Multiple blames on a node may result in a ban of its certificate. Multiples blame on a particular chunk or chunks belonging to the same data resumes into a revocation of all rights given to nodes even the owner.
+
+\subparagraph{Data Tribunal} Once the required amount of blames reached the network select not related random identities and asks them to rate the blame. The digital judges would be able to read the reasons left during the blaming phase. However, they are not able to read the content of the data itself. Except is the consensus decides otherwise. Owners can ask for a second trial if they think the judgment was unfair and add a generic argument. For the second trial, different unrelated random nodes will have to rate the blame again. The decision from the second trial is definitive. The data is either archived, either the owner and related nodes get their rights back.
+
+\paragraph{Storage} Data is stored across the network. It is spread on the network as encrypted chunks belonging to an identity, the private and public keys for the data is also spread across the network and belongs to the network. The data and its keys have redundancy chunks, also spread across the network.
+
+\subparagraph{Data owners} The owning rights are given and managed by the network to a particular identity. The owner can give as he wishes the reading, writing, and executing rights to any nodes or identity on the network. He can also set a public access for certificate or trust levels. The ownership is, of course, revocable or transferable by the consensus. However, the owner can also transfer the property to another identity. Both parties must accept the transfer. Note that he cannot transfer blamed data.
+
+\paragraph{Network requirements} A node does not need an identity to be able to connect to the network. It connects automatically and integrates the mesh of nodes by giving storage and computational power. However, an identity requires a node to connect to the network and interact with it. So, a node works without an identity, but an identity always needs a node.
+
+\paragraph{Security} When everything goes by plan it's awesome, the best would be to plan also what is less awesome.
+
+\subparagraph{Internet Service Providers} They should not be able to interpret the network activity. They are only aware of encrypted tunnels made to random nodes. Like the Tor network, the gateway nodes never the same. It allows a censorship protection.
+
+\subparagraph{Backdoor} The project is not friendly for third party authorities like governments, police investigations, companies, etc. However, the consensus has virtually unlimited power over the network and can model its democracy as it is pleased. We can easily imagine that the consensus decides to disclose all the pedophiles from the network with the goal that the \textit{real world} would punish them. The consensus decides what is right or wrong, and morality.
+
+\subparagraph{3rd parties} Depending on the technologies used on the project, we could, in a first time, use third party services like Tor, Github, Twitter, BitTorrent trackers, etc. (note the public status and censorship of the example). The security could be compromised during the bootstrap phase in some cases because the ISP and others services could target and track nodes' activities.
+
+\subparagraph{Compromised users} In the case of malicious software presence on a system used by the node solutions can be taken into account. Assuming that there is less than X\% (exhausting value to estimate at this phase of the project) of malicious software designed for the network. It is indeed difficult to protect people from malicious people. We could add security layers, like a Pin or a passphrase, but if the user is running a keylogger, it will always be insecure. However, since the node can only be accessible from a unique hardware (certificate linked to the hardware), the stolen key could not be as useful as planned. However, the system could also be compromised by someone or something physical like the RUBBER USB\cite{HakshopRubberUSB}, in which case the hardware protection could be bypassed. Now we could think of security that only shows a virtual keyboard, but a particular program could sniff the mouse positions and actions. A solution could be to use a USB-key as key, but it could also be replicated if the key is writable. We could use an external hardware, but it would impact Overclouds' public attractivity. Moreover, in the end, how to be sure that the company making the encrypting device will not be hacked, resulting in the release of the algorithms for generating the keys? Another solution is to control the hardware and the software, assuming that there is no way for an external or internal entity to know what's the key. This last option would mean that Overclouds would have to be privatized somehow, and it would impact nature and vision of the project, by making part of the project proprietary.
+
+\subparagraph{Certificate or Identity Clones} The network does not allow clones using the network at the same time. The consensus will decide which one is the real one, and the network will not ignore the clone, no peers would accept a connection from it.
+
+In the case an identity is stolen, in the current state of the concept, the attacker would have full access to the identity's assets. However, a solution to avoid this concern would be to link an identity to a unique node. Forcing the user to have a different identity for each node it connects to. The attacker would have to have a clone of the identity key and a clone of the node certificate, which increase the difficulty of the attack. However, it is still possible if the attacker has access to the original hardware and have the technical knowledge to emulate the hardware running the clone of victim's node certificate. To increase the security again and solve this problem, we would have to add an extra layer of protection with a secure additional hardware such as a NitroKey\cite{NitrokeyNitokey}. Now, those solutions are considered extreme, in general, going this far into security is not necessary.  However, if those solutions enter into consideration, we could predict a substantial impact on new users willing to join the network.
+
+Note that the consensus could be able to revoke a key or certificate. Protocol for asking the consensus to revoke an identity could be implemented. Alternatively, simply asking many people to blame the stolen identity or certificate.
+
+\paragraph{Answer to unanswered questions from the String Project}
+\begin{itemize}
+\item Should we take into account that the wired Internet speed only improves?
+
+\dots No, the speed is not important in our case except maybe during the first load of the Webgate, which is permanently cached into the browser then. The only problem that could happen to a user with a small bandwidth is that the data will be shared and downloaded at a slower rate. For the other Overclouds users, the slow connections could note even be noticed if they are the seeder is not unique, due to the BitTorrent protocol.
+
+\item Should we start from a programmable network such as Ethereum or MaidSafe? Alternatively, should we start from scratch?
+
+\dots It was decided that we would use Ethereum because of its popularity and community. We discovered that help can be found with patience since the project is still under heavy development and attacks on the network are done. Starting from scratch would require a heavy amount of work, which cannot be filled with the time provided for the bachelor project. However, the solutions found with Ethereum at the moment is good enough for the current view of the project. 
+
+\item Would it be possible to allow nodes to run programs on the network like on Ethereum or with an API like on Maidsafe\cite{MaidSafe2014MaidSafe.netCommunity}.
+
+\dots That's part of the architecture now.
+
+\end{itemize}
+
+%-------------------------------------------------------
+%    END OF THE ORIGINAL DESIGN
+%-------------------------------------------------------

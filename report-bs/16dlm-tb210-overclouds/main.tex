@@ -1,0 +1,125 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Main part of the Report
+% Author: Romain Claret
+% Content: Bachelor Project at HE-Arc 2016
+% College of Applied Science ARC, Neuchâtel, Switzerland
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%-------------------------------------------------------
+\title{16DLM-TB210 Overclouds Report}
+
+\documentclass[12pt]{article}
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{adjustbox}
+\usepackage[autostyle]{csquotes}
+\usepackage{multicol}
+\usepackage[linktoc=all]{hyperref}
+\usepackage{fancyref}
+\usepackage{fancyhdr}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+%-------------------------------------------------------
+%	START MAIN DOCUMENT
+%-------------------------------------------------------
+\begin{document}
+
+%-------------------------------------------------------
+%	COVER PAGE
+%-------------------------------------------------------
+\input{./cover-page.tex}
+\newpage
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{}
+\lhead{}
+\rfoot{}
+\lfoot{\includegraphics[height=0.8cm]{./logos/cc-attibution-noncommercial-sharealike-4-0-international-88x31.png}}
+
+%-------------------------------------------------------
+%	Licenses PAGE
+%-------------------------------------------------------
+%\input{./licenses.tex}
+%\newpage
+
+%-------------------------------------------------------
+%	ABSTRACT & DESCRIPTION
+%-------------------------------------------------------
+\input{./description.tex}
+\newpage
+
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\headheight}{14.5pt}
+\rhead{Romain Claret}
+\lhead{16DLM-TB210 Overclouds}
+\rfoot{Page \thepage}
+\lfoot{\includegraphics[height=0.8cm]{./logos/cc-attibution-noncommercial-sharealike-4-0-international-88x31.png}}
+
+
+%-------------------------------------------------------
+%	TABLE OF CONTENTS
+%-------------------------------------------------------
+\tableofcontents
+\newpage
+
+%-------------------------------------------------------
+%	PREFACE
+%-------------------------------------------------------
+\input{./preface.tex}
+\clearpage
+%\setcounter{page}{1}
+
+%-------------------------------------------------------
+%	ANALYSES
+%-------------------------------------------------------
+\input{./analyses.tex}
+\clearpage
+
+%-------------------------------------------------------
+%	IMPLEMENTATIONS
+%-------------------------------------------------------
+\input{./implementations.tex}
+\clearpage
+
+%-------------------------------------------------------
+%	RESULTS
+%-------------------------------------------------------
+\input{./results.tex}
+\clearpage
+
+%-------------------------------------------------------
+%	CONCLUSION
+%-------------------------------------------------------
+\input{./conclusion.tex}
+\clearpage
+
+%-------------------------------------------------------
+%	BIBLIOGRAPHY
+%-------------------------------------------------------
+\input{./bibliography.tex}
+\clearpage
+
+%-------------------------------------------------------
+%	ANNEXES
+%-------------------------------------------------------
+\input{./annexes.tex}
+\clearpage
+
+%-------------------------------------------------------
+%	END MAIN DOCUMENT
+%-------------------------------------------------------
+\end{document}

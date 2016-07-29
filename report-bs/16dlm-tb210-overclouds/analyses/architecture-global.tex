@@ -1,0 +1,78 @@
+%-------------------------------------------------------
+%    DOCUMENT CONFIGURATIONS
+%-------------------------------------------------------
+
+%-------------------------------------------------------
+%    START OF ARCHITECTURE ANALYSE
+%-------------------------------------------------------
+\subsection{Global Architecture}
+During the spring project, where this project starts from, we bootstrapped global solutions and concepts, resulting into a first comprehensive overview of the project. However note that during the bachelor project new research and analyses have been made, and the project has evolved, which resulted in new architectures, and new recommendations. The spring session version of the global architecture can be found on figure~\ref{fig:latest-ss-architecture} in the annexes. Of course, this architecture is not definitive but contributes to the understanding of what we are trying to do. The latest global architecture version is found on figure ~\ref{fig:latest-architecture} in the annexes.
+
+The main point of this architecture is to create a consensus-driven with a decentralized data storage network.
+
+\subsubsection{Consensus-driven} The goal is to apply the rules made by the identities. Overclouds control the security between the nodes. Indeed, from client's point of view, they are talking about the network and not a particular node from the network. The network work is split into encrypted and distributed chunks to nodes. Note that the chunks are encrypted for a particular node as the keys are stored and owned by the consensus. Each node is participating by default to the network storage and computation power. The trust brainstorming can be found in the annexes on figure~\ref{fig:oc-trust-brainstorming}
+
+\subsubsection{User} Considered as someone willing to access the Overclouds network. As an entity, the user can at least create one identity which is defined by a Pair of Public \& Private Keys and Coins. Then at each connection to the network, the user must log in with the private key to the public key which works as the username. This process provides an anonymization for the users.
+
+\subsubsection{Identities} Users can use any node from the network. For a user to identify himself, he needs to generate at least one unique identity. Identities are created from an existing node that is already part of the network. An identity cannot be alternated. The user must generate a new one if the previous one was banned, and restart the process of acquiring reputation from the network.
+
+\subsubsection{Node} See as a peer for the network which runs default a virtual machine (which executes networks contracts) and provides computational work to verify network transactions.
+
+\subsubsection{OC Blockchain} Based on Ethereum\cite{VitalikButerin2013APlatform}, Overclouds is running a private blockchain. It provides a history of transactions, smart-contracts support, and network activity tracking.
+
+\subsubsection{Gateway} A browser-only solution allowing a node to join the network. A user can choose to use an Official (maintained by the Developers), Community (managed by a community of users) or Private gateway.
+
+\subsubsection{OC Contract} Working as the main unalterable contract of the network. Its goal is to provide the basis for the network to work. It's applying the rules made by the community. The communication between the nodes are all passing by this entity, indeed, from client's point of view, they are talking directly to the network and not a particular node from the network. 
+
+\subparagraph{Democracy} Identities can create votes and of course votes for submitted proposals, which are creations or modification of the rules governing every transaction on the network. Each identity is weighted by default to the initial vote unit and can vote once. However, the consensus can decide to give more weight or votes to distinct identities. By default, nodes can be used only once to give a vote (except if the consensus agrees else-wise).
+
+\paragraph{Executing} User are not interacting with the storage themselves, they must use request the network to do the work such as read, write or execute.
+
+\subparagraph{Internal crypto-currency} Nodes are automatically retrieving units of the internal crypto-currency with their proof-of-activity. The network owns the currency. Rewards are given to identities for good behavior and participation. The coins are transferable to unbanned identities. However, an identity has no interaction access to its balance during the trial phase. If the identity is banned, its currency balance is returned to the network. The use of the crypto-currency is not clear for the moment, but it could be employed as a fuel like on Ethereum\cite{Ethereum2016EthereumDocumentation}.
+
+\paragraph{Reputation} Using the internal crypto-currency as unit. While contributing to the network, identities are earning coins. Those coins are used to interact with the network itself. For example, identity gains or loses coins for being correct or incorrect on a blame after a data trial. A concept for the storage reputation points is found on figure ~\ref{fig:oc-concept-data-reputation-points} in the annexes.
+
+\paragraph{Mesh of Trust} Authority in charge of linking the proof of participation to the identities. 
+
+\subsubsection{Community Contracts} Those are the contracts submitted by the community. It could be rules, third party storage and gateways. The community is voting for the contracts (rules) to include, exclude from the network.
+
+\subsubsection{Proof of Participation} New concept coming from the need for the network contributors. Identities with accepted contracts are considered as special identities, indeed, if the community accepts their contracts it means that they understood the community needs. They have a higher vote weight and are earning more coins.
+
+\paragraph{Network requirements} A node does not need an identity to be able to connect to the network. It connects automatically and integrates the mesh of nodes by giving storage and computational power. However, an identity requires a node to connect to the network and interact with it. So, a node works without an identity, but an identity always needs a node.
+
+\paragraph{Security} When everything goes by plan it's awesome, the best would be to plan also what is less awesome.
+
+\subparagraph{Internet Service Providers} They should not be able to interpret the network activity. They are only aware of encrypted tunnels made to random nodes. Like the Tor network, the gateway nodes never the same. It allows a censorship protection.
+
+\subparagraph{Backdoor} The project is not friendly for third party authorities like governments, police investigations, companies, etc. However, the consensus has virtually unlimited power over the network and can model its democracy as it is pleased. We can easily imagine that the consensus decides to disclose all the pedophiles from the network with the goal that the \textit{real world} would punish them. The consensus decides what is right or wrong, and morality.
+
+\subparagraph{3rd parties} Depending on the technologies used on the project, we could, in a first time, use third party services like Tor, Github, Twitter, BitTorrent trackers, etc. (note the public status and censorship of the example). The security could be compromised during the bootstrap phase in some cases because the ISP and others services could target and track nodes' activities.
+
+\subparagraph{Compromised users} In the case of malicious software presence on a system used by the node solutions can be taken into account. Assuming that there is less than X\% (exhausting value to estimate at this phase of the project) of malicious software designed for the network. It is indeed difficult to protect people from malicious people. We could add security layers, like a Pin or a passphrase, but if the user is running a keylogger, it will always be insecure. However, since the node can only be accessible from a unique hardware (certificate linked to the hardware), the stolen key could not be as useful as planned. However, the system could also be compromised by someone or something physical like the RUBBER USB\cite{HakshopRubberUSB}, in which case the hardware protection could be bypassed. Now we could think of security that only shows a virtual keyboard, but a particular program could sniff the mouse positions and actions. A solution could be to use a USB-key as key, but it could also be replicated if the key is writable. We could use an external hardware, but it would impact Overclouds' public attractivity. Moreover, in the end, how to be sure that the company making the encrypting device will not be hacked, resulting in the release of the algorithms for generating the keys? Another solution is to control the hardware and the software, assuming that there is no way for an external or internal entity to know what's the key. This last option would mean that Overclouds would have to be privatized somehow, and it would impact nature and vision of the project, by making part of the project proprietary.
+
+\subparagraph{Certificate or Identity Clones} The network does not allow clones using the network at the same time. The consensus will decide which one is the real one, and the network will not ignore the clone, no peers would accept a connection from it.
+
+In the case an identity is stolen, in the current state of the concept, the attacker would have full access to the identity's assets. However, a solution to avoid this concern would be to link an identity to a unique node. Forcing the user to have a different identity for each node it connects to. The attacker would have to have a clone of the identity key and a clone of the node certificate, which increase the difficulty of the attack. However, it is still possible if the attacker has access to the original hardware and have the technical knowledge to emulate the hardware running the clone of victim's node certificate. To increase the security again and solve this problem, we would have to add an extra layer of protection with a secure additional hardware such as a NitroKey\cite{NitrokeyNitokey}. Now, those solutions are considered extreme, in general, going this far into security is not necessary.  However, if those solutions enter into consideration, we could predict a substantial impact on new users willing to join the network.
+
+Note that the consensus could be able to revoke a key or certificate. Protocol for asking the consensus to revoke an identity could be implemented. Alternatively, simply asking many people to blame the stolen identity or certificate.
+
+\paragraph{Answer to unanswered questions from the String Project}
+\begin{itemize}
+\item Should we take into account that the wired Internet speed only improves?
+
+\dots No, the speed is not important in our case except maybe during the first load of the Webgate, which is permanently cached into the browser then. The only problem that could happen to a user with a small bandwidth is that the data will be shared and downloaded at a slower rate. For the other Overclouds users, the slow connections could note even be noticed if they are the seeder is not unique, due to the BitTorrent protocol.
+
+\item Should we start from a programmable network such as Ethereum or MaidSafe? Alternatively, should we start from scratch?
+
+\dots It was decided that we would use Ethereum because of its popularity and community. We discovered that help can be found with patience since the project is still under heavy development and attacks on the network are done. Starting from scratch would require a heavy amount of work, which cannot be filled with the time provided for the bachelor project. However, the solutions found with Ethereum at the moment is good enough for the current view of the project. 
+
+\item Would it be possible to allow nodes to run programs on the network like on Ethereum or with an API like on Maidsafe\cite{MaidSafe2014MaidSafe.netCommunity}.
+
+\dots That's part of the architecture now.
+\end{itemize}
+
+
+%-------------------------------------------------------
+%    END OF ARCHITECTURE ANALYSE
+%-------------------------------------------------------
+

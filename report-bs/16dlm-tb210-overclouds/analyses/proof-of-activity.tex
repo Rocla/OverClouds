@@ -1,0 +1,29 @@
+%-------------------------------------------------------
+%    DOCUMENT CONFIGURATIONS
+%-------------------------------------------------------
+
+%-------------------------------------------------------
+%    START OF PROOF OF ACTIVITY ANALYSE
+%-------------------------------------------------------
+
+\subsection{Proof of Activity}
+The protocol from Bentov, Lee, Mizrahi and Rosenfeld  \cite{Bentov2013ProofStake} which is implemented into PeerCoin (and its clones), is considered as a hybrid of the PoW and PoS. The nodes are doing PoW work by mining blocks and at the same time with the PoS (meaning that the blockchain includes both types of blocks).
+
+\paragraph{The procedure}
+\begin{itemize}
+\item The PoW miner mine.
+\item Block is found, the network is notified and creates a template. (multiple templates are possible)
+\item The block hash is used to find random owners by using its hash as numbers to determine owners (nodes from the network).
+\item Turn by turn each chosen owners sign the key with the key of the block.
+\begin{itemize}
+\item If a chosen owner is unavailable, the process paused. (it is not a problem this concurrently miners are still mining and generating new templates with different owners)
+\end{itemize}
+\item At some point in time, blocks will be signed, and the reward will be given to the miner and the owners.
+\end{itemize}
+
+\paragraph{Continues data exchange}
+To reduce the data traffic, each template does not include a transaction list during the signing process itself; it is the last owner (signer) that is adding it when creating the block.
+
+%-------------------------------------------------------
+%    END OF PROOF OF ACTIVITY ANALYSE
+%-------------------------------------------------------

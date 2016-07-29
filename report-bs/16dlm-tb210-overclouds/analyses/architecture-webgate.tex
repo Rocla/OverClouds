@@ -1,0 +1,49 @@
+%-------------------------------------------------------
+%    DOCUMENT CONFIGURATIONS
+%-------------------------------------------------------
+
+%-------------------------------------------------------
+%    START OF ARCHITECTURE ANALYSE
+%-------------------------------------------------------
+\subsection{Webgate Architecture}
+
+Born from the need to create the first link between users, the Webgate is the result of the gateway concept from the global architecture. Its goal is to deliver an easy way to connect to the network right from the browser. The current architecture is found on figure~\ref{fig:oc-webgate-architecture-latest} from the annexes, as well as the concept on figure~\ref{fig:oc-brainstorm-webgate}.
+
+\subsubsection{User} When connecting to the webgate, the user have the choice to either identify himself and access its private data or use the service anonymously.
+
+\subsubsection{Background} While connected to the network, a background service runs on the node (browser) which provides the distributed content for the rest of the network. It downloads chunks of encrypted data and distributes them to the network automatically. This service assures that data is this accessible even if the main seeder is not connected anymore.
+
+\subsubsection{Webapps} On Overclouds, everything is considered as Webapps. The user is free to either create a webapp or not while uploading content. However, content that is not detected as a webapp will be converted automatically. This concept allows the system to manage the data as folders and have a unique hash address per upload.
+
+\subsubsection{Webgate features}
+\begin{itemize}
+\item Content
+\begin{itemize}
+\item Load and Create webapps
+\item Encrypt and Decrypt shared content 
+\item Distribute encryption keys into the network
+\item Split and Merge distributed chunks from the webapps
+\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item Background
+\begin{itemize}
+\item Load, seed and update redundancy table
+\item Automatic. It doesn't require the user to do anything
+\item Anonymous. The data chunks are encrypted and useless for the user
+\end{itemize}
+\end{itemize}
+
+\begin{itemize}
+\item Webapps
+\begin{itemize}
+\item Static storage for media and webapps without database requirements.
+\item Dynamic storage for webapps with database requirements. The database is distributed into the network and updated via the Abstract Master Node. The figure~\ref{fig:oc-brainstorm-dynamic-web} from the annexes relates to the dynamic webapps.
+\end{itemize}
+\end{itemize}
+
+%-------------------------------------------------------
+%    END OF ARCHITECTURE ANALYSE
+%-------------------------------------------------------
+

@@ -1,0 +1,257 @@
+\select@language {english}
+\select@language {english}
+\contentsline {section}{\numberline {1}Preface}{4}{section.1}
+\contentsline {subsection}{\numberline {1.1}Introduction}{4}{subsection.1.1}
+\contentsline {paragraph}{Today}{4}{section*.2}
+\contentsline {paragraph}{New behaviors emerged}{4}{section*.3}
+\contentsline {paragraph}{The problem}{4}{section*.4}
+\contentsline {paragraph}{Intellectual Properties}{4}{section*.5}
+\contentsline {paragraph}{Economy}{5}{section*.6}
+\contentsline {paragraph}{Game of cat and mouse}{5}{section*.7}
+\contentsline {paragraph}{Legacy}{5}{section*.8}
+\contentsline {paragraph}{Taking the wrong direction}{6}{section*.9}
+\contentsline {paragraph}{Overclouds}{6}{section*.10}
+\contentsline {paragraph}{Nice to have}{6}{section*.11}
+\contentsline {subsection}{\numberline {1.2}Big Picture}{7}{subsection.1.2}
+\contentsline {paragraph}{Global}{7}{section*.12}
+\contentsline {paragraph}{The consensus}{7}{section*.13}
+\contentsline {paragraph}{Network}{7}{section*.14}
+\contentsline {paragraph}{Storage}{7}{section*.15}
+\contentsline {paragraph}{Crypto-Currency}{8}{section*.16}
+\contentsline {paragraph}{Self updating}{8}{section*.17}
+\contentsline {subsection}{\numberline {1.3}Objectives}{9}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Specifications}{10}{subsection.1.4}
+\contentsline {subsection}{\numberline {1.5}Management}{11}{subsection.1.5}
+\contentsline {section}{\numberline {2}Analyses}{12}{section.2}
+\contentsline {subsection}{\numberline {2.1}Blockchains}{12}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Worth it?}{12}{subsubsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.2}What's next in crypto-currency?}{12}{subsubsection.2.1.2}
+\contentsline {subsubsection}{\numberline {2.1.3}Predicted evolution in blockchains}{13}{subsubsection.2.1.3}
+\contentsline {subsubsection}{\numberline {2.1.4}Proof-of-Work}{13}{subsubsection.2.1.4}
+\contentsline {subsubsection}{\numberline {2.1.5}Proof-of-Stake}{14}{subsubsection.2.1.5}
+\contentsline {paragraph}{Proof-of-Stake?\cite {King2012PPCoin:Proof-of-Stake}}{14}{section*.18}
+\contentsline {paragraph}{Now, on the security side}{14}{section*.19}
+\contentsline {paragraph}{Nothing-at-Stake}{14}{section*.20}
+\contentsline {paragraph}{Long Range Attack}{15}{section*.21}
+\contentsline {paragraph}{Ghost}{15}{section*.22}
+\contentsline {paragraph}{Casper}{16}{section*.23}
+\contentsline {paragraph}{Finally}{16}{section*.24}
+\contentsline {subsubsection}{\numberline {2.1.6}Attacks on blockchains}{16}{subsubsection.2.1.6}
+\contentsline {paragraph}{The 51\% attack}{16}{section*.25}
+\contentsline {paragraph}{Spam attacks}{16}{section*.26}
+\contentsline {paragraph}{DDOS on exchange platforms}{17}{section*.27}
+\contentsline {paragraph}{Special dedication to Mining malwares}{17}{section*.28}
+\contentsline {subsection}{\numberline {2.2}Proof of Activity}{18}{subsection.2.2}
+\contentsline {paragraph}{The procedure}{18}{section*.29}
+\contentsline {paragraph}{Continues data exchange}{18}{section*.30}
+\contentsline {subsection}{\numberline {2.3}Communication}{19}{subsection.2.3}
+\contentsline {paragraph}{Propagation}{19}{section*.31}
+\contentsline {paragraph}{3rd parties}{19}{section*.32}
+\contentsline {paragraph}{Organization's Server}{19}{section*.33}
+\contentsline {subsubsection}{\numberline {2.3.1}WebRTC}{20}{subsubsection.2.3.1}
+\contentsline {paragraph}{Datachannel\cite {R.Stewart2007StreamProtocol}}{20}{section*.34}
+\contentsline {subparagraph}{ORTC}{20}{section*.35}
+\contentsline {subsubsection}{\numberline {2.3.2}What about Overclouds?}{20}{subsubsection.2.3.2}
+\contentsline {paragraph}{Signaling free}{21}{section*.36}
+\contentsline {subsection}{\numberline {2.4}Cryptography}{22}{subsection.2.4}
+\contentsline {paragraph}{Privacy}{22}{section*.37}
+\contentsline {subsubsection}{\numberline {2.4.1}From Scratch VS Libraries}{22}{subsubsection.2.4.1}
+\contentsline {paragraph}{1st Question}{22}{section*.38}
+\contentsline {paragraph}{2nd Question}{22}{section*.39}
+\contentsline {paragraph}{Decision}{22}{section*.40}
+\contentsline {subsubsection}{\numberline {2.4.2}Comparison of some JavaScript Cryptography Libraries}{22}{subsubsection.2.4.2}
+\contentsline {subsubsection}{\numberline {2.4.3}A killer}{23}{subsubsection.2.4.3}
+\contentsline {subsubsection}{\numberline {2.4.4}Now what}{23}{subsubsection.2.4.4}
+\contentsline {subsubsection}{\numberline {2.4.5}What about OverClouds}{23}{subsubsection.2.4.5}
+\contentsline {subsubsection}{\numberline {2.4.6}Special Mention}{23}{subsubsection.2.4.6}
+\contentsline {subsection}{\numberline {2.5}Consensus}{24}{subsection.2.5}
+\contentsline {subsubsection}{\numberline {2.5.1}Consensus != Blockchains}{24}{subsubsection.2.5.1}
+\contentsline {paragraph}{Comparing}{24}{section*.41}
+\contentsline {subsubsection}{\numberline {2.5.2}Overclouds Consensus Concept}{25}{subsubsection.2.5.2}
+\contentsline {paragraph}{Blockchain}{25}{section*.42}
+\contentsline {paragraph}{Ethereum}{25}{section*.43}
+\contentsline {paragraph}{Maidsafe}{25}{section*.44}
+\contentsline {paragraph}{Alternative blockchains}{25}{section*.45}
+\contentsline {paragraph}{Browser based blockchain}{25}{section*.46}
+\contentsline {paragraph}{The one}{25}{section*.47}
+\contentsline {paragraph}{Development}{25}{section*.48}
+\contentsline {subsection}{\numberline {2.6}Storage}{26}{subsection.2.6}
+\contentsline {paragraph}{Data}{26}{section*.49}
+\contentsline {paragraph}{Verbs}{26}{section*.50}
+\contentsline {paragraph}{Flags}{26}{section*.51}
+\contentsline {subparagraph}{Bans}{26}{section*.52}
+\contentsline {subparagraph}{Flags}{26}{section*.53}
+\contentsline {subparagraph}{Blames}{27}{section*.54}
+\contentsline {paragraph}{Global knowledge}{27}{section*.55}
+\contentsline {paragraph}{P2P}{27}{section*.56}
+\contentsline {subparagraph}{Data owners}{28}{section*.57}
+\contentsline {subsubsection}{\numberline {2.6.1}Content Management}{28}{subsubsection.2.6.1}
+\contentsline {subsubsection}{\numberline {2.6.2}Data Tribunal}{28}{subsubsection.2.6.2}
+\contentsline {subsubsection}{\numberline {2.6.3}Data Sharing}{28}{subsubsection.2.6.3}
+\contentsline {subsubsection}{\numberline {2.6.4}Existing solutions}{29}{subsubsection.2.6.4}
+\contentsline {paragraph}{Swarm\cite {EthersphereIPFSSWARM}}{29}{section*.58}
+\contentsline {paragraph}{Filecoin\cite {2014Filecoin:Network}}{29}{section*.59}
+\contentsline {paragraph}{SyncNet\cite {MinardiSyncNet:Browser}}{29}{section*.60}
+\contentsline {paragraph}{Storj\cite {WilkinsonStorjNetwork}}{29}{section*.61}
+\contentsline {paragraph}{Symform}{29}{section*.62}
+\contentsline {paragraph}{Bittorrent\cite {Ferreira2012ContentBitTorrent}}{29}{section*.63}
+\contentsline {paragraph}{Webtorrent\cite {Sivek2004WebTorrent:Servers}}{29}{section*.64}
+\contentsline {paragraph}{IPFS\cite {BenetIPFS3}}{30}{section*.65}
+\contentsline {subsubsection}{\numberline {2.6.5}Overclouds Storage solution}{30}{subsubsection.2.6.5}
+\contentsline {subsection}{\numberline {2.7}Global Architecture}{31}{subsection.2.7}
+\contentsline {subsubsection}{\numberline {2.7.1}Consensus-driven}{31}{subsubsection.2.7.1}
+\contentsline {subsubsection}{\numberline {2.7.2}User}{31}{subsubsection.2.7.2}
+\contentsline {subsubsection}{\numberline {2.7.3}Identities}{31}{subsubsection.2.7.3}
+\contentsline {subsubsection}{\numberline {2.7.4}Node}{32}{subsubsection.2.7.4}
+\contentsline {subsubsection}{\numberline {2.7.5}OC Blockchain}{32}{subsubsection.2.7.5}
+\contentsline {subsubsection}{\numberline {2.7.6}Gateway}{32}{subsubsection.2.7.6}
+\contentsline {subsubsection}{\numberline {2.7.7}OC Contract}{32}{subsubsection.2.7.7}
+\contentsline {subparagraph}{Democracy}{32}{section*.66}
+\contentsline {paragraph}{Executing}{32}{section*.67}
+\contentsline {subparagraph}{Internal crypto-currency}{33}{section*.68}
+\contentsline {paragraph}{Reputation}{33}{section*.69}
+\contentsline {paragraph}{Mesh of Trust}{33}{section*.70}
+\contentsline {subsubsection}{\numberline {2.7.8}Community Contracts}{33}{subsubsection.2.7.8}
+\contentsline {subsubsection}{\numberline {2.7.9}Proof of Participation}{33}{subsubsection.2.7.9}
+\contentsline {paragraph}{Network requirements}{33}{section*.71}
+\contentsline {paragraph}{Security}{34}{section*.72}
+\contentsline {subparagraph}{Internet Service Providers}{34}{section*.73}
+\contentsline {subparagraph}{Backdoor}{34}{section*.74}
+\contentsline {subparagraph}{3rd parties}{34}{section*.75}
+\contentsline {subparagraph}{Compromised users}{34}{section*.76}
+\contentsline {subparagraph}{Certificate or Identity Clones}{35}{section*.77}
+\contentsline {paragraph}{Answer to unanswered questions from the String Project}{35}{section*.78}
+\contentsline {subsection}{\numberline {2.8}Webgate Architecture}{37}{subsection.2.8}
+\contentsline {subsubsection}{\numberline {2.8.1}User}{37}{subsubsection.2.8.1}
+\contentsline {subsubsection}{\numberline {2.8.2}Background}{37}{subsubsection.2.8.2}
+\contentsline {subsubsection}{\numberline {2.8.3}Webapps}{37}{subsubsection.2.8.3}
+\contentsline {subsubsection}{\numberline {2.8.4}Webgate features}{37}{subsubsection.2.8.4}
+\contentsline {section}{\numberline {3}Implementations}{39}{section.3}
+\contentsline {subsection}{\numberline {3.1}Consensus}{39}{subsection.3.1}
+\contentsline {paragraph}{Tests}{39}{section*.79}
+\contentsline {paragraph}{nodeJS client}{39}{section*.80}
+\contentsline {paragraph}{Docker}{39}{section*.81}
+\contentsline {paragraph}{Browser only}{39}{section*.82}
+\contentsline {paragraph}{Javascript APIs}{39}{section*.83}
+\contentsline {subsubsection}{\numberline {3.1.1}Docker Deployement}{39}{subsubsection.3.1.1}
+\contentsline {paragraph}{Build}{39}{section*.84}
+\contentsline {paragraph}{Mount and Run}{40}{section*.85}
+\contentsline {paragraph}{Scale}{40}{section*.86}
+\contentsline {paragraph}{Open the netstats}{40}{section*.87}
+\contentsline {paragraph}{Unmount}{40}{section*.88}
+\contentsline {subsection}{\numberline {3.2}Webgate}{40}{subsection.3.2}
+\contentsline {paragraph}{P2P}{40}{section*.89}
+\contentsline {paragraph}{Tracker}{40}{section*.90}
+\contentsline {paragraph}{Offline}{41}{section*.91}
+\contentsline {paragraph}{Quick share}{41}{section*.92}
+\contentsline {paragraph}{Webapps}{41}{section*.93}
+\contentsline {paragraph}{Loading}{41}{section*.94}
+\contentsline {paragraph}{Encryption}{41}{section*.95}
+\contentsline {paragraph}{Web worker}{41}{section*.96}
+\contentsline {paragraph}{The webgate always in a tab}{41}{section*.97}
+\contentsline {subsubsection}{\numberline {3.2.1}Build and Deployement}{41}{subsubsection.3.2.1}
+\contentsline {paragraph}{Install dependencies (to do once)}{42}{section*.98}
+\contentsline {paragraph}{Build}{42}{section*.99}
+\contentsline {paragraph}{Localhost}{42}{section*.100}
+\contentsline {paragraph}{Server}{42}{section*.101}
+\contentsline {paragraph}{Patch \& Run}{42}{section*.102}
+\contentsline {section}{\numberline {4}Results}{43}{section.4}
+\contentsline {subsection}{\numberline {4.1}Consensus}{43}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Webgate}{43}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Iterations}{43}{subsection.4.3}
+\contentsline {paragraph}{Sprint 1}{43}{section*.103}
+\contentsline {paragraph}{Sprint 2}{43}{section*.104}
+\contentsline {paragraph}{Sprint 3}{43}{section*.105}
+\contentsline {paragraph}{Sprint 4}{43}{section*.106}
+\contentsline {paragraph}{Sprint 5}{43}{section*.107}
+\contentsline {paragraph}{Sprint 6}{44}{section*.108}
+\contentsline {paragraph}{Sprint 7}{44}{section*.109}
+\contentsline {paragraph}{Sprint 8}{44}{section*.110}
+\contentsline {subsection}{\numberline {4.4}Webgate UI}{44}{subsection.4.4}
+\contentsline {section}{\numberline {5}Conclusion}{45}{section.5}
+\contentsline {paragraph}{Planning}{45}{section*.111}
+\contentsline {paragraph}{Architecture}{45}{section*.112}
+\contentsline {paragraph}{Encryption}{45}{section*.113}
+\contentsline {paragraph}{Storage}{45}{section*.114}
+\contentsline {paragraph}{Consensus}{45}{section*.115}
+\contentsline {paragraph}{Webgate}{45}{section*.116}
+\contentsline {section}{\numberline {6}Bibliography}{46}{section.6}
+\contentsline {section}{\numberline {7}Annexes}{51}{section.7}
+\contentsline {subsection}{\numberline {7.1}State of the Art}{51}{subsection.7.1}
+\contentsline {subsubsection}{\numberline {7.1.1}Similar products}{51}{subsubsection.7.1.1}
+\contentsline {subsubsection}{\numberline {7.1.2}Existing Networks}{51}{subsubsection.7.1.2}
+\contentsline {paragraph}{Freenet\cite {Clarke1999ASystem, Clarke2001Freenet:System}}{51}{section*.118}
+\contentsline {paragraph}{I2P\cite {Foodists2003TheInternet}}{51}{section*.119}
+\contentsline {paragraph}{MaidSafe\cite {MaidSafe2014MaidSafe.netCommunity}}{52}{section*.120}
+\contentsline {paragraph}{Tor\cite {Dingledine2004Tor:Router}}{52}{section*.121}
+\contentsline {paragraph}{ZeroNet\cite {Zeronet2016ZeroNet}}{52}{section*.122}
+\contentsline {paragraph}{Project Maelstrom}{52}{section*.123}
+\contentsline {paragraph}{Diaspora*}{52}{section*.124}
+\contentsline {paragraph}{FlowingMail}{52}{section*.125}
+\contentsline {paragraph}{Bitmessage\cite {Warren2012Bitmessage:System}}{53}{section*.126}
+\contentsline {paragraph}{Retroshare}{53}{section*.127}
+\contentsline {paragraph}{MediaGoblin\cite {Webber2016GNUDocumentation}}{53}{section*.128}
+\contentsline {paragraph}{Movim}{53}{section*.129}
+\contentsline {paragraph}{The IPFS Project\cite {Benet2014IPFS-ContentSystem}}{53}{section*.130}
+\contentsline {paragraph}{Serval Project\cite {Gardner-stephen2011TheTelecommunications}}{53}{section*.131}
+\contentsline {paragraph}{Open Garden}{53}{section*.132}
+\contentsline {paragraph}{Hyperboria\cite {HypeHyperboriaWhitepaper}}{54}{section*.133}
+\contentsline {subsubsection}{\numberline {7.1.3}Transfer Protocols}{54}{subsubsection.7.1.3}
+\contentsline {paragraph}{Route-based VPN}{54}{section*.134}
+\contentsline {paragraph}{Commotion}{54}{section*.135}
+\contentsline {paragraph}{Hubzilla}{54}{section*.136}
+\contentsline {paragraph}{Tent}{54}{section*.137}
+\contentsline {paragraph}{cjdns}{54}{section*.138}
+\contentsline {paragraph}{WebRTC}{54}{section*.139}
+\contentsline {paragraph}{Open Peer}{54}{section*.140}
+\contentsline {paragraph}{freedom.js}{55}{section*.141}
+\contentsline {subsubsection}{\numberline {7.1.4}Protections}{55}{subsubsection.7.1.4}
+\contentsline {paragraph}{Honeypot}{55}{section*.142}
+\contentsline {paragraph}{Penetration Testing Lab}{55}{section*.143}
+\contentsline {paragraph}{Two-factor authentication}{55}{section*.144}
+\contentsline {paragraph}{Let's Encrypt}{55}{section*.145}
+\contentsline {subsubsection}{\numberline {7.1.5}Cryptography}{55}{subsubsection.7.1.5}
+\contentsline {paragraph}{Stanford Javascript Crypto Library\cite {Stark2009SymmetricJavascript}}{55}{section*.146}
+\contentsline {paragraph}{MSR JavaScript Cryptography Library}{55}{section*.147}
+\contentsline {paragraph}{MDN}{55}{section*.148}
+\contentsline {paragraph}{W3C}{56}{section*.149}
+\contentsline {paragraph}{Google Closure}{56}{section*.150}
+\contentsline {paragraph}{forge}{56}{section*.151}
+\contentsline {paragraph}{jsHashes}{56}{section*.152}
+\contentsline {paragraph}{crypto-broserify}{56}{section*.153}
+\contentsline {paragraph}{BLAKE2\cite {SaarinenM-J.2015TheMAC}}{56}{section*.154}
+\contentsline {subsubsection}{\numberline {7.1.6}Hardware}{56}{subsubsection.7.1.6}
+\contentsline {paragraph}{XBee digimesh}{56}{section*.155}
+\contentsline {paragraph}{Nitrokey}{56}{section*.156}
+\contentsline {subsubsection}{\numberline {7.1.7}Blockchains}{57}{subsubsection.7.1.7}
+\contentsline {paragraph}{So much hype in this, but what is it?}{57}{section*.157}
+\contentsline {paragraph}{Bitcoin \cite {SatoshiNakamoto2008Bitcoin:System}}{57}{section*.158}
+\contentsline {paragraph}{Ethereum \cite {Ethereum2016EthereumDocumentation}}{57}{section*.159}
+\contentsline {paragraph}{Others}{57}{section*.160}
+\contentsline {subparagraph}{Lite Coin\cite {Litecoin2011LitecoinWiki}}{58}{section*.161}
+\contentsline {subparagraph}{Dodge Coin \cite {MaxK.2013DogecoinCore}}{58}{section*.162}
+\contentsline {subparagraph}{Peer Coin \cite {King2012Peercoin}}{58}{section*.163}
+\contentsline {subsubsection}{\numberline {7.1.8}Decentralized applications}{58}{subsubsection.7.1.8}
+\contentsline {paragraph}{YaCy}{58}{section*.164}
+\contentsline {subsubsection}{\numberline {7.1.9}Reputation Management}{58}{subsubsection.7.1.9}
+\contentsline {paragraph}{TeamSpeak}{58}{section*.165}
+\contentsline {paragraph}{EigenTrust}{58}{section*.166}
+\contentsline {subsubsection}{\numberline {7.1.10}Operating Systems}{58}{subsubsection.7.1.10}
+\contentsline {paragraph}{Project-Byzantium}{58}{section*.167}
+\contentsline {paragraph}{Tails}{58}{section*.168}
+\contentsline {paragraph}{arkOS}{59}{section*.169}
+\contentsline {subsubsection}{\numberline {7.1.11}Technologies}{59}{subsubsection.7.1.11}
+\contentsline {paragraph}{QEMU JS}{59}{section*.170}
+\contentsline {paragraph}{PeerJS}{59}{section*.171}
+\contentsline {paragraph}{PeerShare}{59}{section*.172}
+\contentsline {paragraph}{PeerSurf}{59}{section*.173}
+\contentsline {paragraph}{OpenWebRTC}{59}{section*.174}
+\contentsline {paragraph}{PeerServer}{59}{section*.175}
+\contentsline {subsubsection}{\numberline {7.1.12}Other}{59}{subsubsection.7.1.12}
+\contentsline {paragraph}{Prism-Break}{59}{section*.176}
+\contentsline {subsection}{\numberline {7.2}Architectures}{60}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Concepts}{64}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Schemes}{77}{subsection.7.4}
+\contentsline {subsection}{\numberline {7.5}Screenshots}{84}{subsection.7.5}
+\contentsline {subsection}{\numberline {7.6}Graphs}{87}{subsection.7.6}
+\contentsline {subsection}{\numberline {7.7}Tables}{94}{subsection.7.7}

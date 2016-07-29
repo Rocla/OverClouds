@@ -1,0 +1,54 @@
+%-------------------------------------------------------
+%    DOCUMENT CONFIGURATIONS
+%-------------------------------------------------------
+
+%-------------------------------------------------------
+%    START OF CONSENSUS ANALYSE
+%-------------------------------------------------------
+\subsection{Consensus}
+Read this subsection as a teaser from the final project analysis on the consensus concept. Indeed, the time allocated for this research and analyze was null. However, knowledge grows over time even if the research was targeting something else.
+
+\subsubsection{Consensus != Blockchains}
+The blockchains technology being very popular nowadays, it sometimes can put eye cups on our field of decisions.
+
+Blockchains have indeed proved that it works as a consensus. However, a consensus with highly fault tolerant networks and overcome the Byzantine (Two Generals Problem) is not something that only blockchains have.
+
+For example, Maidsafe\cite{MaidSafe2014MaidSafe.netCommunity} uses another technology to obtain a consensus\cite{Nick2015CONSENSUSBLOCKCHAIN}. Instead of using the whole network to validate a transaction, they give the consensus role to a random group of nodes.
+
+\paragraph{Comparing} They both have pros and cons of course.
+\begin{itemize}
+\item Blockchains
+\begin{itemize}
+\item Pros: Shared global record of all transactions.
+\item Cons: The chain can be gigantic (Bitcoin more than 60GB at the moment), and the file must be synced between all network’s 6000 plus. Network speed. nodes\cite{AyeowchGLOBALDISTRIBUTION}.
+\end{itemize}
+\end{itemize}
+\begin{itemize}
+\item MaidSafe
+\begin{itemize}
+\item Pros: Bandwidth speed limitations only. Low data storage consumption.
+\item Cons: Small groups of nodes are playing the role of consensus for transactions. Nodes could never be aware of transactions that happened elsewhere if they are not related to them at any point in time.
+\end{itemize}
+\end{itemize}
+
+\subsubsection{Overclouds Consensus Concept}
+
+\paragraph{Blockchain} This technology could become heavy. As a solution to decrease the long-term size, the consensus could agree on generating a new genesis block and distribute it to the clients.
+
+\paragraph{Ethereum} Blockchain solution with smart contracts capabilities. Custom Genesis Block out of the box for private chains. Storage is not possible right from the ethereum itself. However, a clever mix of ethereum implementation and decentralized web storage (webrtc, webtorrent, etc.) could work.
+
+\paragraph{Maidsafe} See it as a small group consensus. It includes a decentralized storage, but it is not open to developers yet. Plus the hype is currently much lower compared to Ethereum based on Google trending. In the end, Maidsafe doesn't even come close to ethereum's community and adoption progression.
+
+\paragraph{Alternative blockchains} None found looked as attractive as ethereum. Indeed, it is the only one giving a virtual machine to run code on the network (smart contracts).
+
+\paragraph{Browser based blockchain} It doesn't exist. Browser solutions to mine exist, however, a combination of JS, HTML5, WebGL. Investigating in the future could be interesting.
+
+\paragraph{The one}The chosen consensus is Ethereum. A new architecture with an ethereum private blockchain has been made, which can be found on the figure~\ref{fig:oc-concept-draft-global-view-idea} from the annexes.
+
+\paragraph{Development} NodeJS+NPM are at start designed to work on a server. However, with the browserify technology, nodejs code can be a bundle to run in the browser, but it's not a universal or magic technic, it could need some work is the npm package, for example, isn't designed to operate with browserify right out of the box. EthereumJS has already modules compatible with Broswerify.
+
+
+%-------------------------------------------------------
+%    END OF BLOCKCHAINS ANALYSE
+%-------------------------------------------------------
+

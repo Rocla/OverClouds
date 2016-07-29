@@ -1,0 +1,58 @@
+%-------------------------------------------------------
+%    DOCUMENT CONFIGURATIONS
+%-------------------------------------------------------
+
+%-------------------------------------------------------
+%    START OF WEBGATE
+%-------------------------------------------------------
+\subsection{Webgate} It is the first and the main interface for a user to join and be part the Overclouds network. To join the network, the user must enter the URL \url{https://overclouds.ch} into the browser bar address and the connection is made. The concept UI can be found in the annexes on the figure~\ref{fig:oc-concept-webgate-ui}. It works only with Chrome at the moment, couldn't make it work with Firefox yet.
+
+\paragraph{P2P} Research has been done in the Webtorrent direction. We are using the Webtorrent\cite{Torrent2015WebTorrent} technology, which is the javascript and Webrtc implementation of the bittorrent protocol. Learning and testing the different type of Distributed Hash Tables. Learning and testing bit/web torrent protocol. Research on mobile browsers webrtc capable.
+
+\paragraph{Tracker} To simplify the data hash table process, we made Overclouds compatible with the standard webtorrent tracker. This allows the network to be deployed on virtually an unlimited amount of trackers without having to maintain a specific tracker implementation or even have to take care of the servers ourselves. 
+
+\paragraph{Offline} In the view of having a gateway always accessible, even if the hosting servers are down, the whole website has been made compatible with browser's permanent web storage. The first time the user connects to the webgate, it's ready for offline use. Note that internet is still required to use the service. Also, note that the webgate use Cloudflare for caching the data and for the load balance.
+
+\paragraph{Quick share} The user can drag \& drop file-s, or folder-s and starting sharing them right from the webgate.
+
+\paragraph{Webapps} While sharing content if the "index.html" file is not found, it will automatically create one.
+
+\paragraph{Loading} As everything is considered as webapps on the network, each hash address lead the user to some sort of website.
+
+\paragraph{Encryption} Currently only the file encryption has been implemented. The user can generate a random key or use its own. After comparing SJCL\cite{Stark2009SymmetricJavascript} and CryptoJS\cite{Brix2013CryptoJS} libraries, we choose to use CryptoJS because of it was much simpler to use, and the performances were similar even if the on the Table~\ref{tab:key-derivation-pbkdf2} from the annexes showed significant differences.
+
+\paragraph{Web worker} The magic allowing decentralized webapps is the web workers fetching the data in parallel.
+
+\paragraph{The webgate always in a tab} Due to the background service specification, we force the user always to have the webgate in a tab of the browser. Plus in a technical side, Chrome support webworks only if the main tab is open.
+
+\subsubsection{Build and Deployement} As it was developed with NodeJS, the project must be compiled before deploying, once compiled the user may choose to use a localhost server using NodeJS http server or deploy it on a distant server. Execute the commands from the root folder.
+
+\paragraph{Install dependencies (to do once)}
+\begin{itemize}
+\item command: npm install
+\end{itemize}
+
+\paragraph{Build}
+\begin{itemize}
+\item command: npm run-script build
+\end{itemize}
+
+\paragraph{Localhost}
+\begin{itemize}
+\item command: npm run-script start
+\end{itemize}
+
+\paragraph{Server} Note that the server and the domain name must be certified with a SSL certificate. We are using Let's encrypt\cite{LetsEncrypt}, which is free. 
+\begin{itemize}
+\item Move the files from the static folder into the root of the distant server. 
+\end{itemize}
+
+\paragraph{Patch \& Run}
+\begin{itemize}
+\item command: npm version patch \&\& npm run-script build \&\& npm run-script start
+\end{itemize}
+
+
+%-------------------------------------------------------
+%    END OF COMMUNICATION
+%-------------------------------------------------------
